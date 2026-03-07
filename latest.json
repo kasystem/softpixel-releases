@@ -1,0 +1,11 @@
+{
+  "version": "0.1.2",
+  "notes": "Update",
+  "pub_date": "2026-03-06T23:59:59.598331Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUbFdPeFAvVElRNFcxOTNlZWpaWXNHYjVBMDh0bDV6MGdtOFBmemc0UUp4NHBBKzZlTzFMZmY2aDNEVmllQUFDUmpuaXFRRmV6K0EyVTFxeEpjYVlVUkVBYjY0Nm1RSFFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzcyODQxNTcwCWZpbGU6dG1wX3NpZ240LmV4ZQpJQmZpZzd6MTZnM0RXQTNxVllaUWpsMWhubWdDT09iaFRxWjVhNy9MWjdxN2xYZUNQZS8rTHl3OFlUWjJLRnRWRUoyZUN4YnFTRkRsSWxjZjd5ci9BQT09Cg==",
+      "url": "https://github.com/kasystem/softpixel-releases/releases/download/v0.1.2/SoftPixel_POS_0.1.2_x64-setup.exe"
+    }
+  }
+}
