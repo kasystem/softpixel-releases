@@ -1,11 +1,11 @@
 {
-  "version": "0.1.2",
-  "notes": "Update",
-  "pub_date": "2026-03-06T23:59:59.598331Z",
+  "version": "0.1.3",
+  "notes": "Force update",
+  "pub_date": "2026-03-07T01:05:54.635456Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUbFdPeFAvVElRNFcxOTNlZWpaWXNHYjVBMDh0bDV6MGdtOFBmemc0UUp4NHBBKzZlTzFMZmY2aDNEVmllQUFDUmpuaXFRRmV6K0EyVTFxeEpjYVlVUkVBYjY0Nm1RSFFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzcyODQxNTcwCWZpbGU6dG1wX3NpZ240LmV4ZQpJQmZpZzd6MTZnM0RXQTNxVllaUWpsMWhubWdDT09iaFRxWjVhNy9MWjdxN2xYZUNQZS8rTHl3OFlUWjJLRnRWRUoyZUN4YnFTRkRsSWxjZjd5ci9BQT09Cg==",
-      "url": "https://github.com/kasystem/softpixel-releases/releases/download/v0.1.2/SoftPixel_POS_0.1.2_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUbFdPeFAvVElRNFFpQjNYN3lqMy95TDBMU1NpT3pRSTEwVXFwcXNkTlBkcklscERzNVRudkNYS2xvckZEeW1PMUFLM0tkVE42MUt3WmFaNFNCNHV6clNuRXpLbyszZVFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzcyODQ1NTI4CWZpbGU6dG1wX3NpZ241LmV4ZQp1NTlzM1BQclhHT3R0Z0VsUE1tSFlWNENkWmtXOHg4a0Erem9qUDBuQ1B3OWI5YWI4bVhDSGk3VVFjc29vblRoNW91UXNkT2RyZndYeXlXZGdQSWpEUT09Cg==",
+      "url": "https://github.com/kasystem/softpixel-releases/releases/download/v0.1.3/SoftPixel_POS_0.1.3_x64-setup.exe"
     }
   }
 }
