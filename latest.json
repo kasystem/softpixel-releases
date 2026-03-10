@@ -1,11 +1,11 @@
 {
-  "version": "0.1.5",
-  "notes": "Test release 0.1.5 (same features) per verifikim updater.",
-  "pub_date": "2026-03-07T04:30:00.000000Z",
+  "version": "0.1.8",
+  "notes": "Pricing rules now apply directly in sales. Desktop updater now reads release metadata from the softpixel-releases main branch.",
+  "pub_date": "2026-03-10T03:40:00.000000Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUbFdPeFAvVElRNGN2b0Q0L1pvNmtDaC9SMVoyTFVwNUt4U2REWUQvU2htRVhJbkVQeEhsUzU5NlF3b0psa1o4QWRhUmpCMTRvSGdrME1hT1dGeVFRWEJZNzVTbTBCckFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzcyODUzODQ0CWZpbGU6U09DNDEwfjEuRVhFCkRwRFU1U2xLcGZuaWE3bWdvNGYvaHFGeUZxTXBTbmdEMnNrUURZSDJueG5raU1aYzBPci9uM3JuQmN1a3ZMVGlEekJnMDZGTDhXQmdoelFiMHhGS0RnPT0K",
-      "url": "https://github.com/kasystem/softpixel-releases/releases/download/v0.1.5/SoftPixel_POS_0.1.5_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUbFdPeFAvVElRNGFacElYQ2xKbkZ2OXphV0R0NkFPUFlHeUQ3eXlNTnNDWUhxalpxaEdnNmF6NjRnTlFmTm1MM2twUHhYUDZVck1qTThJRkZaWExiL0Rld2FXKzJ5aUFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzczMTEwMzc5CWZpbGU6U09CNzMwfjEuRVhFCnE3YWVnZ0ltUkhoRVBHNGs3bjJEdlgwYUdDVFZLRm0xMnFGZENWRVFoM2YzOTBuWVRUdzZJZkRRR3VRTjZreHhkSjk1U2E1TkxkMlZPNkY4YWloREFnPT0K",
+      "url": "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/SoftPixel_POS_0.1.8_x64-setup.exe"
     }
   }
 }
