@@ -1,11 +1,11 @@
 {
-  "version": "0.1.9",
-  "notes": "Business module pages are fixed and pricing rules now support product combinations for offers/bundles.",
-  "pub_date": "2026-03-10T04:46:00.000000Z",
+  "version": "0.2.0",
+  "notes": "Stable desktop shell with local UI bundle hot-updates and offline fallback.",
+  "pub_date": "2026-03-14T00:20:00.000000Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUbFdPeFAvVElRNFpmUHVUOXRNSE5tK0pUZUNLUXJvQjRqNEhta0c4MUZSdDQzSzQ3YmFGdUFvTy9obFF0R24xRFNDM2JoeHJpS1VrNEcwK2dzZDVOUFNReGYraGZwSEFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzczMTEzOTYxCWZpbGU6U084OTVBfjEuRVhFCjY4Y0VxaytXMVE3Mk1zMzBZUURXc0VReG5wWlFOQk9uUmJnU24yaFp2N0lXeWxrUXNxUEVxS0gvR25TMUVrZEQ2TzI4NjZBWU9XUUZVeGNwdnRudEJnPT0K",
-      "url": "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/SoftPixel_POS_0.1.9_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUbFdPeFAvVElRNFczYi9SZHJEbVlTeWIxZ1I5Q0VjRkNhT3dFQkthUW54dDB5VllVZ2ZHaFdEWkY2Y3ZWa20xS2twSFExVXNxMEtGRkVpbFA5ZGdsSm4xOHgxRlNiZEFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzczNDQ3NDY0CWZpbGU6U29mdFBpeGVsIFBPU18wLjIuMF94NjQtc2V0dXAuZXhlClkybkYvbmFNWlhiQitSMndvdFlwZWxpRW9RQW1FYXduUFJxT2ZlbkhxTzdOWSt4S0xLWmpNOExqMGduOXArQ0ozMEVnaGYzUnZYV3JFWC9IdlNraURBPT0K",
+      "url": "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/SoftPixel_POS_0.2.0_x64-setup.exe"
     }
   }
 }

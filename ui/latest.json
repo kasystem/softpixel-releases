@@ -1,0 +1,89 @@
+{
+  "version": "ui-0.2.0-001",
+  "min_shell_version": "0.2.0",
+  "published_at": "2026-03-14T00:20:41.804Z",
+  "notes": "UI hot-update bundle for SoftPixel POS desktop shell.",
+  "bundle_base_url": "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/ui/bundles/ui-0.2.0-001/",
+  "files": [
+    {
+      "path": "assets/index.63e2f872.js",
+      "sha256": "c7dd5ce39cc4dca63aeb2f90423eadcc6106176f082d7c4daac0d3b2ad1f5e63"
+    },
+    {
+      "path": "assets/index.bd86b03d.css",
+      "sha256": "a9f8233d2ce731bfb2d7a3967ca8c372b724343642c5df9b3d9bfdcab4323686"
+    },
+    {
+      "path": "assets/index.e25ffaa4.js",
+      "sha256": "c2e803a54cde3d34b74e11d175f738a9356b13f00402a5b4b679e70b4219f0f7"
+    },
+    {
+      "path": "assets/softpixel-logo.528298ef.svg",
+      "sha256": "528298ef4e76b5d6f20a3fc44af7b446ba6f85477a932e17c4081b3e6f598dfc"
+    },
+    {
+      "path": "icon-192.svg",
+      "sha256": "d7db2891caa8a30f196b99b343b8a4da467d6521d30cc2ed8914e26eb78ac3a0"
+    },
+    {
+      "path": "icon-512.svg",
+      "sha256": "8d943e834fce61430cbf8bc8bf70a5907679c7f70ea13d33e03477f4da3bfbf1"
+    },
+    {
+      "path": "index.html",
+      "sha256": "866434801cd600beb55fa8a36423ac87c372619e943145becccf58a7f33c5fbf"
+    },
+    {
+      "path": "manifest.webmanifest",
+      "sha256": "994f73c86471aee3a8dda9369ce7cdc52d8605a035527c46e04bdaf2fbcff27e"
+    },
+    {
+      "path": "service-worker.js",
+      "sha256": "1991a59d46bf256a9cec18e14a404d015a45161bc52a3718a0e45717df41a024"
+    },
+    {
+      "path": "softpixel-admin.html",
+      "sha256": "6df5274bd4db41bf7d6fb2f1fd952eaa23acd5ccfae3498d56e01c2cd166d2ef"
+    },
+    {
+      "path": "templates/atk/accounting-manifest.json",
+      "sha256": "06fc4b1d4150820e7e9b733365b104b7368ebd8ebaf3e9b2bae8a3acdb37251d"
+    },
+    {
+      "path": "templates/atk/purchase-book-no-vat-template.xlsx",
+      "sha256": "2e7934534fee27491fc448fabc97370bd23b3ad2f3f8b826785a7888b2432bfa"
+    },
+    {
+      "path": "templates/atk/purchase-book-vat-template.xlsx",
+      "sha256": "520d4201579a7bf390965bb235931f7801257653ea6bff1eb0415d7f9e71355c"
+    },
+    {
+      "path": "templates/atk/sales-book-no-vat-template.xlsx",
+      "sha256": "a8580ddfa2e7b86aafa4b014226d097c59a35dc4c7d718c17053b40501260ab1"
+    },
+    {
+      "path": "templates/atk/sales-book-vat-template.xlsx",
+      "sha256": "10c1442d7aab7245fd09662461a47ff515f2e9c82277c0b7edbc0f137564dee5"
+    },
+    {
+      "path": "templates/purchase-book-no-vat-template.xlsx",
+      "sha256": "2e7934534fee27491fc448fabc97370bd23b3ad2f3f8b826785a7888b2432bfa"
+    },
+    {
+      "path": "templates/purchase-book-template.xlsx",
+      "sha256": "520d4201579a7bf390965bb235931f7801257653ea6bff1eb0415d7f9e71355c"
+    },
+    {
+      "path": "templates/purchase-book-vat-template.xlsx",
+      "sha256": "520d4201579a7bf390965bb235931f7801257653ea6bff1eb0415d7f9e71355c"
+    },
+    {
+      "path": "templates/sales-book-no-vat-template.xlsx",
+      "sha256": "a8580ddfa2e7b86aafa4b014226d097c59a35dc4c7d718c17053b40501260ab1"
+    },
+    {
+      "path": "templates/sales-book-vat-template.xlsx",
+      "sha256": "10c1442d7aab7245fd09662461a47ff515f2e9c82277c0b7edbc0f137564dee5"
+    }
+  ]
+}
