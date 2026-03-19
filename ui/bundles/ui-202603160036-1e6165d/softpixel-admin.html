@@ -1,0 +1,980 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoftPixel Admin - Control Plane</title>
+    <style>
+      :root { color-scheme: dark; }
+      body {
+        margin: 0;
+        font-family: Segoe UI, Arial, sans-serif;
+        background: #0d1520;
+        color: #e5ecf7;
+      }
+      .wrap { max-width: 1400px; margin: 0 auto; padding: 16px; }
+      .card {
+        background: #132338;
+        border: 1px solid #284467;
+        border-radius: 10px;
+        padding: 14px;
+        margin-bottom: 14px;
+      }
+      h1, h2, h3 { margin: 0 0 10px; }
+      .row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        gap: 10px;
+      }
+      label { display: grid; gap: 6px; font-size: 13px; }
+      input, select, textarea, button {
+        border-radius: 8px;
+        border: 1px solid #3d608d;
+        background: #0f2f4a;
+        color: #e5ecf7;
+        padding: 8px 10px;
+        font-family: inherit;
+      }
+      textarea { resize: vertical; min-height: 64px; }
+      button { cursor: pointer; background: #165270; }
+      button:hover { background: #1f668c; }
+      .warn { background: #6f3f1a; }
+      .danger { background: #6f2c2c; }
+      table { width: 100%; border-collapse: collapse; font-size: 13px; }
+      th, td { border: 1px solid #2f4869; padding: 8px; text-align: left; vertical-align: top; }
+      th { background: #183250; }
+      .mono { font-family: Consolas, monospace; word-break: break-all; }
+      .status { margin-top: 8px; font-size: 13px; color: #9bc6ff; }
+      .actions { display: flex; gap: 6px; flex-wrap: wrap; }
+      .hint { font-size: 12px; color: #a9bdd8; margin-top: 6px; }
+      .grid2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+      @media (max-width: 980px) {
+        .grid2 { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>SoftPixel Admin - Control Plane</h1>
+
+      <section class="card">
+        <h2>Supabase Connection</h2>
+        <div class="row">
+          <label>
+            Supabase URL
+            <input id="sbUrl" placeholder="https://xxxxx.supabase.co" />
+          </label>
+          <label>
+            Publishable / Anon Key
+            <input id="sbKey" placeholder="sb_publishable... or eyJ..." />
+          </label>
+        </div>
+        <div class="actions" style="margin-top:10px">
+          <button id="btnSaveConn">Save Connection</button>
+          <button id="btnHealth">Test Connection</button>
+        </div>
+        <div class="status" id="statusBar">Ready.</div>
+      </section>
+
+      <section class="grid2">
+        <div class="card">
+          <h3>Create / Update Client</h3>
+          <div class="row">
+            <label>Client Code <input id="clientCode" placeholder="SP-MAESTRO" /></label>
+            <label>Client Name <input id="clientName" placeholder="Maestro Group" /></label>
+            <label>
+              Active
+              <select id="clientActive">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+              </select>
+            </label>
+          </div>
+          <div class="actions" style="margin-top:10px">
+            <button id="btnCreateClient">Save Client</button>
+            <button id="btnLoadClients">Load Clients</button>
+          </div>
+          <div style="margin-top:10px; overflow:auto;">
+            <table>
+              <thead><tr><th>ID</th><th>Code</th><th>Name</th><th>Active</th><th>Actions</th></tr></thead>
+              <tbody id="clientsBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Create / Update Entity (Business)</h3>
+          <div class="row">
+            <label>Client Ref (ID / code / name) <input id="entityClientRef" placeholder="SP-MAESTRO" /></label>
+            <label>Entity Code <input id="entityCode" placeholder="MAE-RST" /></label>
+            <label>Legal Name <input id="entityLegalName" placeholder="Maestro Restaurant LLC" /></label>
+            <label>Trade Name <input id="entityTradeName" placeholder="Maestro Pizza" /></label>
+            <label>Country <input id="entityCountry" value="XK" /></label>
+            <label>City <input id="entityCity" placeholder="Prishtinë" /></label>
+            <label>Tax ID <input id="entityTaxId" /></label>
+            <label>VAT No <input id="entityVatNo" /></label>
+            <label>Currency <input id="entityCurrency" value="EUR" /></label>
+            <label>
+              Active
+              <select id="entityActive">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+              </select>
+            </label>
+          </div>
+          <div class="actions" style="margin-top:10px">
+            <button id="btnCreateEntity">Save Entity</button>
+            <button id="btnLoadEntities">Load Entities</button>
+          </div>
+          <div style="margin-top:10px; overflow:auto;">
+            <table>
+              <thead><tr><th>ID</th><th>Client</th><th>Code</th><th>Name</th><th>City</th><th>Active</th><th>Actions</th></tr></thead>
+              <tbody id="entitiesBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid2">
+        <div class="card">
+          <h3>Create / Update Branch</h3>
+          <div class="row">
+            <label>Entity Ref (ID / code / name) <input id="branchEntityRef" placeholder="MAE-RST" /></label>
+            <label>Branch Code <input id="branchCode" placeholder="PR-01" /></label>
+            <label>Branch Name <input id="branchName" placeholder="Prishtine - Qendra" /></label>
+            <label>Country <input id="branchCountry" value="XK" /></label>
+            <label>City <input id="branchCity" placeholder="Prishtinë" /></label>
+            <label>Address <input id="branchAddress" /></label>
+            <label>Timezone <input id="branchTimezone" value="Europe/Belgrade" /></label>
+            <label>
+              Active
+              <select id="branchActive">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+              </select>
+            </label>
+          </div>
+          <div class="actions" style="margin-top:10px">
+            <button id="btnCreateBranch">Save Branch</button>
+            <button id="btnLoadBranches">Load Branches</button>
+          </div>
+          <div style="margin-top:10px; overflow:auto;">
+            <table>
+              <thead><tr><th>ID</th><th>Entity</th><th>Code</th><th>Name</th><th>City</th><th>Active</th><th>Actions</th></tr></thead>
+              <tbody id="branchesBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Entity License (Days or Fixed Date)</h3>
+          <div class="row">
+            <label>Entity Ref (ID / code / name) <input id="licenseEntityRef" placeholder="MAE-RST" /></label>
+            <label>Selected License ID <input id="licenseId" class="mono" placeholder="(new license)" readonly /></label>
+            <label>Start Date <input id="licenseStartDate" type="date" /></label>
+            <label>Expires Date (optional) <input id="licenseExpireDate" type="date" /></label>
+            <label>Valid Days (optional) <input id="licenseValidDays" type="number" min="1" value="365" /></label>
+            <label>Max Branches (0 = Unlimited) <input id="licenseMaxBranches" type="number" min="0" value="0" /></label>
+            <label>Max Devices/Branch (0 = Unlimited) <input id="licenseMaxDevices" type="number" min="0" value="0" /></label>
+            <label>
+              Status
+              <select id="licenseStatus">
+                <option value="active">active</option>
+                <option value="grace">grace</option>
+                <option value="suspended">suspended</option>
+                <option value="expired">expired</option>
+              </select>
+            </label>
+            <label style="grid-column: 1 / -1;">
+              Notes
+              <textarea id="licenseNotes" placeholder="Plan, contract notes, renewal memo..."></textarea>
+            </label>
+          </div>
+          <div class="actions" style="margin-top:10px">
+            <button id="btnSaveLicense">Save License</button>
+            <button id="btnNewLicense">New License</button>
+            <button id="btnDeleteLicense">Delete Selected</button>
+            <button id="btnLoadLicenses">Load Licenses</button>
+          </div>
+          <div class="hint">
+            Renewal/update: use Edit on a license row, change dates/days, then Save.
+            Set limits to <strong>0</strong> for unlimited business plan.
+          </div>
+          <div style="margin-top:10px; overflow:auto;">
+            <table>
+              <thead><tr><th>ID</th><th>Entity</th><th>Status</th><th>From</th><th>To</th><th>Limits</th><th>Actions</th></tr></thead>
+              <tbody id="licensesBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid2">
+        <div class="card">
+          <h3>Issue Enrollment Token</h3>
+          <div class="row">
+            <label>Branch Ref (ID / code / name) <input id="issueBranchRef" placeholder="PR-01" /></label>
+            <label>PC Number (1-99) <input id="issuePcNumber" type="number" min="1" max="99" value="1" /></label>
+            <label>Expires Hours <input id="issueExpHours" type="number" min="1" value="24" /></label>
+          </div>
+          <div class="actions" style="margin-top:10px">
+            <button id="btnIssueToken">Issue Token</button>
+          </div>
+          <div class="status mono" id="issuedToken"></div>
+        </div>
+
+        <div class="card">
+          <h3>Devices / Approvals</h3>
+          <div class="row">
+            <label>Filter Branch (optional) <input id="devicesBranchFilter" /></label>
+          </div>
+          <div class="actions" style="margin-top:10px">
+            <button id="btnLoadDevices">Load Devices</button>
+          </div>
+          <div style="margin-top:10px; overflow:auto;">
+            <table>
+              <thead>
+                <tr>
+                  <th>Device ID</th>
+                  <th>Branch</th>
+                  <th>PC</th>
+                  <th>Name</th>
+                  <th>Status</th>
+                  <th>Approved</th>
+                  <th>Version</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="devicesBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>User Roles / Scope</h3>
+        <div class="row">
+          <label>User ID (Auth UUID) <input id="profileUserId" /></label>
+          <label>
+            Role
+            <select id="profileRole">
+              <option value="owner">owner</option>
+              <option value="head_manager">head_manager</option>
+              <option value="branch_manager">branch_manager</option>
+              <option value="employee">employee</option>
+              <option value="client_owner">client_owner</option>
+              <option value="client_admin">client_admin</option>
+              <option value="softpixel_admin">softpixel_admin</option>
+              <option value="support">support</option>
+              <option value="viewer">viewer</option>
+            </select>
+          </label>
+          <label>Client Ref (optional) <input id="profileClientRef" /></label>
+          <label>Entity Ref (optional) <input id="profileEntityRef" /></label>
+          <label>Branch Ref (optional) <input id="profileBranchRef" /></label>
+          <label>Full Name <input id="profileFullName" /></label>
+          <label>
+            Active
+            <select id="profileActive">
+              <option value="1">Yes</option>
+              <option value="0">No</option>
+            </select>
+          </label>
+        </div>
+        <div class="actions" style="margin-top:10px">
+          <button id="btnSaveProfile">Save Profile</button>
+          <button id="btnLoadProfiles">Load Profiles</button>
+        </div>
+        <div style="margin-top:10px; overflow:auto;">
+          <table>
+            <thead>
+              <tr>
+                <th>User ID</th>
+                <th>Role</th>
+                <th>Client</th>
+                <th>Entity</th>
+                <th>Branch</th>
+                <th>Name</th>
+                <th>Active</th>
+              </tr>
+            </thead>
+            <tbody id="profilesBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>Device Bootstrap Preview</h3>
+        <div class="row">
+          <label>Device ID / Name <input id="bootstrapDeviceRef" /></label>
+        </div>
+        <div class="actions" style="margin-top:10px">
+          <button id="btnDeviceBootstrap">Load Bootstrap</button>
+        </div>
+        <pre class="mono" id="bootstrapOut" style="white-space:pre-wrap; margin:0;"></pre>
+      </section>
+    </div>
+
+    <script>
+      const statusBar = document.getElementById("statusBar");
+      const issuedTokenEl = document.getElementById("issuedToken");
+      const bootstrapOut = document.getElementById("bootstrapOut");
+
+      const clientsBody = document.getElementById("clientsBody");
+      const entitiesBody = document.getElementById("entitiesBody");
+      const branchesBody = document.getElementById("branchesBody");
+      const licensesBody = document.getElementById("licensesBody");
+      const devicesBody = document.getElementById("devicesBody");
+      const profilesBody = document.getElementById("profilesBody");
+
+      function setStatus(text, isErr = false) {
+        statusBar.textContent = text;
+        statusBar.style.color = isErr ? "#ff9f9f" : "#9bc6ff";
+      }
+
+      function todayIso() {
+        const d = new Date();
+        const m = String(d.getMonth() + 1).padStart(2, "0");
+        const day = String(d.getDate()).padStart(2, "0");
+        return `${d.getFullYear()}-${m}-${day}`;
+      }
+
+      function initDefaults() {
+        const savedUrl = localStorage.getItem("sp_admin_sb_url") || "";
+        const savedKey = localStorage.getItem("sp_admin_sb_key") || "";
+        document.getElementById("sbUrl").value = savedUrl;
+        document.getElementById("sbKey").value = savedKey;
+        document.getElementById("licenseId").value = "";
+        document.getElementById("licenseStartDate").value = todayIso();
+        setBoolSelect("entityActive", true);
+        setBoolSelect("branchActive", true);
+      }
+
+      function saveConnection() {
+        const url = document.getElementById("sbUrl").value.trim();
+        const key = document.getElementById("sbKey").value.trim();
+        localStorage.setItem("sp_admin_sb_url", url);
+        localStorage.setItem("sp_admin_sb_key", key);
+        setStatus("Connection saved.");
+      }
+
+      function readConnection() {
+        const url = document.getElementById("sbUrl").value.trim().replace(/\/+$/, "");
+        const key = document.getElementById("sbKey").value.trim();
+        if (!url || !key) throw new Error("Set Supabase URL and key first.");
+        return { url, key };
+      }
+
+      async function rpc(name, payload) {
+        const { url, key } = readConnection();
+        const res = await fetch(`${url}/rest/v1/rpc/${name}`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            apikey: key,
+            Authorization: `Bearer ${key}`
+          },
+          body: JSON.stringify(payload ?? {})
+        });
+        const text = await res.text();
+        if (!res.ok) throw new Error(`${name}: ${res.status} ${text}`);
+        try { return JSON.parse(text); } catch { return text; }
+      }
+
+      function asRows(v) {
+        if (Array.isArray(v)) return v;
+        if (v && typeof v === "object") return [v];
+        return [];
+      }
+
+      function setBoolSelect(id, value) {
+        const el = document.getElementById(id);
+        el.value = value ? "1" : "0";
+      }
+
+      async function testConnection() {
+        try {
+          setStatus("Testing connection...");
+          await rpc("list_clients", {});
+          setStatus("Connection OK.");
+        } catch (err) {
+          setStatus(String(err.message || err), true);
+        }
+      }
+
+      async function createClient() {
+        try {
+          setStatus("Saving client...");
+          await rpc("create_client", {
+            p_code: document.getElementById("clientCode").value.trim(),
+            p_name: document.getElementById("clientName").value.trim(),
+            p_is_active: document.getElementById("clientActive").value === "1"
+          });
+          await loadClients();
+          setStatus("Client saved.");
+        } catch (err) {
+          setStatus(String(err.message || err), true);
+        }
+      }
+
+      async function loadClients() {
+        try {
+          setStatus("Loading clients...");
+          const rows = asRows(await rpc("list_clients", {}));
+          clientsBody.innerHTML = "";
+          rows.forEach((c) => {
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
+              <td class="mono">${c.client_id ?? ""}</td>
+              <td>${c.code ?? ""}</td>
+              <td>${c.name ?? ""}</td>
+              <td>${c.is_active ? "Yes" : "No"}</td>
+              <td></td>
+            `;
+            const actionsTd = tr.lastElementChild;
+            const btnEdit = document.createElement("button");
+            btnEdit.textContent = "Edit";
+            btnEdit.onclick = () => {
+              document.getElementById("clientCode").value = c.code ?? "";
+              document.getElementById("clientName").value = c.name ?? "";
+              setBoolSelect("clientActive", !!c.is_active);
+              setStatus(`Client ${c.code ?? ""} loaded for edit.`);
+            };
+
+            const btnToggle = document.createElement("button");
+            const nextActive = !c.is_active;
+            btnToggle.textContent = nextActive ? "Activate" : "Deactivate";
+            btnToggle.style.marginLeft = "8px";
+            btnToggle.onclick = async () => {
+              try {
+                setStatus(`${nextActive ? "Activating" : "Deactivating"} client...`);
+                await rpc("create_client", {
+                  p_code: c.code,
+                  p_name: c.name,
+                  p_is_active: nextActive
+                });
+                await loadClients();
+                setStatus(`Client ${nextActive ? "activated" : "deactivated"}.`);
+              } catch (err) {
+                setStatus(String(err.message || err), true);
+              }
+            };
+
+            actionsTd.appendChild(btnEdit);
+            actionsTd.appendChild(btnToggle);
+            clientsBody.appendChild(tr);
+          });
+          setStatus(`Loaded ${rows.length} clients.`);
+        } catch (err) {
+          setStatus(String(err.message || err), true);
+        }
+      }
+
+      async function createEntity() {
+        try {
+          setStatus("Saving entity...");
+          await rpc("create_entity", {
+            p_client_id: document.getElementById("entityClientRef").value.trim(),
+            p_code: document.getElementById("entityCode").value.trim(),
+            p_legal_name: document.getElementById("entityLegalName").value.trim(),
+            p_trade_name: document.getElementById("entityTradeName").value.trim() || null,
+            p_country_code: document.getElementById("entityCountry").value.trim() || "XK",
+            p_city: document.getElementById("entityCity").value.trim() || null,
+            p_tax_id: document.getElementById("entityTaxId").value.trim() || null,
+            p_vat_no: document.getElementById("entityVatNo").value.trim() || null,
+            p_currency_code: document.getElementById("entityCurrency").value.trim() || "EUR",
+            p_is_active: document.getElementById("entityActive").value === "1"
+          });
+          await loadEntities();
+          setStatus("Entity saved.");
+        } catch (err) {
+          setStatus(String(err.message || err), true);
+        }
+      }
+
+      async function loadEntities() {
+        try {
+          setStatus("Loading entities...");
+          const rows = asRows(await rpc("list_entities", {
+            p_client_id: document.getElementById("entityClientRef").value.trim() || null
+          }));
+          entitiesBody.innerHTML = "";
+          rows.forEach((e) => {
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
+              <td class="mono">${e.entity_id ?? ""}</td>
+              <td>${e.client_code ?? ""}</td>
+              <td>${e.code ?? ""}</td>
+              <td>${e.trade_name || e.legal_name || ""}</td>
+              <td>${e.city || ""}</td>
+              <td>${e.is_active ? "Yes" : "No"}</td>
+              <td></td>
+            `;
+            const actionsTd = tr.lastElementChild;
+            const btnEdit = document.createElement("button");
+            btnEdit.textContent = "Edit";
+            btnEdit.onclick = () => {
+              document.getElementById("entityClientRef").value = e.client_id ?? e.client_code ?? "";
+              document.getElementById("entityCode").value = e.code ?? "";
+              document.getElementById("entityLegalName").value = e.legal_name ?? "";
+              document.getElementById("entityTradeName").value = e.trade_name ?? "";
+              document.getElementById("entityCountry").value = e.country_code ?? "XK";
+              document.getElementById("entityCity").value = e.city ?? "";
+              document.getElementById("entityTaxId").value = e.tax_id ?? "";
+              document.getElementById("entityVatNo").value = e.vat_no ?? "";
+              document.getElementById("entityCurrency").value = e.currency_code ?? "EUR";
+              setBoolSelect("entityActive", !!e.is_active);
+              setStatus(`Entity ${e.code ?? ""} loaded for edit.`);
+            };
+
+            const btnToggle = document.createElement("button");
+            const nextActive = !e.is_active;
+            btnToggle.textContent = nextActive ? "Activate" : "Deactivate";
+            btnToggle.style.marginLeft = "8px";
+            btnToggle.onclick = async () => {
+              try {
+                setStatus(`${nextActive ? "Activating" : "Deactivating"} entity...`);
+                await rpc("create_entity", {
+                  p_client_id: e.client_id ?? e.client_code,
+                  p_code: e.code,
+                  p_legal_name: e.legal_name,
+                  p_trade_name: e.trade_name || null,
+                  p_country_code: e.country_code || "XK",
+                  p_city: e.city || null,
+                  p_tax_id: e.tax_id || null,
+                  p_vat_no: e.vat_no || null,
+                  p_currency_code: e.currency_code || "EUR",
+                  p_is_active: nextActive
+                });
+                await loadEntities();
+                setStatus(`Entity ${nextActive ? "activated" : "deactivated"}.`);
+              } catch (err) {
+                setStatus(String(err.message || err), true);
+              }
+            };
+
+            actionsTd.appendChild(btnEdit);
+            actionsTd.appendChild(btnToggle);
+            entitiesBody.appendChild(tr);
+          });
+          setStatus(`Loaded ${rows.length} entities.`);
+        } catch (err) {
+          setStatus(String(err.message || err), true);
+        }
+      }
+
+      async function createBranch() {
+        try {
+          setStatus("Saving branch...");
+          await rpc("create_branch", {
+            p_entity_id: document.getElementById("branchEntityRef").value.trim(),
+            p_branch_code: document.getElementById("branchCode").value.trim(),
+            p_name: document.getElementById("branchName").value.trim(),
+            p_country_code: document.getElementById("branchCountry").value.trim() || "XK",
+            p_city: document.getElementById("branchCity").value.trim() || null,
+            p_address_line: document.getElementById("branchAddress").value.trim() || null,
+            p_timezone_name: document.getElementById("branchTimezone").value.trim() || "Europe/Belgrade",
+            p_is_active: document.getElementById("branchActive").value === "1"
+          });
+          await loadBranches();
+          setStatus("Branch saved.");
+        } catch (err) {
+          setStatus(String(err.message || err), true);
+        }
+      }
+
+      async function loadBranches() {
+        try {
+          setStatus("Loading branches...");
+          const rows = asRows(await rpc("list_branches", {
+            p_entity_id: document.getElementById("branchEntityRef").value.trim() || null
+          }));
+          branchesBody.innerHTML = "";
+          rows.forEach((b) => {
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
+              <td class="mono">${b.branch_id ?? ""}</td>
+              <td>${b.entity_code ?? ""}</td>
+              <td>${b.branch_code ?? ""}</td>
+              <td>${b.name ?? ""}</td>
+              <td>${b.city ?? ""}</td>
+              <td>${b.is_active ? "Yes" : "No"}</td>
+              <td></td>
+            `;
+            const actionsTd = tr.lastElementChild;
+            const btnEdit = document.createElement("button");
+            btnEdit.textContent = "Edit";
+            btnEdit.onclick = () => {
+              document.getElementById("branchEntityRef").value = b.entity_id ?? b.entity_code ?? "";
+              document.getElementById("branchCode").value = b.branch_code ?? "";
+              document.getElementById("branchName").value = b.name ?? "";
+              document.getElementById("branchCountry").value = b.country_code ?? "XK";
+              document.getElementById("branchCity").value = b.city ?? "";
+              document.getElementById("branchAddress").value = b.address_line ?? "";
+              document.getElementById("branchTimezone").value = b.timezone_name ?? "Europe/Belgrade";
+              setBoolSelect("branchActive", !!b.is_active);
+              setStatus(`Branch ${b.branch_code ?? ""} loaded for edit.`);
+            };
+
+            const btnToggle = document.createElement("button");
+            const nextActive = !b.is_active;
+            btnToggle.textContent = nextActive ? "Activate" : "Deactivate";
+            btnToggle.style.marginLeft = "8px";
+            btnToggle.onclick = async () => {
+              try {
+                setStatus(`${nextActive ? "Activating" : "Deactivating"} branch...`);
+                await rpc("create_branch", {
+                  p_entity_id: b.entity_id ?? b.entity_code,
+                  p_branch_code: b.branch_code,
+                  p_name: b.name,
+                  p_country_code: b.country_code || "XK",
+                  p_city: b.city || null,
+                  p_address_line: b.address_line || null,
+                  p_timezone_name: b.timezone_name || "Europe/Belgrade",
+                  p_is_active: nextActive
+                });
+                await loadBranches();
+                setStatus(`Branch ${nextActive ? "activated" : "deactivated"}.`);
+              } catch (err) {
+                setStatus(String(err.message || err), true);
+              }
+            };
+
+            actionsTd.appendChild(btnEdit);
+            actionsTd.appendChild(btnToggle);
+            branchesBody.appendChild(tr);
+          });
+          setStatus(`Loaded ${rows.length} branches.`);
+        } catch (err) {
+          setStatus(String(err.message || err), true);
+        }
+      }
+
+      function resetLicenseForm() {
+        document.getElementById("licenseId").value = "";
+        document.getElementById("licenseStartDate").value = todayIso();
+        document.getElementById("licenseExpireDate").value = "";
+        document.getElementById("licenseValidDays").value = "365";
+        document.getElementById("licenseMaxBranches").value = "0";
+        document.getElementById("licenseMaxDevices").value = "0";
+        document.getElementById("licenseStatus").value = "active";
+        document.getElementById("licenseNotes").value = "";
+        setStatus("License form reset (new mode).");
+      }
+
+      async function saveLicense() {
+        try {
+          setStatus("Saving license...");
+          const licenseId = document.getElementById("licenseId").value.trim();
+          const startDate = document.getElementById("licenseStartDate").value || todayIso();
+          const expDate = document.getElementById("licenseExpireDate").value.trim();
+          const validDays = Number(document.getElementById("licenseValidDays").value || "0");
+          if (licenseId) {
+            await rpc("update_license", {
+              p_license_id: licenseId,
+              p_starts_at: startDate,
+              p_expires_at: expDate || null,
+              p_valid_days: validDays > 0 ? validDays : null,
+              p_max_branches: Number(document.getElementById("licenseMaxBranches").value || "0"),
+              p_max_devices_per_branch: Number(document.getElementById("licenseMaxDevices").value || "0"),
+              p_status: document.getElementById("licenseStatus").value,
+              p_notes: document.getElementById("licenseNotes").value.trim() || null
+            });
+          } else {
+            await rpc("upsert_entity_license", {
+              p_entity_id: document.getElementById("licenseEntityRef").value.trim(),
+              p_starts_at: startDate,
+              p_expires_at: expDate || null,
+              p_valid_days: validDays > 0 ? validDays : null,
+              p_max_branches: Number(document.getElementById("licenseMaxBranches").value || "0"),
+              p_max_devices_per_branch: Number(document.getElementById("licenseMaxDevices").value || "0"),
+              p_status: document.getElementById("licenseStatus").value,
+              p_notes: document.getElementById("licenseNotes").value.trim() || null
+            });
+          }
+          await loadLicenses();
+          setStatus(licenseId ? "License updated." : "License saved.");
+        } catch (err) {
+          setStatus(String(err.message || err), true);
+        }
+      }
+
+      async function deleteSelectedLicense() {
+        try {
+          const licenseId = document.getElementById("licenseId").value.trim();
+          if (!licenseId) {
+            setStatus("Select a license first (Edit from table).", true);
+            return;
+          }
+          if (!confirm(`Delete license ${licenseId}?`)) {
+            return;
+          }
+          setStatus("Deleting license...");
+          await rpc("delete_license", { p_license_id: licenseId });
+          resetLicenseForm();
+          await loadLicenses();
+          setStatus("License deleted.");
+        } catch (err) {
+          setStatus(String(err.message || err), true);
+        }
+      }
+
+      async function loadLicenses() {
+        try {
+          setStatus("Loading licenses...");
+          const rows = asRows(await rpc("list_licenses", {
+            p_entity_id: document.getElementById("licenseEntityRef").value.trim() || null
+          }));
+          licensesBody.innerHTML = "";
+          rows.forEach((l) => {
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
+              <td class="mono">${l.license_id ?? ""}</td>
+              <td>${l.entity_code ?? ""}</td>
+              <td>${l.status ?? ""}</td>
+              <td>${l.starts_at ?? ""}</td>
+              <td>${l.expires_at ?? ""}</td>
+              <td>${Number(l.max_branches ?? 0) === 0 ? "Unlimited" : l.max_branches} / ${Number(l.max_devices_per_branch ?? 0) === 0 ? "Unlimited" : l.max_devices_per_branch}</td>
+              <td></td>
+            `;
+            const actionsTd = tr.lastElementChild;
+            const btnEdit = document.createElement("button");
+            btnEdit.textContent = "Edit";
+            btnEdit.onclick = () => {
+              document.getElementById("licenseId").value = l.license_id ?? "";
+              document.getElementById("licenseEntityRef").value = l.entity_id ?? l.entity_code ?? "";
+              document.getElementById("licenseStartDate").value = l.starts_at ?? todayIso();
+              document.getElementById("licenseExpireDate").value = l.expires_at ?? "";
+              document.getElementById("licenseValidDays").value = "0";
+              document.getElementById("licenseMaxBranches").value = String(l.max_branches ?? 0);
+              document.getElementById("licenseMaxDevices").value = String(l.max_devices_per_branch ?? 0);
+              document.getElementById("licenseStatus").value = l.status ?? "active";
+              document.getElementById("licenseNotes").value = l.notes ?? "";
+              setStatus(`License ${l.license_id ?? ""} loaded for edit.`);
+            };
+
+            const btnExtend30 = document.createElement("button");
+            btnExtend30.textContent = "+30d";
+            btnExtend30.style.marginLeft = "8px";
+            btnExtend30.onclick = async () => {
+              try {
+                setStatus("Extending license by 30 days...");
+                await rpc("extend_license", { p_license_id: l.license_id, p_extend_days: 30 });
+                await loadLicenses();
+                setStatus("License extended (+30d).");
+              } catch (err) {
+                setStatus(String(err.message || err), true);
+              }
+            };
+
+            const btnExtend365 = document.createElement("button");
+            btnExtend365.textContent = "+365d";
+            btnExtend365.style.marginLeft = "8px";
+            btnExtend365.onclick = async () => {
+              try {
+                setStatus("Extending license by 365 days...");
+                await rpc("extend_license", { p_license_id: l.license_id, p_extend_days: 365 });
+                await loadLicenses();
+                setStatus("License extended (+365d).");
+              } catch (err) {
+                setStatus(String(err.message || err), true);
+              }
+            };
+
+            const btnDelete = document.createElement("button");
+            btnDelete.textContent = "Delete";
+            btnDelete.style.marginLeft = "8px";
+            btnDelete.onclick = async () => {
+              try {
+                if (!confirm(`Delete license ${l.license_id}?`)) return;
+                setStatus("Deleting license...");
+                await rpc("delete_license", { p_license_id: l.license_id });
+                if (document.getElementById("licenseId").value === String(l.license_id ?? "")) {
+                  resetLicenseForm();
+                }
+                await loadLicenses();
+                setStatus("License deleted.");
+              } catch (err) {
+                setStatus(String(err.message || err), true);
+              }
+            };
+
+            actionsTd.appendChild(btnEdit);
+            actionsTd.appendChild(btnExtend30);
+            actionsTd.appendChild(btnExtend365);
+            actionsTd.appendChild(btnDelete);
+            licensesBody.appendChild(tr);
+          });
+          setStatus(`Loaded ${rows.length} licenses.`);
+        } catch (err) {
+          setStatus(String(err.message || err), true);
+        }
+      }
+
+      async function issueToken() {
+        try {
+          setStatus("Issuing token...");
+          const rows = asRows(await rpc("issue_device_token", {
+            p_branch_id: document.getElementById("issueBranchRef").value.trim(),
+            p_pc_number: Number(document.getElementById("issuePcNumber").value || "1"),
+            p_expires_hours: Number(document.getElementById("issueExpHours").value || "24")
+          }));
+          const row = rows[0];
+          if (!row) throw new Error("No token returned.");
+          issuedTokenEl.textContent = `TOKEN: ${row.token_plain} | expires: ${row.expires_at}`;
+          setStatus("Token issued.");
+        } catch (err) {
+          setStatus(String(err.message || err), true);
+        }
+      }
+
+      async function loadDevices() {
+        try {
+          setStatus("Loading devices...");
+          const rows = asRows(await rpc("list_branch_devices", {
+            p_branch_id: document.getElementById("devicesBranchFilter").value.trim() || null
+          }));
+          devicesBody.innerHTML = "";
+          rows.forEach((d) => {
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
+              <td class="mono">${d.device_id ?? ""}</td>
+              <td class="mono">${d.branch_id ?? ""}</td>
+              <td>${d.pc_number ?? ""}</td>
+              <td>${d.device_name ?? ""}</td>
+              <td>${d.status ?? ""}</td>
+              <td>${d.approved ? "Yes" : "No"}</td>
+              <td>${d.current_version ?? "-"}</td>
+              <td></td>
+            `;
+            const actions = tr.lastElementChild;
+            const btnApprove = document.createElement("button");
+            btnApprove.textContent = "Approve";
+            btnApprove.onclick = () => approveDevice(d.device_id, true);
+            const btnBlock = document.createElement("button");
+            btnBlock.textContent = "Block";
+            btnBlock.className = "danger";
+            btnBlock.onclick = () => approveDevice(d.device_id, false);
+            const btnAccess = document.createElement("button");
+            btnAccess.textContent = "Issue Access";
+            btnAccess.className = "warn";
+            btnAccess.onclick = () => issueAccess(d.device_id);
+            actions.append(btnApprove, btnBlock, btnAccess);
+            devicesBody.appendChild(tr);
+          });
+          setStatus(`Loaded ${rows.length} devices.`);
+        } catch (err) {
+          setStatus(String(err.message || err), true);
+        }
+      }
+
+      async function approveDevice(deviceId, approve) {
+        try {
+          setStatus(`${approve ? "Approving" : "Blocking"} device...`);
+          await rpc("approve_device", { p_device_id: deviceId, p_approve: !!approve });
+          await loadDevices();
+          setStatus(`Device ${approve ? "approved" : "blocked"}.`);
+        } catch (err) {
+          setStatus(String(err.message || err), true);
+        }
+      }
+
+      async function issueAccess(deviceId) {
+        try {
+          setStatus("Issuing access token...");
+          const rows = asRows(await rpc("issue_device_access_token", {
+            p_device_id: deviceId,
+            p_valid_days: 90
+          }));
+          const row = rows[0];
+          if (!row) throw new Error("No access token returned.");
+          issuedTokenEl.textContent = `ACCESS TOKEN: ${row.token_plain} | expires: ${row.expires_at}`;
+          setStatus("Access token issued.");
+        } catch (err) {
+          setStatus(String(err.message || err), true);
+        }
+      }
+
+      async function loadDeviceBootstrap() {
+        try {
+          setStatus("Loading bootstrap...");
+          const rows = asRows(await rpc("get_device_bootstrap", {
+            p_device_id: document.getElementById("bootstrapDeviceRef").value.trim()
+          }));
+          bootstrapOut.textContent = JSON.stringify(rows[0] || null, null, 2);
+          setStatus(rows[0] ? "Bootstrap loaded." : "No bootstrap row.");
+        } catch (err) {
+          setStatus(String(err.message || err), true);
+          bootstrapOut.textContent = "";
+        }
+      }
+
+      async function saveProfile() {
+        try {
+          setStatus("Saving user profile...");
+          await rpc("upsert_user_profile", {
+            p_user_id: document.getElementById("profileUserId").value.trim(),
+            p_role: document.getElementById("profileRole").value,
+            p_client_id: document.getElementById("profileClientRef").value.trim() || null,
+            p_entity_id: document.getElementById("profileEntityRef").value.trim() || null,
+            p_branch_id: document.getElementById("profileBranchRef").value.trim() || null,
+            p_full_name: document.getElementById("profileFullName").value.trim() || null,
+            p_is_active: document.getElementById("profileActive").value === "1"
+          });
+          await loadProfiles();
+          setStatus("User profile saved.");
+        } catch (err) {
+          setStatus(String(err.message || err), true);
+        }
+      }
+
+      async function loadProfiles() {
+        try {
+          setStatus("Loading user profiles...");
+          const rows = asRows(await rpc("list_user_profiles", {}));
+          profilesBody.innerHTML = "";
+          rows.forEach((p) => {
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
+              <td class="mono">${p.user_id ?? ""}</td>
+              <td>${p.role ?? ""}</td>
+              <td>${p.client_code ?? ""}</td>
+              <td>${p.entity_code ?? ""}</td>
+              <td>${p.branch_code ?? ""}</td>
+              <td>${p.full_name ?? ""}</td>
+              <td>${p.is_active ? "Yes" : "No"}</td>
+            `;
+            profilesBody.appendChild(tr);
+          });
+          setStatus(`Loaded ${rows.length} user profiles.`);
+        } catch (err) {
+          setStatus(String(err.message || err), true);
+        }
+      }
+
+      document.getElementById("btnSaveConn").addEventListener("click", saveConnection);
+      document.getElementById("btnHealth").addEventListener("click", testConnection);
+      document.getElementById("btnCreateClient").addEventListener("click", createClient);
+      document.getElementById("btnLoadClients").addEventListener("click", loadClients);
+      document.getElementById("btnCreateEntity").addEventListener("click", createEntity);
+      document.getElementById("btnLoadEntities").addEventListener("click", loadEntities);
+      document.getElementById("btnCreateBranch").addEventListener("click", createBranch);
+      document.getElementById("btnLoadBranches").addEventListener("click", loadBranches);
+      document.getElementById("btnSaveLicense").addEventListener("click", saveLicense);
+      document.getElementById("btnNewLicense").addEventListener("click", resetLicenseForm);
+      document.getElementById("btnDeleteLicense").addEventListener("click", deleteSelectedLicense);
+      document.getElementById("btnLoadLicenses").addEventListener("click", loadLicenses);
+      document.getElementById("btnIssueToken").addEventListener("click", issueToken);
+      document.getElementById("btnLoadDevices").addEventListener("click", loadDevices);
+      document.getElementById("btnDeviceBootstrap").addEventListener("click", loadDeviceBootstrap);
+      document.getElementById("btnSaveProfile").addEventListener("click", saveProfile);
+      document.getElementById("btnLoadProfiles").addEventListener("click", loadProfiles);
+
+      initDefaults();
+    </script>
+  </body>
+</html>

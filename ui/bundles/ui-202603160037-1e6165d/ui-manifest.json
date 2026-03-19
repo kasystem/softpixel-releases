@@ -1,25 +1,25 @@
 {
-  "version": "ui-202603190530-new",
+  "version": "ui-202603160037-1e6165d",
   "min_shell_version": "0.2.1",
-  "published_at": "2026-03-19T05:30:00.000Z",
-  "notes": "UI update: product grid layout, F5 cancel order, Faturat e Rregullta fixes",
-  "bundle_base_url": "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/ui/bundles/ui-202603190530-new/",
+  "published_at": "2026-03-16T00:37:37.656Z",
+  "notes": "UI hot-update bundle for SoftPixel POS desktop shell.",
+  "bundle_base_url": "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/ui/bundles/ui-202603160037-1e6165d/",
   "files": [
     {
-      "path": "assets/HistoryView.27881b1a.js",
-      "sha256": "eb6143978a00670957580acd9be229ac0121e56e4d75644971ea3ca0941c0d5b"
+      "path": "assets/HistoryView.962a916c.js",
+      "sha256": "28be93bf6467641be113f75aab4c83f06e9777d1b5ae4cbb9add2e9ae93e7d55"
     },
     {
-      "path": "assets/ProductsAdminView.d2c682e3.js",
-      "sha256": "c12b634927c4b0017a566337c2af713a87634abf837bb78cdfb664aef02a3a75"
+      "path": "assets/ProductsAdminView.055f9af6.js",
+      "sha256": "2941a3da19fb8204096c1c6e66ba7da448ce6082c2624b3f0150fd6d90ace5a7"
     },
     {
-      "path": "assets/index.2277884f.js",
-      "sha256": "3a0faa99e8ebeab440ae349611fad9c986fc231645e5bb4501b9a34a28f78d23"
+      "path": "assets/index.708ea740.js",
+      "sha256": "e3d02aab7395f3d8fece70e9d2e6b68e8fd52b51b00dd862e5d72a56dc9c850d"
     },
     {
-      "path": "assets/index.a126b061.css",
-      "sha256": "c22a9254ba03c000fc4b21def7f6de509d7781e9aa6c172b8b1f60a5f3f9076d"
+      "path": "assets/index.bdc97f68.css",
+      "sha256": "a3d29801f5fa9cd40f2643e82d465f5f4d4bfa907937e54432caf41cf46f4ecd"
     },
     {
       "path": "assets/index.e25ffaa4.js",
@@ -47,7 +47,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "dff2b4b59c13e44128b09678e4f5b2dc599f6b90519c0a4891169abdc50bc8c1"
+      "sha256": "57bb91eb135aa83816dd17e9387b5e7516ea465caf8d317bb96352b93fc58fc9"
     },
     {
       "path": "manifest.webmanifest",
