@@ -1,0 +1,49 @@
+{
+  "sourceRoot": "pos-desktop/Kontabiliteti/Librat sipas ATK",
+  "templates": [
+    {
+      "id": "purchase_vat",
+      "section": "Kontabiliteti",
+      "subsection": "Librat e Shitjes dhe Blerjes",
+      "label": "Libri i Blerjes me TVSH",
+      "mode": "me_tvsh",
+      "kind": "blerje",
+      "sourceRelativePath": "Me TVSH/Libri-i-Blerjes-FINAL-MOSTRA-1 (1).xlsx",
+      "publicRelativePath": "templates/atk/purchase-book-vat-template.xlsx",
+      "publicUrl": "/templates/atk/purchase-book-vat-template.xlsx"
+    },
+    {
+      "id": "sales_vat",
+      "section": "Kontabiliteti",
+      "subsection": "Librat e Shitjes dhe Blerjes",
+      "label": "Libri i Shitjes me TVSH",
+      "mode": "me_tvsh",
+      "kind": "shitje",
+      "sourceRelativePath": "Me TVSH/Libri-i-Shitjes-FINAL-MOSTRA (1).xlsx",
+      "publicRelativePath": "templates/atk/sales-book-vat-template.xlsx",
+      "publicUrl": "/templates/atk/sales-book-vat-template.xlsx"
+    },
+    {
+      "id": "purchase_no_vat",
+      "section": "Kontabiliteti",
+      "subsection": "Librat e Shitjes dhe Blerjes",
+      "label": "Libri i Blerjes pa TVSH",
+      "mode": "pa_tvsh",
+      "kind": "blerje",
+      "sourceRelativePath": "Pa TVSH/Template_LB_SM_AL.xlsx",
+      "publicRelativePath": "templates/atk/purchase-book-no-vat-template.xlsx",
+      "publicUrl": "/templates/atk/purchase-book-no-vat-template.xlsx"
+    },
+    {
+      "id": "sales_no_vat",
+      "section": "Kontabiliteti",
+      "subsection": "Librat e Shitjes dhe Blerjes",
+      "label": "Libri i Shitjes pa TVSH",
+      "mode": "pa_tvsh",
+      "kind": "shitje",
+      "sourceRelativePath": "Pa TVSH/Template_LSH_SM_AL.xlsx",
+      "publicRelativePath": "templates/atk/sales-book-no-vat-template.xlsx",
+      "publicUrl": "/templates/atk/sales-book-no-vat-template.xlsx"
+    }
+  ]
+}
