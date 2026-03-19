@@ -1,21 +1,21 @@
 {
-  "version": "ui-202603190700-new",
+  "version": "ui-202603190800-new",
   "min_shell_version": "0.2.1",
-  "published_at": "2026-03-19T07:00:00.000Z",
-  "notes": "Rename Barazimet to Faturat, add CRUD for Regular Invoices in Statistics section",
-  "bundle_base_url": "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/ui/bundles/ui-202603190700-new/",
+  "published_at": "2026-03-19T08:00:00.000Z",
+  "notes": "Update Faturat section: add date filters (daily/weekly/monthly/yearly/custom), default to today, separate Regular Invoices",
+  "bundle_base_url": "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/ui/bundles/ui-202603190800-new/",
   "files": [
     {
-      "path": "assets/HistoryView.1b0c775b.js",
-      "sha256": "fec509ff259c649a5bc43db45727b1442b7dc6da345735c1eda1c7776aed270a"
+      "path": "assets/HistoryView.3c054b05.js",
+      "sha256": "ae8e074f90af7a7052afaff3be9c3f95867686383791c4afefa9ac11ea122334"
     },
     {
-      "path": "assets/ProductsAdminView.1330dae6.js",
-      "sha256": "c838369259b9c8a5ee9bff1e8b7fa13f208e2d067d4a70e27992e60dd04167cc"
+      "path": "assets/ProductsAdminView.eb6da672.js",
+      "sha256": "508545207984a2374a70c3f6e1122da92b8ab26f3ed5aaeb3e7593b8dcf51c76"
     },
     {
-      "path": "assets/index.1fd98e9f.js",
-      "sha256": "36091ec16ee5927026c21c5b918eb34ceb85d53ff1ece2db50f7e83a33a63f63"
+      "path": "assets/index.aaf0ef55.js",
+      "sha256": "5fe2885c788ffa6fc4c81cb148182a579530a36ba85f7f8cf8804207bf998921"
     },
     {
       "path": "assets/index.a126b061.css",
@@ -47,7 +47,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "0af7cb8128957259b2df50410227a473f092f99423cb475e9f2aea84ca1568d2"
+      "sha256": "6d6a819589850b4380b4580ebd2d9c82825a05b602cd32983eba0315ce2a9f94"
     },
     {
       "path": "manifest.webmanifest",
