@@ -1,21 +1,21 @@
 {
-  "version": "ui-202603190800-new",
+  "version": "ui-202603190830-new",
   "min_shell_version": "0.2.1",
-  "published_at": "2026-03-19T08:00:00.000Z",
-  "notes": "Update Faturat section: add date filters (daily/weekly/monthly/yearly/custom), default to today, separate Regular Invoices",
-  "bundle_base_url": "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/ui/bundles/ui-202603190800-new/",
+  "published_at": "2026-03-19T08:30:00.000Z",
+  "notes": "Remove Faturat e Rregullta from Faturat subsection, keep all invoices including unpaid",
+  "bundle_base_url": "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/ui/bundles/ui-202603190830-new/",
   "files": [
     {
-      "path": "assets/HistoryView.3c054b05.js",
-      "sha256": "ae8e074f90af7a7052afaff3be9c3f95867686383791c4afefa9ac11ea122334"
+      "path": "assets/HistoryView.480e8d11.js",
+      "sha256": "db58aee8f4de8046080318d80ef80c0bef236ea3c79705bf4d1b14066d323ced"
     },
     {
-      "path": "assets/ProductsAdminView.eb6da672.js",
-      "sha256": "508545207984a2374a70c3f6e1122da92b8ab26f3ed5aaeb3e7593b8dcf51c76"
+      "path": "assets/ProductsAdminView.aad84b3a.js",
+      "sha256": "7cc2ff2f9915fefe00e0c839dddc68b6e4c5e058b4a446e4835714568e33f651"
     },
     {
-      "path": "assets/index.aaf0ef55.js",
-      "sha256": "5fe2885c788ffa6fc4c81cb148182a579530a36ba85f7f8cf8804207bf998921"
+      "path": "assets/index.2ff446f4.js",
+      "sha256": "8fb6d787179c71d2052b8287f4226c2517d6efdcfbaa3250e5f7fc218eec5182"
     },
     {
       "path": "assets/index.a126b061.css",
@@ -47,7 +47,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "6d6a819589850b4380b4580ebd2d9c82825a05b602cd32983eba0315ce2a9f94"
+      "sha256": "07dec9b9185b9c812debdba0db93fc8f9590f23983ba09f068b36a21a41ac1fe"
     },
     {
       "path": "manifest.webmanifest",
