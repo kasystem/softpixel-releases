@@ -1,21 +1,21 @@
 {
-  "version": "ui-202603191000-new",
+  "version": "ui-202603191030-new",
   "min_shell_version": "0.2.1",
-  "published_at": "2026-03-19T10:00:00.000Z",
-  "notes": "Fix: move useEffect after pushToast definition",
-  "bundle_base_url": "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/ui/bundles/ui-202603191000-new/",
+  "published_at": "2026-03-19T10:30:00.000Z",
+  "notes": "Fix: auto-load history when Faturat section becomes active",
+  "bundle_base_url": "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/ui/bundles/ui-202603191030-new/",
   "files": [
     {
-      "path": "assets/HistoryView.868c56c5.js",
-      "sha256": "27700dc154aaa3cf8ba6ccc4b3a50c814abe039e188211f8983bc21929e551aa"
+      "path": "assets/HistoryView.4a6213f7.js",
+      "sha256": "4ab0119c3bb8ad060d428196afbac0148ba6093998ec9e68255cdf3ab654a23a"
     },
     {
-      "path": "assets/ProductsAdminView.19eaebb5.js",
-      "sha256": "473a60f11301c0b92d772ea2e80ecfbeaf4b0be4fc1909d1ba9d14f1f9072f73"
+      "path": "assets/ProductsAdminView.f0386f1f.js",
+      "sha256": "ff9eeae2e04480d99d7652044990dd50ed581b73f417f99358b841d0c01ac0f3"
     },
     {
-      "path": "assets/index.ae62452f.js",
-      "sha256": "f9358f1e96c82d2f8c36001a18ddd79e49bf3421ba2e45aeb6223715bcbfa0d9"
+      "path": "assets/index.c24375b2.js",
+      "sha256": "4629e46dd7fb3b6b09d61daca3231c7de01f217a329db0a08c136966eafdf2e7"
     },
     {
       "path": "assets/index.a126b061.css",
@@ -47,7 +47,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "50c2c9823029ada1095f185a5470a7ca79b70d25151864a9477b38a43c985d94"
+      "sha256": "277c9756f62eb44d18029a18ec4ed7b323dc65c6e9c0825a3c2b2c184dbcc1e0"
     },
     {
       "path": "manifest.webmanifest",
