@@ -1,21 +1,21 @@
 {
-  "version": "ui-202603190900-new",
+  "version": "ui-202603191000-new",
   "min_shell_version": "0.2.1",
-  "published_at": "2026-03-19T09:00:00.000Z",
-  "notes": "Add ui-bundle-update-ready event listener for toast notification",
-  "bundle_base_url": "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/ui/bundles/ui-202603190900-new/",
+  "published_at": "2026-03-19T10:00:00.000Z",
+  "notes": "Fix: move useEffect after pushToast definition",
+  "bundle_base_url": "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/ui/bundles/ui-202603191000-new/",
   "files": [
     {
-      "path": "assets/HistoryView.6df54f5b.js",
-      "sha256": "8729f7aa9f01cbecc218a06e6792b511b6b3ca1d188073a94eb0c46286b762c4"
+      "path": "assets/HistoryView.868c56c5.js",
+      "sha256": "27700dc154aaa3cf8ba6ccc4b3a50c814abe039e188211f8983bc21929e551aa"
     },
     {
-      "path": "assets/ProductsAdminView.601b7d20.js",
-      "sha256": "2e7e131a858bfa6ad8b0cd9d6a23d52f6ff114fe2a0ddf467bb53cb8b2f2a44f"
+      "path": "assets/ProductsAdminView.19eaebb5.js",
+      "sha256": "473a60f11301c0b92d772ea2e80ecfbeaf4b0be4fc1909d1ba9d14f1f9072f73"
     },
     {
-      "path": "assets/index.ddcfa6a8.js",
-      "sha256": "9e5a69ae7b74d0e0c9eb008d1fb709f519224fcbf24223603043f82159cdb148"
+      "path": "assets/index.ae62452f.js",
+      "sha256": "f9358f1e96c82d2f8c36001a18ddd79e49bf3421ba2e45aeb6223715bcbfa0d9"
     },
     {
       "path": "assets/index.a126b061.css",
@@ -47,7 +47,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "ef4f4d0a922d44e7c2c469d2b9a13d89c7514f3e4cf1f5606156702a2366f778"
+      "sha256": "50c2c9823029ada1095f185a5470a7ca79b70d25151864a9477b38a43c985d94"
     },
     {
       "path": "manifest.webmanifest",
