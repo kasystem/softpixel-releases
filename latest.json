@@ -1,11 +1,11 @@
 {
-    "version":  "0.2.7",
+    "version":  "0.2.8",
     "notes":  "Restaurant module release.",
-    "pub_date":  "2026-06-03T17:44:30.0106241Z",
+    "pub_date":  "2026-06-03T18:10:30.4129126Z",
     "platforms":  {
                       "windows-x86_64":  {
                                              "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSTitZcnpsVW9UcFpZOEsyTWhuVHdwak16Nkx1ajY4NXBhVTF3bGFYT1AwN0g4ZnRDY2cwMVRaL1o2MXMzK2tITExYejdxUHlUR3RITHdiQkNpQzF0V2d5d2pvbjFVeUFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwNTA4NjY3CWZpbGU6UFJPR1JBTUVSSV8wLjIuN194NjQtc2V0dXAuZXhlCjFxLzV0NzdPNHhTQy9Bb3ZOc3pQc0tEWHJXT0wwY0c2TDZUSkNHM01pZGI3emJjRnhiTWZsNXlhdG90a2VXUU5WWWI2b0pBTUFkbkpCeXNOSmJLMUF3PT0K",
-                                             "url":  "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/SoftPixel_Restaurant_0.2.7_x64-setup.exe"
+                                             "url":  "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/SoftPixel_Restaurant_0.2.8_x64-setup.exe"
                                          }
                   }
 }
