@@ -1,8 +1,8 @@
 {
-    "version":  "0.2.18",
-    "force":  false,
-    "url":  "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/PROGRAMERI-RESTAURANT-0.2.18.exe",
-    "sha256":  "9144019581e8a6850cac06e06345cefde4df5e6e6112827541b5920cebf597df",
-    "notes":  "",
-    "pub_date":  "2026-06-08T09:43:31.840Z"
+  "version": "0.2.20",
+  "force": false,
+  "url": "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/PROGRAMERI-RESTAURANT-0.2.20.exe",
+  "sha256": "9da0004bc9bc01efa2a8c74bd7cd5880f6b7491925ee250fa8f818ee9a948caa",
+  "notes": "",
+  "pub_date": "2026-06-08T10:24:56.904Z"
 }
