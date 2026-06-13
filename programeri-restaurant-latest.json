@@ -1,6 +1,6 @@
 {
   "version": "0.2.47",
-  "force": false,
+  "force": true,
   "url": "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/PROGRAMERI-RESTAURANT-0.2.47.exe",
   "sha256": "226b6b00016744119481265716d96080f7e98ccfaa47f3968ca607c10da3c969",
   "notes": "",
