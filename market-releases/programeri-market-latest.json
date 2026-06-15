@@ -1,8 +1,8 @@
 {
-    "version":  "0.2.1",
-    "force":  false,
-    "url":  "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/market-releases/PROGRAMERI-MARKET-0.2.1.exe",
-    "sha256":  "c379c692ae3a7b646c60aef2526c0e6209dde194240950d34c922e0ea1edec45",
-    "notes":  "Market Electron release",
-    "pub_date":  "2026-06-14T01:22:30.851Z"
+  "version": "0.2.2",
+  "force": false,
+  "sha256": "51257b94a594af73f982453c8ebe62115773e53c35d0737de24485f5b81c5060",
+  "pub_date": "2026-06-16T00:37:06.9772338+02:00",
+  "url": "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/market-releases/PROGRAMERI-MARKET-0.2.2.exe",
+  "notes": "Market Electron release"
 }
