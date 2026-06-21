@@ -2,7 +2,7 @@
     "version":  "0.2.65",
     "force":  false,
     "url":  "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/PROGRAMERI-MARKET-0.2.65.exe",
-    "sha256":  "56e3060e85490be0c409b373e8b626f06115859235397bb31c1bb853df091ce4",
-    "notes":  "Market Electron release - SEF fiscal queue migration fix",
-    "pub_date":  "2026-06-21T21:19:12.069Z"
+    "sha256":  "52734261260a0c41035636639c3b7a7f5434f6b387df9e57f77e672d6503bec4",
+    "notes":  "Market Electron release - starts at /market and includes SEF fiscal queue migration fix",
+    "pub_date":  "2026-06-21T21:35:04.321Z"
 }
