@@ -1,8 +1,8 @@
 ﻿{
-    "version":  "0.2.66",
+    "version":  "0.2.67",
     "force":  false,
-    "sha256":  "10914f7f409c1307982e9c06ac6656fd41b34dd1a8999113922b848559135634",
-    "pub_date":  "2026-06-21T21:49:07.921Z",
-    "url":  "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/PROGRAMERI-MARKET-0.2.66.exe",
-    "notes":  "fix: login (verifyPasswordAsync algorithm mismatch + seed standard users pronar/menaxher/shites/kamarier)"
+    "sha256":  "3f49b867cfc4eb4a065f88e313ae3bc3cd071a4491ef9b870736dd5d7623d2dc",
+    "pub_date":  "2026-06-21T21:59:15.615Z",
+    "url":  "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/PROGRAMERI-MARKET-0.2.67.exe",
+    "notes":  "fix: restore license from device-identity.secure.json (safeStorage) on startup"
 }
