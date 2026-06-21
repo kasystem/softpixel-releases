@@ -1,8 +1,8 @@
-{
-    "version":  "0.2.65",
+﻿{
+    "version":  "0.2.66",
     "force":  false,
-    "url":  "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/PROGRAMERI-MARKET-0.2.65.exe",
-    "sha256":  "52734261260a0c41035636639c3b7a7f5434f6b387df9e57f77e672d6503bec4",
-    "notes":  "Market Electron release - starts at /market and includes SEF fiscal queue migration fix",
-    "pub_date":  "2026-06-21T21:35:04.321Z"
+    "sha256":  "10914f7f409c1307982e9c06ac6656fd41b34dd1a8999113922b848559135634",
+    "pub_date":  "2026-06-21T21:49:07.921Z",
+    "url":  "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/PROGRAMERI-MARKET-0.2.66.exe",
+    "notes":  "fix: login (verifyPasswordAsync algorithm mismatch + seed standard users pronar/menaxher/shites/kamarier)"
 }
