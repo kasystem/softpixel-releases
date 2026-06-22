@@ -1,0 +1,13 @@
+name: keep-alive
+
+on:
+  schedule:
+    - cron: '*/14 * * * *'
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Render service
+        run: curl -sf --max-time 30 https://pos-ui-omks.onrender.com > /dev/null && echo "OK" || echo "WARN: no response"
