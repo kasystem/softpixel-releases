@@ -1,8 +1,8 @@
-﻿{
-    "version":  "0.2.67",
+{
+    "version":  "0.2.68",
     "force":  false,
-    "sha256":  "3f49b867cfc4eb4a065f88e313ae3bc3cd071a4491ef9b870736dd5d7623d2dc",
-    "pub_date":  "2026-06-21T21:59:15.615Z",
-    "url":  "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/PROGRAMERI-MARKET-0.2.67.exe",
-    "notes":  "fix: restore license from device-identity.secure.json (safeStorage) on startup"
+    "sha256":  "9b84e00ce3003e54d76f35b4e44afa4ebf18762108dddbfc96f3c5a9e1ecdd32",
+    "pub_date":  "2026-06-22T00:00:00.000Z",
+    "url":  "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/PROGRAMERI-MARKET-0.2.68.exe",
+    "notes":  "fix: toast mbi overlay licensës (z-index), fullscreen, seed Supabase defaults për token"
 }
