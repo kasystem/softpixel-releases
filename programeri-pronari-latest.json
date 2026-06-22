@@ -1,8 +1,8 @@
 {
-    "version":  "0.2.63",
-    "force":  false,
-    "url":  "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/PROGRAMERI-PRONARI-0.2.63.exe",
-    "sha256":  "a9bca15f80f87045c083366d522c72daae683c1340bcedd020c22d7158bbf03e",
-    "notes":  "",
-    "pub_date":  "2026-06-21T00:00:00.000Z"
+    "version": "0.2.64",
+    "force": true,
+    "url": "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/PROGRAMERI-PRONARI-0.2.64.exe",
+    "sha256": "1a0d6ba694782ca38eaf4ba60c384f001d3fad5e1379ac48dd2ecd3769b64121",
+    "notes": "",
+    "pub_date": "2026-06-22T21:34:23.223Z"
 }
