@@ -1,0 +1,17 @@
+{
+  "version": "ui-202606252116-bd664f6",
+  "min_shell_version": "0.2.9",
+  "published_at": "2026-06-25T21:16:33.055Z",
+  "notes": "Encrypted UI hot-update bundle for SoftPixel POS desktop shell.",
+  "bundle_base_url": "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/ui/bundles/ui-202606252116-bd664f6/",
+  "files": [],
+  "encrypted_bundle": {
+    "path": "bundle.enc",
+    "sha256": "4eede83b7f970039f1eb5cb06c8b9fd0ff2242e0239a42ea61aafe830d123502",
+    "nonce_b64": "jyRRx7rpm5zVeGWL",
+    "tag_b64": "shwnkQ8iOgNmOznkXbPHlQ==",
+    "payload_sha256": "5d38817e199ec1eab68ecd454f14ea5cc32f322539b15210cd8f56f550a7ad84",
+    "cipher": "aes-256-gcm",
+    "format": "softpixel-ui-enc-v1"
+  }
+}
