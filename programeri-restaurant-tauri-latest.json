@@ -1,11 +1,11 @@
-{
-  "version": "0.2.9",
-  "notes": "PROGRAMERI Restaurant Tauri v0.2.9 — release fillestar",
-  "pub_date": "2026-06-03T18:25:27.406Z",
+﻿{
+  "version": "0.3.0",
+  "notes": "PROGRAMERI Tauri v0.3.0",
+  "pub_date": "2026-06-28T01:04:14.992Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSTitZcnpsVW9UcFpZOEsyTWhuVHdwak16Nkx1ajY4NXBhVTF3bGFYT1AwN0g4ZnRDY2cwMVRaL1o2MXMzK2tITExYejdxUHlUR3RITHdiQkNpQzF0V2d5d2pvbjFVeUFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwNTA4NjY3CWZpbGU6UFJPR1JBTUVSSV8wLjIuN194NjQtc2V0dXAuZXhlCjFxLzV0NzdPNHhTQy9Bb3ZOc3pQc0tEWHJXT0wwY0c2TDZUSkNHM01pZGI3emJjRnhiTWZsNXlhdG90a2VXUU5WWWI2b0pBTUFkbkpCeXNOSmJLMUF3PT0K",
-      "url": "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/SoftPixel_Restaurant_0.2.9_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSTitZcnpsVW9UcGRzWm1xWHdOOGJQRldQWGZjMkNiNjBSSVRyYnF0Z3JQS2NSNmVyTDk2emZtM2VUQTdUditIbk0zUjVSMnA2Ykd4a2g3am1HSFNkdFRYOGVNSmlVNlFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyNjAyMzQyCWZpbGU6UFJPR1JBTUVSSV8wLjMuMF94NjQtc2V0dXAuZXhlCmY4aStyc1lKOGZBZVRqbjA3aTI5REJzaUY2TEtZR28yN3paaXB6ZjdzeGZKN3lSQnBraGJmQnZVNkJFYjBZZXNLc3ZibzZUL2NnZTY5L1FtMHFBc0FBPT0K",
+      "url": "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/PROGRAMERI-TAURI-RESTAURANT-0.3.0-x64-setup.exe"
     }
   }
 }
