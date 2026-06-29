@@ -1,11 +1,11 @@
 {
-  "version": "0.3.1",
-  "notes": "PROGRAMERI MARKET Tauri v0.3.1",
-  "pub_date": "2026-06-28T20:30:07.381Z",
+  "version": "0.3.2",
+  "notes": "PROGRAMERI MARKET Tauri v0.3.2",
+  "pub_date": "2026-06-29T06:09:36.078Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSTitZcnpsVW9UcGZRbEgzWUFkRFVkb1N1RVRYU1hUaW42enZSeTNYcmRQYU1hYnhGQkd5MnRCZnlTalJpeUtjTHg0OHFJUUtnUlZaZmZ2bGF5Ny84akk2QjVaNmIzRmdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyNjc4NjA2CWZpbGU6UFJPR1JBTUVSSSBNQVJLRVRfMC4zLjFfeDY0LXNldHVwLmV4ZQpTRnlKaDhTazJQRUxUUEFCN0tIN29TdVF5Z2lPdzlBaUJmYnQ3VStuZTJiTWM2b2RRVC9IMXhiTk1JNUsyUG9kb0d2R3J3cDZTNld0TUxZeDhkZ05Cdz09Cg==",
-      "url": "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/PROGRAMERI-TAURI-MARKET-0.3.1-x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSTitZcnpsVW9UcFE3SEQvZzhWL1Nlem84cno2YVN0cVZrdU9hN0J0bzlySjZKVWIxV3ZsYnB1QlF4ZnJ2SEYvYXB0eWhFR081MmxSREpHTVFzUktPVWJ5dWtnMy9xNkFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyNzEzMzY5CWZpbGU6UFJPR1JBTUVSSSBNQVJLRVRfMC4zLjJfeDY0LXNldHVwLmV4ZQpUbE9CYzlRd3Zlbk92RGp6bXl4RmkxY2xtdVlxTTBlVmllcHdHbFF2dVNVMVVhbHRmNFZVUStITzdVL0x6aUEyRWJySllEQUhtM0Q1S1FWUTdCUjBEUT09Cg==",
+      "url": "https://raw.githubusercontent.com/kasystem/softpixel-releases/main/PROGRAMERI-TAURI-MARKET-0.3.2-x64-setup.exe"
     }
   }
 }
