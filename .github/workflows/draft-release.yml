@@ -1,0 +1,25 @@
+name: Draft PROGRAMERI release
+on:
+  workflow_dispatch:
+    inputs:
+      source_ref:
+        description: Exact source ref to build
+        required: true
+      channel:
+        type: choice
+        options: [internal, beta, stable]
+        default: internal
+permissions:
+  contents: write
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Document guarded draft workflow
+        run: |
+          echo "This workflow is intentionally non-publishing until repository-specific source checkout and signing secrets are approved."
+          echo "Requested ref: ${{ inputs.source_ref }}; channel: ${{ inputs.channel }}"
+      - name: Require signing configuration before implementation
+        env:
+          MANIFEST_SIGNING_KEY: ${{ secrets.PROGRAMERI_MANIFEST_SIGNING_KEY }}
+        run: test -n "$MANIFEST_SIGNING_KEY" || { echo "Signing key is not configured; no artifact created."; exit 1; }
