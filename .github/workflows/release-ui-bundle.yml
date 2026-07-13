@@ -1,0 +1,122 @@
+name: Release PROGRAMERI Electron UI bundle
+# Phase 9 — builds a UI-only bundle (pos-ui/dist, zipped) matching what the
+# Electron shell's Phase 3 ui-updater.js downloads and stages, signs its
+# manifest, and drafts (never publishes) a GitHub Release with the zip +
+# manifest as assets.
+#
+# Manual dispatch only. Guarded: fails fast, before any build work happens,
+# if PROGRAMERI_UI_MANIFEST_SIGNING_KEY is not configured. Nothing in this
+# workflow has ever been executed — see PHASE_9_ELECTRON_RELEASE_REPORT.md.
+on:
+  workflow_dispatch:
+    inputs:
+      pos_ui_ref:
+        description: Exact kasystem/pos-ui ref/SHA to build
+        required: true
+      channel:
+        type: choice
+        options: [internal, beta, stable]
+        default: internal
+      min_electron_shell_version:
+        description: Minimum Electron shell version this bundle is compatible with
+        required: true
+      max_electron_shell_version:
+        description: Maximum Electron shell version this bundle is compatible with (leave blank for no upper bound)
+        required: false
+      draft_release:
+        description: Create a draft GitHub Release with the built bundle attached (always drafted, never auto-published)
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  guard-secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Require UI manifest signing key
+        env:
+          UI_MANIFEST_SIGNING_KEY: ${{ secrets.PROGRAMERI_UI_MANIFEST_SIGNING_KEY }}
+        run: |
+          test -n "$UI_MANIFEST_SIGNING_KEY" || { echo "::error::PROGRAMERI_UI_MANIFEST_SIGNING_KEY is not configured; no manifest can be signed. No build attempted."; exit 1; }
+          echo "Secret present. Requested pos-ui ref: ${{ inputs.pos_ui_ref }}, channel: ${{ inputs.channel }}"
+
+  build:
+    needs: guard-secrets
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout softpixel-releases (this repo — provides scripts/sign-manifest.js)
+        uses: actions/checkout@v4
+        with:
+          path: softpixel-releases
+
+      - name: Checkout pos-ui
+        uses: actions/checkout@v4
+        with:
+          repository: kasystem/pos-ui
+          ref: ${{ inputs.pos_ui_ref }}
+          path: pos-ui
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install and build pos-ui
+        working-directory: pos-ui
+        run: |
+          npm ci
+          npm run build
+
+      - name: Zip the built UI bundle (must match ui-updater.js's extractZipSafely expectations — flat zip of dist/*)
+        working-directory: pos-ui/dist
+        run: zip -r ../../ui-bundle.zip .
+
+      - name: Compute version + SHA-256
+        id: artifact
+        run: |
+          echo "sha256=$(sha256sum ui-bundle.zip | cut -d' ' -f1)" >> "$GITHUB_OUTPUT"
+          echo "ui_version=$(node -p "require('./pos-ui/package.json').version")-${{ inputs.channel }}.${{ github.run_number }}" >> "$GITHUB_OUTPUT"
+
+      - name: Write unsigned UI update manifest
+        run: |
+          cat > /tmp/ui-manifest.unsigned.json <<EOF
+          {
+            "key_id": "${{ inputs.channel }}-1",
+            "target_shell": "electron",
+            "ui_version": "${{ steps.artifact.outputs.ui_version }}",
+            "min_electron_shell_version": "${{ inputs.min_electron_shell_version }}",
+            "max_electron_shell_version": ${{ inputs.max_electron_shell_version != '' && format('"{0}"', inputs.max_electron_shell_version) || 'null' }},
+            "required_api_contract": "v2",
+            "required_db_schema": 1,
+            "bundle_url": "REPLACE_WITH_RELEASE_ASSET_URL_AFTER_UPLOAD",
+            "bundle_sha256": "${{ steps.artifact.outputs.sha256 }}",
+            "encrypted": false,
+            "rollout_percent": 0
+          }
+          EOF
+
+      - name: Sign manifest (Ed25519, same canonical-JSON scheme ui-updater.js verifies)
+        env:
+          PROGRAMERI_UI_MANIFEST_SIGNING_KEY: ${{ secrets.PROGRAMERI_UI_MANIFEST_SIGNING_KEY }}
+        run: node softpixel-releases/scripts/sign-manifest.js /tmp/ui-manifest.unsigned.json bundle_signature PROGRAMERI_UI_MANIFEST_SIGNING_KEY > /tmp/ui-manifest.signed.json
+
+      - name: Upload bundle + manifest as workflow artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: programeri-ui-bundle-${{ steps.artifact.outputs.ui_version }}
+          path: |
+            ui-bundle.zip
+            /tmp/ui-manifest.signed.json
+          retention-days: 14
+
+      - name: Draft GitHub Release (rollout_percent is 0 — no device installs from this manifest until a human edits it and re-signs)
+        if: ${{ inputs.draft_release }}
+        uses: softprops/action-gh-release@v2
+        with:
+          draft: true
+          prerelease: ${{ inputs.channel != 'stable' }}
+          tag_name: ui-${{ inputs.channel }}-${{ steps.artifact.outputs.ui_version }}
+          files: |
+            ui-bundle.zip
+            /tmp/ui-manifest.signed.json

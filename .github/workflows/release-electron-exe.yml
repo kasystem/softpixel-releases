@@ -1,0 +1,148 @@
+name: Release PROGRAMERI Electron EXE
+# Phase 9 — builds the real production Electron shell (kasystem/pos-desktop's
+# pos-desktop/electron, NOT the archived softpixel-web-shell) against a
+# pinned pos-ui ref, signs an update manifest, and drafts (never publishes)
+# a GitHub Release with the EXE + manifest as assets.
+#
+# Manual dispatch only. Guarded: every job fails fast, before any build
+# work happens, if its required secrets are not configured. Nothing in this
+# workflow has ever been executed — see PHASE_9_ELECTRON_RELEASE_REPORT.md.
+on:
+  workflow_dispatch:
+    inputs:
+      pos_desktop_ref:
+        description: Exact kasystem/pos-desktop ref/SHA to build (must contain pos-desktop/electron)
+        required: true
+      pos_ui_ref:
+        description: Exact kasystem/pos-ui ref/SHA to build the UI bundle from
+        required: true
+      channel:
+        type: choice
+        options: [internal, beta, stable]
+        default: internal
+      draft_release:
+        description: Create a draft GitHub Release with the built EXE attached (always drafted, never auto-published)
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  guard-secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Require cross-repo checkout token and EXE signing key
+        env:
+          CROSS_REPO_CHECKOUT_TOKEN: ${{ secrets.CROSS_REPO_CHECKOUT_TOKEN }}
+          EXE_MANIFEST_SIGNING_KEY: ${{ secrets.PROGRAMERI_EXE_MANIFEST_SIGNING_KEY }}
+        run: |
+          test -n "$CROSS_REPO_CHECKOUT_TOKEN" || { echo "::error::CROSS_REPO_CHECKOUT_TOKEN is not configured; pos-desktop/pos-ui cannot be checked out from this workflow. No build attempted."; exit 1; }
+          test -n "$EXE_MANIFEST_SIGNING_KEY" || { echo "::error::PROGRAMERI_EXE_MANIFEST_SIGNING_KEY is not configured; no manifest can be signed. No build attempted."; exit 1; }
+          echo "Secrets present. Requested pos-desktop ref: ${{ inputs.pos_desktop_ref }}, pos-ui ref: ${{ inputs.pos_ui_ref }}, channel: ${{ inputs.channel }}"
+
+  build:
+    needs: guard-secrets
+    runs-on: windows-latest
+    steps:
+      - name: Checkout softpixel-releases (this repo — provides scripts/sign-manifest.js)
+        uses: actions/checkout@v4
+        with:
+          path: softpixel-releases
+
+      - name: Checkout pos-desktop
+        uses: actions/checkout@v4
+        with:
+          repository: kasystem/pos-desktop
+          ref: ${{ inputs.pos_desktop_ref }}
+          token: ${{ secrets.CROSS_REPO_CHECKOUT_TOKEN }}
+          path: pos-desktop
+
+      - name: Checkout pos-ui (sibling dir — prepare-ui-bundle.cjs resolves it as ../../pos-ui from pos-desktop/electron)
+        uses: actions/checkout@v4
+        with:
+          repository: kasystem/pos-ui
+          ref: ${{ inputs.pos_ui_ref }}
+          token: ${{ secrets.CROSS_REPO_CHECKOUT_TOKEN }}
+          path: pos-ui
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install pos-ui dependencies
+        working-directory: pos-ui
+        run: npm ci
+
+      - name: Install pos-desktop/electron dependencies (native modules, no lifecycle scripts)
+        working-directory: pos-desktop/electron
+        run: npm ci --ignore-scripts
+
+      - name: Rebuild native modules against the bundled Electron ABI
+        working-directory: pos-desktop/electron
+        run: |
+          node node_modules/electron/install.js
+          npx --yes @electron/rebuild
+
+      - name: Build portable EXE (runs prebuild -> prepare-ui-bundle.cjs -> electron-builder)
+        working-directory: pos-desktop/electron
+        run: npm run build
+
+      - name: Locate built EXE and compute SHA-256
+        id: artifact
+        shell: bash
+        working-directory: pos-desktop/electron
+        run: |
+          exe_path=$(ls dist/*.exe | head -n1)
+          echo "exe_path=$exe_path" >> "$GITHUB_OUTPUT"
+          echo "sha256=$(sha256sum "$exe_path" | cut -d' ' -f1)" >> "$GITHUB_OUTPUT"
+          echo "size_bytes=$(stat -c%s "$exe_path")" >> "$GITHUB_OUTPUT"
+          node -e "console.log(require('./package.json').version)" > /tmp/version.txt
+          echo "version=$(cat /tmp/version.txt)" >> "$GITHUB_OUTPUT"
+
+      - name: Write unsigned EXE update manifest
+        shell: bash
+        run: |
+          cat > /tmp/exe-manifest.unsigned.json <<EOF
+          {
+            "key_id": "${{ inputs.channel }}-1",
+            "product_id": "com.softpixel.pos",
+            "architecture": "x64",
+            "version": "${{ steps.artifact.outputs.version }}",
+            "filename": "$(basename "${{ steps.artifact.outputs.exe_path }}")",
+            "url": "REPLACE_WITH_RELEASE_ASSET_URL_AFTER_UPLOAD",
+            "sha256": "${{ steps.artifact.outputs.sha256 }}",
+            "size_bytes": ${{ steps.artifact.outputs.size_bytes }},
+            "rollout_percent": 0,
+            "authenticode_required": false,
+            "min_db_schema": 1,
+            "max_db_schema": null
+          }
+          EOF
+
+      - name: Sign manifest (Ed25519, same canonical-JSON scheme exe-updater.js verifies)
+        env:
+          PROGRAMERI_EXE_MANIFEST_SIGNING_KEY: ${{ secrets.PROGRAMERI_EXE_MANIFEST_SIGNING_KEY }}
+        run: node ../../softpixel-releases/scripts/sign-manifest.js /tmp/exe-manifest.unsigned.json signature PROGRAMERI_EXE_MANIFEST_SIGNING_KEY > /tmp/exe-manifest.signed.json
+        shell: bash
+        working-directory: pos-desktop/electron
+
+      - name: Upload EXE + manifest as workflow artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: programeri-restaurant-exe-${{ steps.artifact.outputs.version }}-${{ inputs.channel }}
+          path: |
+            pos-desktop/electron/${{ steps.artifact.outputs.exe_path }}
+            /tmp/exe-manifest.signed.json
+          retention-days: 14
+
+      - name: Draft GitHub Release (rollout_percent is 0 — no device installs from this manifest until a human edits it and re-signs)
+        if: ${{ inputs.draft_release }}
+        uses: softprops/action-gh-release@v2
+        with:
+          draft: true
+          prerelease: ${{ inputs.channel != 'stable' }}
+          tag_name: electron-${{ inputs.channel }}-${{ steps.artifact.outputs.version }}-${{ github.run_number }}
+          files: |
+            pos-desktop/electron/${{ steps.artifact.outputs.exe_path }}
+            /tmp/exe-manifest.signed.json
