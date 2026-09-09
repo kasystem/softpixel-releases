@@ -1,14 +1,14 @@
 {
-  "version": "2.0.1",
+  "version": "2.2.0",
   "product_id": "com.programeripos.pagat",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pagat-v2.0.1/Programeri-POS-Pagat-2.0.1-Setup.exe",
-  "sha256": "d025fc8b2eaa655bc28cf9e8eb8056526fca057e20cfa19a6404cab33a80308d",
-  "size": 120962067,
-  "published_at": "2026-09-09T06:31:42.687Z",
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pagat-v2.2.0/Programeri-POS-Pagat-2.2.0-Setup.exe",
+  "sha256": "3c64c1d9d6a1dfb092f73e350d37a38731ca38cae60953c2b7b39c42632cb95d",
+  "size": 120962031,
+  "published_at": "2026-09-09T10:56:50.916Z",
   "notes": "Programeri POS Pagat: licencim, biznese, punëtorë dhe paga.",
-  "signature": "Iv+4Rp3ilQQbGe1FBhGUDHoQ69Zd10TbsJRLWMB8x5m1bnd3lmqC52yC3jHKQt/B41DxeQWoQoE48RwmGmO+Cg=="
+  "signature": "RHl737R9YXCHi3irQMi+euMgz8MACuOW9IVBHe8mLSSo6iU6ABYLa9oPvdWXqKguNYkY1/iH0f7mEzbtQpdeBQ=="
 }
