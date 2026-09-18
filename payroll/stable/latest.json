@@ -1,14 +1,14 @@
 {
-  "version": "2.2.0",
+  "version": "2.3.0",
   "product_id": "com.programeripos.pagat",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pagat-v2.2.0/Programeri-POS-Pagat-2.2.0-Setup.exe",
-  "sha256": "3c64c1d9d6a1dfb092f73e350d37a38731ca38cae60953c2b7b39c42632cb95d",
-  "size": 120962031,
-  "published_at": "2026-09-09T10:56:50.916Z",
-  "notes": "Programeri POS Pagat: licencim, biznese, punëtorë dhe paga.",
-  "signature": "RHl737R9YXCHi3irQMi+euMgz8MACuOW9IVBHe8mLSSo6iU6ABYLa9oPvdWXqKguNYkY1/iH0f7mEzbtQpdeBQ=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pagat-v2.3.0/Programeri-POS-Pagat-2.3.0-Setup.exe",
+  "sha256": "6af8ae659255032113c8149f3993d3da6bd839ac72dd808914068eb45109c9f3",
+  "size": 121549443,
+  "published_at": "2026-09-18T09:43:23.229Z",
+  "notes": "Punëtor praktikant (me/pa pagesë), logo i ri i markës, dhe rregullime të shumta në kontrata, sinkronizim dhe eksportime.",
+  "signature": "/y2m5Z5ovwh/x3j6fpLIl81ZQUD3uhpQyK1OaA3tjjwvPBxzabHi14GkkPrsyxQGjbdWIbozolpYqCX/d4wfBg=="
 }
