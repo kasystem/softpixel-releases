@@ -1,14 +1,14 @@
 {
-  "version": "2.3.0",
+  "version": "2.3.1",
   "product_id": "com.programeripos.pagat",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pagat-v2.3.0/Programeri-POS-Pagat-2.3.0-Setup.exe",
-  "sha256": "6af8ae659255032113c8149f3993d3da6bd839ac72dd808914068eb45109c9f3",
-  "size": 121549443,
-  "published_at": "2026-09-18T09:43:23.229Z",
-  "notes": "Punëtor praktikant (me/pa pagesë), logo i ri i markës, dhe rregullime të shumta në kontrata, sinkronizim dhe eksportime.",
-  "signature": "/y2m5Z5ovwh/x3j6fpLIl81ZQUD3uhpQyK1OaA3tjjwvPBxzabHi14GkkPrsyxQGjbdWIbozolpYqCX/d4wfBg=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pagat-v2.3.1/Programeri-POS-Pagat-2.3.1-Setup.exe",
+  "sha256": "6a90a70f9a4ac32e0ca42235f9c591ff3e2c6d697dab2f146f62a66fefe4ac4b",
+  "size": 121551197,
+  "published_at": "2026-09-18T21:36:40.239Z",
+  "notes": "Përditësim i detyrueshëm me 'Përditëso tani' (instalim i vërtetë), datë largimi në të ardhmen nuk e shënon më punëtorin 'i larguar', praktikant me/pa pagesë, logo i ri.",
+  "signature": "mKEX8HKFEGrU6Btb1NDbc8SkscyVlZgGzeCgixOpe2MScKf6DAH29Ha6hOCavgx8hbxPvDVqGDb8XBW1K8eOBw=="
 }
