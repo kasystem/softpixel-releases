@@ -1,14 +1,14 @@
 {
-  "version": "2.3.1",
+  "version": "2.3.2",
   "product_id": "com.programeripos.pagat",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pagat-v2.3.1/Programeri-POS-Pagat-2.3.1-Setup.exe",
-  "sha256": "6a90a70f9a4ac32e0ca42235f9c591ff3e2c6d697dab2f146f62a66fefe4ac4b",
-  "size": 121551197,
-  "published_at": "2026-09-18T21:36:40.239Z",
-  "notes": "Përditësim i detyrueshëm me 'Përditëso tani' (instalim i vërtetë), datë largimi në të ardhmen nuk e shënon më punëtorin 'i larguar', praktikant me/pa pagesë, logo i ri.",
-  "signature": "mKEX8HKFEGrU6Btb1NDbc8SkscyVlZgGzeCgixOpe2MScKf6DAH29Ha6hOCavgx8hbxPvDVqGDb8XBW1K8eOBw=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pagat-v2.3.2/Programeri-POS-Pagat-2.3.2-Setup.exe",
+  "sha256": "db2137f824d6fd659c49c3399f445fda31fa514ae61c983d570c455043dcbc6e",
+  "size": 123152597,
+  "published_at": "2026-09-19T06:18:14.716Z",
+  "notes": "Përmbledhje (tab i ri), Deklarime ATK: Lista e Punëtorëve .xls gati për ATK, pa eksport të databazës lokale, përditësim i detyrueshëm.",
+  "signature": "LNg4c3KCt3mbX3UG+20UGdvIOxRIsWHnAyr7uZ76x4ncYVZ2Fdol/WQBNUv4WSFgxIrsXmP5JXkcC4THbnpNDw=="
 }
