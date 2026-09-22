@@ -1,0 +1,14 @@
+{
+  "version": "1.0.28",
+  "product_id": "com.programeri.pos",
+  "channel": "stable",
+  "architecture": "x64",
+  "min_db_schema": 1,
+  "max_db_schema": 1,
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.28/update.zip",
+  "sha256": "2bae283d103002b37707f7a3ba90a31cc765efdcf519663462f30a1da9882998",
+  "size": 198513854,
+  "published_at": "2026-09-22T09:08:10.434Z",
+  "notes": "Rregullim atomiciteti fiskal (shkrime kritike + ledger ne te njejtin transaksion); rikuperim integriteti pa auditim per rastin e vecante te nje shkrimi kritik te nderprere, dhe ribazim i heshtur kur perkufizimi i digest-it ndryshon nga vete app-i; paritet mobile/EXE: shitje me borxh, rezervime, porosi me termin, koment banaku, zgjedhje depoje, ndryshim cmimi ne Market, tokena dizajni te perbashketa WPF/MAUI.",
+  "signature": "Sd1Xxys/LQP8OZjl7MKA5w5ezz2gC6Cxu6mI1lJ0QnyAzxZmuUdx9mL3Oi7An3yq57FIZ3UpOeyiFzRC67fKDQ=="
+}
