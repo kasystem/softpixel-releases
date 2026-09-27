@@ -1,14 +1,14 @@
 {
-  "version": "1.0.28",
+  "version": "1.0.29",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.28/update.zip",
-  "sha256": "2bae283d103002b37707f7a3ba90a31cc765efdcf519663462f30a1da9882998",
-  "size": 198513854,
-  "published_at": "2026-09-22T09:08:10.434Z",
-  "notes": "Rregullim atomiciteti fiskal (shkrime kritike + ledger ne te njejtin transaksion); rikuperim integriteti pa auditim per rastin e vecante te nje shkrimi kritik te nderprere, dhe ribazim i heshtur kur perkufizimi i digest-it ndryshon nga vete app-i; paritet mobile/EXE: shitje me borxh, rezervime, porosi me termin, koment banaku, zgjedhje depoje, ndryshim cmimi ne Market, tokena dizajni te perbashketa WPF/MAUI.",
-  "signature": "Sd1Xxys/LQP8OZjl7MKA5w5ezz2gC6Cxu6mI1lJ0QnyAzxZmuUdx9mL3Oi7An3yq57FIZ3UpOeyiFzRC67fKDQ=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.29/update.zip",
+  "sha256": "7721b85bb4a44178321761183abfcd719c678f9b08810153b921c9638286292a",
+  "size": 199188352,
+  "published_at": "2026-09-27T19:18:12.763Z",
+  "notes": "Bllok Tatimor si buton+modal me histori; paritet Market/Restaurant (tab-e, dashboard-i i Kontabilitetit, Cash In/Out, Oferta, Shenime); Mobile: rrumbullakosja e Kusurit, 'Kesh', fature B2B me previewer A4.",
+  "signature": "ZgpL+d9ikN2DMYk7GdWol/7jPQG4fVvSAC486fND39+ELCXL8ykjPJh+Iwpr8a0LSsl39U9ZeVrG3hEYVtm2BQ=="
 }
