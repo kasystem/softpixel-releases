@@ -1,14 +1,14 @@
 {
-  "version": "1.0.29",
+  "version": "1.0.30",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.29/update.zip",
-  "sha256": "7721b85bb4a44178321761183abfcd719c678f9b08810153b921c9638286292a",
-  "size": 199188352,
-  "published_at": "2026-09-27T19:18:12.763Z",
-  "notes": "Bllok Tatimor si buton+modal me histori; paritet Market/Restaurant (tab-e, dashboard-i i Kontabilitetit, Cash In/Out, Oferta, Shenime); Mobile: rrumbullakosja e Kusurit, 'Kesh', fature B2B me previewer A4.",
-  "signature": "ZgpL+d9ikN2DMYk7GdWol/7jPQG4fVvSAC486fND39+ELCXL8ykjPJh+Iwpr8a0LSsl39U9ZeVrG3hEYVtm2BQ=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.30/update.zip",
+  "sha256": "992a9fb3d558910cfb12d329a792d9164a3e01fa7312ac38ab6060ad38649ade",
+  "size": 199301423,
+  "published_at": "2026-09-29T20:56:02.962Z",
+  "notes": "Përditësim fiskal, auditimi dhe pagash; rregullim i ciklit të update-it 1.0.29 dhe përditësim i komponentit OCR.",
+  "signature": "PHjOz2hVEdcJyS8MPts8n4lto/qrqmNjW/Uj+gBY1yft4k4SKA6UzFjqkI+zVpSQAtmZR9EBNC4+FIuklf0XCQ=="
 }
