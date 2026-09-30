@@ -1,14 +1,14 @@
 {
-  "version": "1.0.30",
+  "version": "1.0.31",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.30/update.zip",
-  "sha256": "992a9fb3d558910cfb12d329a792d9164a3e01fa7312ac38ab6060ad38649ade",
-  "size": 199301423,
-  "published_at": "2026-09-29T20:56:02.962Z",
-  "notes": "Përditësim fiskal, auditimi dhe pagash; rregullim i ciklit të update-it 1.0.29 dhe përditësim i komponentit OCR.",
-  "signature": "PHjOz2hVEdcJyS8MPts8n4lto/qrqmNjW/Uj+gBY1yft4k4SKA6UzFjqkI+zVpSQAtmZR9EBNC4+FIuklf0XCQ=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.31/update.zip",
+  "sha256": "abb4a85aaec0b97ec9aa9802b8735a86ba9e1de4080de405fffd1d845f13600f",
+  "size": 199405939,
+  "published_at": "2026-09-30T16:15:27.747Z",
+  "notes": "Kyçje më e shpejtë, RFID nga çdo fushë, ndërfaqe më reaguese, histori fiskale me faqe dhe ruajtje e integritetit ATK.",
+  "signature": "h5OhenXahHIihyF6b8OKBZqlVXJfC+sddPcghzj1QKRSWD4og162vFrAyk8rV5i40owXe3x4+0Z74Ek4AY4mDg=="
 }
