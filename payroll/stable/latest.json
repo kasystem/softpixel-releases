@@ -1,14 +1,14 @@
 {
-  "version": "2.3.3",
+  "version": "2.3.4",
   "product_id": "com.programeripos.pagat",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pagat-v2.3.3/Programeri-POS-Pagat-2.3.3-Setup.exe",
-  "sha256": "d39705175ecf8913df54779f6e42af03a6e7c5234df07314089a16b4088f58b7",
-  "size": 123155475,
-  "published_at": "2026-10-01T09:08:40.359Z",
-  "notes": "2.3.3: rregullim i gabimit te orarit qe mbivendosej dhe vlente vetem 'jave e pare' (tani orari ri mbyll automatikisht ate te meparshmin); shtuar historik + fshirje orari ne formen e punetorit; Ore shtese/vikendi/feste tani jane te ndryshueshme manualisht dhe sistemi i rishperndan automatikisht ne tabelen ditore (shton +1 te dita me pak ore, heq -1 nga dita me shume ore); Oret standarde NUK ndikohen me nga keto ndryshime; shtuar parapamje e menjehershme Bruto/Neto/Kosto ndersa plotesohet forma e pages.",
-  "signature": "22jEWA67IPMEWycPmsvO62DSXe5Kuon2+po6bZ/TstaZdJALLi0RaPRd/Pv33uFYok+kAf0pUA0rNExwrlZ8Cw=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pagat-v2.3.4/Programeri-POS-Pagat-2.3.4-Setup.exe",
+  "sha256": "40880b3cbb992dd650b5c32f0565b455b9ffe99fd91b614dffb74a66f5f07f1a",
+  "size": 123155451,
+  "published_at": "2026-10-01T09:57:07.793Z",
+  "notes": "2.3.4: Rikthen menune Konfliktet e sinkronizimit, shfaq numrin e konflikteve dhe udhezimin kur ruajtja bllokohet.",
+  "signature": "PEE/Y7N7bJ/zIBkuPReySNyDdVS3jvlnqsj0EbN8HTvfXC3dhP0FFcRyjDJsT/GX0H0TLmwcMR/1zBHAB7GWDQ=="
 }
