@@ -1,14 +1,14 @@
 {
-  "version": "1.0.32",
+  "version": "1.0.33",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.32/update.zip",
-  "sha256": "b15acbe89742c82b1f07188d2c1399426c3825a10d0a94ada22255e2ce097627",
-  "size": 199461780,
-  "published_at": "2026-10-01T14:01:22.953Z",
-  "notes": "Rregullim real: kuponi SEF mund te dergohej 2 here ne ATK pas pergjigje te paqarte (timeout/HTTP 5xx) nga ATK — tani ndalohet automatikisht, kerkon konfirmim manual ne portalin ATK para çdo ridergimi. CouponId kalon ne format 19-shifror. Zbritja me % mungonte ne total ne EXE — rregulluar.",
-  "signature": "OL+Oah16l3I1Cr6gQCFBQjfFWd+zm6XswfWL/AUKuwHp+400STqA6BrqQY/TlXbgdjgKLynwlLedqMImORTJBg=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.33/update.zip",
+  "sha256": "0a16b7f0a1ecd2ea76cc40647a7000931164fe02b05069158eccf3b789461291",
+  "size": 199486775,
+  "published_at": "2026-10-01T23:40:04.032Z",
+  "notes": "Qasja ATK: tani shfaqen te dy zinxhiret (Zinxhiri i Kuponëve + Zinxhiri i Auditimit) ne Hash Chain tab. E re: Pastrimi i te Dhenave te Vjetra (vetem ATK) — fshin permanentisht hyrje te vjetra te auditimit, me prove te pandryshueshme dhe zinxhir i verifikueshem. Zgjedhes periudhe per kuponet (Sot default). Rregulluar vonesa ne hapjen e Qasja ATK.",
+  "signature": "PRTdZZ71ulfZweKIWSetuOigbeMgEDsLxZNaxhSqNmjRS+elC9BJfyAOuCwhx8EtxfkUXkQ/RmGAlsfFiHHQBQ=="
 }
