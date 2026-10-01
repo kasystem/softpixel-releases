@@ -1,14 +1,14 @@
 {
-  "version": "1.0.31",
+  "version": "1.0.32",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.31/update.zip",
-  "sha256": "abb4a85aaec0b97ec9aa9802b8735a86ba9e1de4080de405fffd1d845f13600f",
-  "size": 199405939,
-  "published_at": "2026-09-30T16:15:27.747Z",
-  "notes": "Kyçje më e shpejtë, RFID nga çdo fushë, ndërfaqe më reaguese, histori fiskale me faqe dhe ruajtje e integritetit ATK.",
-  "signature": "h5OhenXahHIihyF6b8OKBZqlVXJfC+sddPcghzj1QKRSWD4og162vFrAyk8rV5i40owXe3x4+0Z74Ek4AY4mDg=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.32/update.zip",
+  "sha256": "b15acbe89742c82b1f07188d2c1399426c3825a10d0a94ada22255e2ce097627",
+  "size": 199461780,
+  "published_at": "2026-10-01T14:01:22.953Z",
+  "notes": "Rregullim real: kuponi SEF mund te dergohej 2 here ne ATK pas pergjigje te paqarte (timeout/HTTP 5xx) nga ATK — tani ndalohet automatikisht, kerkon konfirmim manual ne portalin ATK para çdo ridergimi. CouponId kalon ne format 19-shifror. Zbritja me % mungonte ne total ne EXE — rregulluar.",
+  "signature": "OL+Oah16l3I1Cr6gQCFBQjfFWd+zm6XswfWL/AUKuwHp+400STqA6BrqQY/TlXbgdjgKLynwlLedqMImORTJBg=="
 }
