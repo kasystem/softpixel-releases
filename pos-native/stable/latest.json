@@ -1,14 +1,14 @@
 {
-  "version": "1.0.33",
+  "version": "1.0.34",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.33/update.zip",
-  "sha256": "0a16b7f0a1ecd2ea76cc40647a7000931164fe02b05069158eccf3b789461291",
-  "size": 199486775,
-  "published_at": "2026-10-01T23:40:04.032Z",
-  "notes": "Qasja ATK: tani shfaqen te dy zinxhiret (Zinxhiri i Kuponëve + Zinxhiri i Auditimit) ne Hash Chain tab. E re: Pastrimi i te Dhenave te Vjetra (vetem ATK) — fshin permanentisht hyrje te vjetra te auditimit, me prove te pandryshueshme dhe zinxhir i verifikueshem. Zgjedhes periudhe per kuponet (Sot default). Rregulluar vonesa ne hapjen e Qasja ATK.",
-  "signature": "PRTdZZ71ulfZweKIWSetuOigbeMgEDsLxZNaxhSqNmjRS+elC9BJfyAOuCwhx8EtxfkUXkQ/RmGAlsfFiHHQBQ=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.34/update.zip",
+  "sha256": "9786918a43b2d2b0e7b5018734bceecc096db535051640afa31ca1318b691b13",
+  "size": 199489594,
+  "published_at": "2026-10-02T09:10:39.303Z",
+  "notes": "Njesia matese ATK e unifikuar (nje kontroll i vetem, sinkronizuar me payload-in SEF); shfaqet te pllakeza e produktit; mbrojtje ndaj riklasifikimit heshtur ne mjetin bulk Klasifikimi ATK; kontrast i permiresuar per emrat e Njesise dhe Kategorise ATK; zinxhiri i kuponeve SEF tani eshte i vazhdueshem nder dite.",
+  "signature": "JsjhVuZsQqvGzc3Vx6GqYzmHWuWFXUmahMV3q6HM91lsGnkgrKtLt69vG4hcirPuHBD3Ry2guJe3Cjjc4NJzAA=="
 }
