@@ -1,14 +1,14 @@
 {
-  "version": "1.0.35",
+  "version": "1.0.36",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.35/update.zip",
-  "sha256": "0a238ffd6641023eecdd6945fceb44518e590783f25b0230da15cb0b7d53f869",
-  "size": 199621728,
-  "published_at": "2026-10-09T17:23:24.624Z",
-  "notes": "Versioni 1.0.35\n- Çmimet me deri në 4 shifra sinkronizohen saktë mes pajisjeve dhe nuk kthehen më në vlerën e vjetër.\n- Kuponi: një rresht i vetëm zbritjeje për artikull; kthim/anulim edhe për kuponët offline (dërgohen pas origjinalit).\n- Ora ATK me datë; paralajmërim i kuq kur ora e pajisjes është gabim (fiskalizimi vazhdon me orën e ATK-së).\n- Qasja ATK: skedë te menuja, regjistri i auditimit si Excel (kolona, eksport CSV/Excel, ekran i plotë), veprimet e përdoruesit me emër.\n- Hequr: fatura normale (F7), printimi termik, pamja paraprake.",
-  "signature": "8ZkLmNEh6ipd6qMW4slCDdw4oMcnPmpfze5uZOIdxqbFUT77UoDwNYrh9UmclWJglYKcMcxfFlisPUhBuaYlBw=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.36/update.zip",
+  "sha256": "d78ef74716c5973495e6c0810d0cba2ffd591bcd163db74bc968d60667b7f3b4",
+  "size": 199622764,
+  "published_at": "2026-10-09T18:46:22.953Z",
+  "notes": "",
+  "signature": "zS7QvWxrS4xeUOJVK91VH1RvwzQAs8aT5irpSJ5BlJkxEFgFB3qpQsYYDeluBmBUq3Po99ibCu+MHSg7Eb4qBA=="
 }
