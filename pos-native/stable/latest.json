@@ -1,14 +1,14 @@
 {
-  "version": "1.0.34",
+  "version": "1.0.35",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.34/update.zip",
-  "sha256": "9786918a43b2d2b0e7b5018734bceecc096db535051640afa31ca1318b691b13",
-  "size": 199489594,
-  "published_at": "2026-10-02T09:10:39.303Z",
-  "notes": "Njesia matese ATK e unifikuar (nje kontroll i vetem, sinkronizuar me payload-in SEF); shfaqet te pllakeza e produktit; mbrojtje ndaj riklasifikimit heshtur ne mjetin bulk Klasifikimi ATK; kontrast i permiresuar per emrat e Njesise dhe Kategorise ATK; zinxhiri i kuponeve SEF tani eshte i vazhdueshem nder dite.",
-  "signature": "JsjhVuZsQqvGzc3Vx6GqYzmHWuWFXUmahMV3q6HM91lsGnkgrKtLt69vG4hcirPuHBD3Ry2guJe3Cjjc4NJzAA=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.35/update.zip",
+  "sha256": "0a238ffd6641023eecdd6945fceb44518e590783f25b0230da15cb0b7d53f869",
+  "size": 199621728,
+  "published_at": "2026-10-09T17:23:24.624Z",
+  "notes": "Versioni 1.0.35\n- Çmimet me deri në 4 shifra sinkronizohen saktë mes pajisjeve dhe nuk kthehen më në vlerën e vjetër.\n- Kuponi: një rresht i vetëm zbritjeje për artikull; kthim/anulim edhe për kuponët offline (dërgohen pas origjinalit).\n- Ora ATK me datë; paralajmërim i kuq kur ora e pajisjes është gabim (fiskalizimi vazhdon me orën e ATK-së).\n- Qasja ATK: skedë te menuja, regjistri i auditimit si Excel (kolona, eksport CSV/Excel, ekran i plotë), veprimet e përdoruesit me emër.\n- Hequr: fatura normale (F7), printimi termik, pamja paraprake.",
+  "signature": "8ZkLmNEh6ipd6qMW4slCDdw4oMcnPmpfze5uZOIdxqbFUT77UoDwNYrh9UmclWJglYKcMcxfFlisPUhBuaYlBw=="
 }
