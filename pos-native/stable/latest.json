@@ -1,14 +1,14 @@
 {
-  "version": "1.0.36",
+  "version": "1.0.37",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.36/update.zip",
-  "sha256": "d78ef74716c5973495e6c0810d0cba2ffd591bcd163db74bc968d60667b7f3b4",
-  "size": 199622764,
-  "published_at": "2026-10-09T18:46:22.953Z",
-  "notes": "",
-  "signature": "zS7QvWxrS4xeUOJVK91VH1RvwzQAs8aT5irpSJ5BlJkxEFgFB3qpQsYYDeluBmBUq3Po99ibCu+MHSg7Eb4qBA=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.37/update.zip",
+  "sha256": "5bbfbaca8669111355903d42d17ee2b1d0e6fd95c6a50729eef74b377517547b",
+  "size": 199706485,
+  "published_at": "2026-10-10T06:12:28.451Z",
+  "notes": "Kontroll integriteti cdo 5s me diagnoze te sakte; sinkronizim i vazhdueshem i te dhenave te biznesit (TVSH, NUI, adresa); Online/Offline dhe 48h cdo 3s; mesazh kur ora e PC-se eshte gabim gjate perditesimit; rifillim i kontekstit te bllokuar me token te ri; eksport audit JSON/PDF; logo opsionale; perkthime.",
+  "signature": "PVRZQMrrIzlGPvSszHCK8ekr6uLrIi7akMe+OF+9U1PyKNncfyl1S6JAOZ7+Zt/mlHu8GveXxBwo4wIGnwigAA=="
 }
