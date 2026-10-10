@@ -1,14 +1,14 @@
 {
-  "version": "1.0.37",
+  "version": "1.0.38",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.37/update.zip",
-  "sha256": "5bbfbaca8669111355903d42d17ee2b1d0e6fd95c6a50729eef74b377517547b",
-  "size": 199706485,
-  "published_at": "2026-10-10T06:12:28.451Z",
-  "notes": "Kontroll integriteti cdo 5s me diagnoze te sakte; sinkronizim i vazhdueshem i te dhenave te biznesit (TVSH, NUI, adresa); Online/Offline dhe 48h cdo 3s; mesazh kur ora e PC-se eshte gabim gjate perditesimit; rifillim i kontekstit te bllokuar me token te ri; eksport audit JSON/PDF; logo opsionale; perkthime.",
-  "signature": "PVRZQMrrIzlGPvSszHCK8ekr6uLrIi7akMe+OF+9U1PyKNncfyl1S6JAOZ7+Zt/mlHu8GveXxBwo4wIGnwigAA=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.38/update.zip",
+  "sha256": "f2a449e071431a492049771abc6974a9bb4974509c9e364b29a8d0c5f8d0398e",
+  "size": 199763138,
+  "published_at": "2026-10-10T07:01:44.987Z",
+  "notes": "Ora ATK çdo sekondë; paralajmërimi OFFLINE; njësitë ATK; prova të manipulimit të skedarëve dhe kontrolle fiskale.",
+  "signature": "XZOJuVVwVHz9F8XYrm0xkcrkquW8W3Widoy21EGyS8eWUel823oLEZeKUh8ly3tFKdMxNFY61vABrYQH+LauBQ=="
 }
