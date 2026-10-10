@@ -1,14 +1,14 @@
 {
-  "version": "1.0.38",
+  "version": "1.0.39",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.38/update.zip",
-  "sha256": "f2a449e071431a492049771abc6974a9bb4974509c9e364b29a8d0c5f8d0398e",
-  "size": 199763138,
-  "published_at": "2026-10-10T07:01:44.987Z",
-  "notes": "Ora ATK çdo sekondë; paralajmërimi OFFLINE; njësitë ATK; prova të manipulimit të skedarëve dhe kontrolle fiskale.",
-  "signature": "XZOJuVVwVHz9F8XYrm0xkcrkquW8W3Widoy21EGyS8eWUel823oLEZeKUh8ly3tFKdMxNFY61vABrYQH+LauBQ=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.39/update.zip",
+  "sha256": "bcb63a5c6fc2778a754a845e7923f2b4366f1a7bf2758fc8901dcc052dbc7675",
+  "size": 199770251,
+  "published_at": "2026-10-10T09:40:17.595Z",
+  "notes": "Payload ATK dhe pergjigjet e plota; diagnostikimi i gabimeve dhe offline.",
+  "signature": "4YJgYIYbMFfwQkmmwMIWYiJzhn/3Jxo1gzuDu4GA6AmSGBw5RgDQdyrmSwyQaOvfA7D2HP+4wqoQiUwloxNRCA=="
 }
