@@ -1,0 +1,14 @@
+{
+  "version": "1.0.40",
+  "product_id": "com.programeri.pos.pef",
+  "channel": "stable",
+  "architecture": "x64",
+  "min_db_schema": 1,
+  "max_db_schema": 1,
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.40/update.zip",
+  "sha256": "96140ad19354316667ba422aae3174170275cd1592d9c9cb32ad38947db2422c",
+  "size": 225184934,
+  "published_at": "2026-10-18T10:55:50.584Z",
+  "notes": "PEF KONTO Original 1.0.40; pagesa fiskale dhe lirimi i tavolinave.",
+  "signature": "LpB6LrQoxKfCf6RpDhCqlUTplud6WQf9Efx+MAoOqb2+t3tt9PZphyWfEidoe/A3MCGDUa7ko9BAjQG8olmBCg=="
+}

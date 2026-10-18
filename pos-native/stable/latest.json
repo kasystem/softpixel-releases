@@ -1,14 +1,14 @@
 {
-  "version": "1.0.39",
+  "version": "1.0.40",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.39/update.zip",
-  "sha256": "bcb63a5c6fc2778a754a845e7923f2b4366f1a7bf2758fc8901dcc052dbc7675",
-  "size": 199770251,
-  "published_at": "2026-10-10T09:40:17.595Z",
-  "notes": "Payload ATK dhe pergjigjet e plota; diagnostikimi i gabimeve dhe offline.",
-  "signature": "4YJgYIYbMFfwQkmmwMIWYiJzhn/3Jxo1gzuDu4GA6AmSGBw5RgDQdyrmSwyQaOvfA7D2HP+4wqoQiUwloxNRCA=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.40/update.zip",
+  "sha256": "c02fa8a9ca9ef954522cecabf60530d09ef884fa418490d1bfc1373c6a662822",
+  "size": 200110756,
+  "published_at": "2026-10-18T18:57:00.627Z",
+  "notes": "Rregullime te pageses fiskale, lirimit te tavolinave dhe integritetit te dokumenteve.",
+  "signature": "0fulfPB64Sj6EgA0CXxQLhf14Il8ooYLunuVM/D+Cq6M+vJzCffLR2gYEi344ZUa/Q1AbNrLzxX/U0NCAXcPAw=="
 }
