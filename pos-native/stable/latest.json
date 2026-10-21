@@ -1,14 +1,14 @@
 {
-  "version": "1.0.44",
+  "version": "1.0.45",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.44/update.zip",
-  "sha256": "ef5cffe56fdd177c6c7c2cb9705c7d1b997ecd276391c9269222f752f900c5c8",
-  "size": 200399850,
-  "published_at": "2026-10-21T17:52:07.943Z",
-  "notes": "PROGRAMERI POS SEF 1.0.44 (Windows)\n\n- SEF PROD: certifikimi ATK (Nr. 211703902655) vlen per çdo version te aplikacionit. Onboarding-u i ri ne PROD nuk bllokohet me \"PROD eshte i bllokuar\"; kerkohen vetem kodi EDI i fiskalizimit dhe certifikata ATK e pajisjes.\n- Perfshin te gjitha rregullimet e 1.0.43.",
-  "signature": "rI3uRPT4ZQm+WT3LbvSIN2KOwzm1hpQgpj8Uck3x/csh9OX3UI6Q6M1TIx3BWWycq9i/knt8nlLvTqRQjTspAg=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.45/update.zip",
+  "sha256": "e864f4a54e760950cd553787bb71435a7bcc72bb474252317c5b7158f62b9e5e",
+  "size": 200450319,
+  "published_at": "2026-10-21T23:34:57.968Z",
+  "notes": "PROGRAMERI POS 1.0.45\n\n- Fatura A4 B2B: te gjitha menyrat e pageses, pagese e kombinuar, data e fatures prapa ne kohe (jo ne te ardhmen, jo ne periudhe te mbyllur); parapamje brenda aplikacionit me Printo dhe Ruaj PDF; te dhenat dhe logoja e shitesit; shfaqet \"E gjeneruar\" te Statistikat.\n- POS SALE: zgjedhja B2B per klientet biznes; dritarja e klientit nuk del me jashte ekranit.\n- Dega e re krijon automatikisht \"Depo Kryesore\".\n- Sinkronizim me i shpejte pas importit te shume produkteve.\n- Login: www.programeri.net.\n- PEF KONTO: emri i skedarit kryesor i pershtatshem me versionet 1.0.39/1.0.40; \"Per Kontabilistin\" pa gabim; nivelet e kontabilitetit te lexueshme.",
+  "signature": "gyyGmdLkrByEsnthye7eb3ViRKZIDBnIImSF1V4rXJtcQRYlCvVUNQ8wDjsIsixinmgCWhvyagbfpOjD0HahAQ=="
 }
