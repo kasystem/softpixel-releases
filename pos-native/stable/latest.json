@@ -1,14 +1,14 @@
 {
-  "version": "1.0.43",
+  "version": "1.0.44",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.43/update.zip",
-  "sha256": "6b33ea700fdb847597da4e1044f470d183bc42f504de3db74436f01007bd34bd",
-  "size": 200399313,
-  "published_at": "2026-10-21T16:14:31.898Z",
-  "notes": "PROGRAMERI POS SEF 1.0.43 (Windows)\n\n- Libri i Shitjes (ATK): shfaqen te dhenat qe ekzistojne, pa dialoge bllokuese; ditet me TVSH te perzier (8%/18%) ndahen nga totalet.\n- PRINTO FISKAL: biznes ne TVSH pa numer TVSH merr mesazh te qarte para ruajtjes (jo \"Gabim i papritur\").\n- Normativat: pas \"Ruaj dhe Finalizo\" shitjet e meparshme ne pritje rakordohen me stokun (FIFO) me konfirmim; \"Efektive nga\" propozohet nga shitja e pare ne pritje.\n- SEF PROD: versioni i certifikuar (1.0.27) ruhet si evidence dhe nuk e bllokon me perditesimet.\n- Kontabilitet/stok: rregullime sinkronizimi pas bashkimit te integrimeve ERP.",
-  "signature": "rbkYKVW3Bh+mbJcyBn3Isny3ScxleBTl/C1r5ej3ygSaG8Qv8VWodAhA6lnZvzZsFvUvq8BkJUb9spJwFNAwCA=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.44/update.zip",
+  "sha256": "ef5cffe56fdd177c6c7c2cb9705c7d1b997ecd276391c9269222f752f900c5c8",
+  "size": 200399850,
+  "published_at": "2026-10-21T17:52:07.943Z",
+  "notes": "PROGRAMERI POS SEF 1.0.44 (Windows)\n\n- SEF PROD: certifikimi ATK (Nr. 211703902655) vlen per çdo version te aplikacionit. Onboarding-u i ri ne PROD nuk bllokohet me \"PROD eshte i bllokuar\"; kerkohen vetem kodi EDI i fiskalizimit dhe certifikata ATK e pajisjes.\n- Perfshin te gjitha rregullimet e 1.0.43.",
+  "signature": "rI3uRPT4ZQm+WT3LbvSIN2KOwzm1hpQgpj8Uck3x/csh9OX3UI6Q6M1TIx3BWWycq9i/knt8nlLvTqRQjTspAg=="
 }
