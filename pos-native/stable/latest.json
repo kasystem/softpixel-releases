@@ -1,14 +1,14 @@
 {
-  "version": "1.0.40",
+  "version": "1.0.43",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.40/update.zip",
-  "sha256": "c02fa8a9ca9ef954522cecabf60530d09ef884fa418490d1bfc1373c6a662822",
-  "size": 200110756,
-  "published_at": "2026-10-18T18:57:00.627Z",
-  "notes": "Rregullime te pageses fiskale, lirimit te tavolinave dhe integritetit te dokumenteve.",
-  "signature": "0fulfPB64Sj6EgA0CXxQLhf14Il8ooYLunuVM/D+Cq6M+vJzCffLR2gYEi344ZUa/Q1AbNrLzxX/U0NCAXcPAw=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.43/update.zip",
+  "sha256": "6b33ea700fdb847597da4e1044f470d183bc42f504de3db74436f01007bd34bd",
+  "size": 200399313,
+  "published_at": "2026-10-21T16:14:31.898Z",
+  "notes": "PROGRAMERI POS SEF 1.0.43 (Windows)\n\n- Libri i Shitjes (ATK): shfaqen te dhenat qe ekzistojne, pa dialoge bllokuese; ditet me TVSH te perzier (8%/18%) ndahen nga totalet.\n- PRINTO FISKAL: biznes ne TVSH pa numer TVSH merr mesazh te qarte para ruajtjes (jo \"Gabim i papritur\").\n- Normativat: pas \"Ruaj dhe Finalizo\" shitjet e meparshme ne pritje rakordohen me stokun (FIFO) me konfirmim; \"Efektive nga\" propozohet nga shitja e pare ne pritje.\n- SEF PROD: versioni i certifikuar (1.0.27) ruhet si evidence dhe nuk e bllokon me perditesimet.\n- Kontabilitet/stok: rregullime sinkronizimi pas bashkimit te integrimeve ERP.",
+  "signature": "rbkYKVW3Bh+mbJcyBn3Isny3ScxleBTl/C1r5ej3ygSaG8Qv8VWodAhA6lnZvzZsFvUvq8BkJUb9spJwFNAwCA=="
 }
