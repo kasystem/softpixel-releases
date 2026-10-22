@@ -1,14 +1,14 @@
 {
-  "version": "1.0.40",
+  "version": "1.0.45",
   "product_id": "com.programeri.pos.pef",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.40/update.zip",
-  "sha256": "96140ad19354316667ba422aae3174170275cd1592d9c9cb32ad38947db2422c",
-  "size": 225184934,
-  "published_at": "2026-10-18T10:55:50.584Z",
-  "notes": "PEF KONTO Original 1.0.40; pagesa fiskale dhe lirimi i tavolinave.",
-  "signature": "LpB6LrQoxKfCf6RpDhCqlUTplud6WQf9Efx+MAoOqb2+t3tt9PZphyWfEidoe/A3MCGDUa7ko9BAjQG8olmBCg=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.45/update.zip",
+  "sha256": "d078ea95acfa901407e60877b5bd529cc235bda3ab914d522079d35c25bc55b5",
+  "size": 226287920,
+  "published_at": "2026-10-21T23:58:39.629Z",
+  "notes": "PROGRAMERI POS 1.0.45\r\n\r\n- Fatura A4 B2B: te gjitha menyrat e pageses, pagese e kombinuar, data e fatures prapa ne kohe (jo ne te ardhmen, jo ne periudhe te mbyllur); parapamje brenda aplikacionit me Printo dhe Ruaj PDF; te dhenat dhe logoja e shitesit; shfaqet \"E gjeneruar\" te Statistikat.\r\n- POS SALE: zgjedhja B2B per klientet biznes; dritarja e klientit nuk del me jashte ekranit.\r\n- Dega e re krijon automatikisht \"Depo Kryesore\".\r\n- Sinkronizim me i shpejte pas importit te shume produkteve.\r\n- Login: www.programeri.net.\r\n- PEF KONTO: emri i skedarit kryesor i pershtatshem me versionet 1.0.39/1.0.40; \"Per Kontabilistin\" pa gabim; nivelet e kontabilitetit te lexueshme.",
+  "signature": "Vd6chFZwuTg2Q1E28Q4nHtRXr1A1eyaAKdpqw+crStTDxmnxFLg35R+SNnJukPBRtpmOMWp+PwYyrMIYB2VACw=="
 }
