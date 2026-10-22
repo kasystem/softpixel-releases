@@ -1,14 +1,14 @@
 {
-  "version": "1.0.45",
+  "version": "1.0.47",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.45/update.zip",
-  "sha256": "e864f4a54e760950cd553787bb71435a7bcc72bb474252317c5b7158f62b9e5e",
-  "size": 200450319,
-  "published_at": "2026-10-21T23:34:57.968Z",
-  "notes": "PROGRAMERI POS 1.0.45\n\n- Fatura A4 B2B: te gjitha menyrat e pageses, pagese e kombinuar, data e fatures prapa ne kohe (jo ne te ardhmen, jo ne periudhe te mbyllur); parapamje brenda aplikacionit me Printo dhe Ruaj PDF; te dhenat dhe logoja e shitesit; shfaqet \"E gjeneruar\" te Statistikat.\n- POS SALE: zgjedhja B2B per klientet biznes; dritarja e klientit nuk del me jashte ekranit.\n- Dega e re krijon automatikisht \"Depo Kryesore\".\n- Sinkronizim me i shpejte pas importit te shume produkteve.\n- Login: www.programeri.net.\n- PEF KONTO: emri i skedarit kryesor i pershtatshem me versionet 1.0.39/1.0.40; \"Per Kontabilistin\" pa gabim; nivelet e kontabilitetit te lexueshme.",
-  "signature": "gyyGmdLkrByEsnthye7eb3ViRKZIDBnIImSF1V4rXJtcQRYlCvVUNQ8wDjsIsixinmgCWhvyagbfpOjD0HahAQ=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.47/update.zip",
+  "sha256": "b808cd915e616b595960f4c9709f28f96340a0ee43b0c5537968cb62b856b849",
+  "size": 200483516,
+  "published_at": "2026-10-22T11:41:40.354Z",
+  "notes": "PROGRAMERI POS 1.0.47 (Windows SEF)\n\n- Stoku: sasia negative (shitje pa hyrje) shfaqet ne Statistikat, Stoku dhe Stok & Fitim; cilesimi \"Lejo shitje pa stok\" zbatohet para fiskalizimit; konfirmim me data kur produkti kalon ne \"Produkt per shitje\"/\"rishitje\".\n- Kontabiliteti: TVSH-ja e shitjeve te reja merret nga kuponi i fiskalizuar; numri i fatures ne Libri i Shitjes pa UUID; viti fiskal/periudha te lexueshme.\n- Printimi SEF me i shpejte (pa testin e printerit para fiskalizimit; printohet vetem pas pranimit nga ATK).\n- Butoni \"Dil\" ngjitur me perdoruesin.\n- Perditesimi nuk kthehet mbrapsht kur pritet zgjedhja e biznesit.\n- Fatura A4 B2B: pagesa te kombinuara, data prapa ne kohe, parapamje me Printo/Ruaj PDF, logoja dhe te dhenat e shitesit.",
+  "signature": "jl1lqqwhpCorOu2lenL4wkwlG070BXAw0yFq1BbL9A7zeCwHZZQuh7rcX7FZPpY4gja+u4h4aTF7kvAKLq5LAA=="
 }
