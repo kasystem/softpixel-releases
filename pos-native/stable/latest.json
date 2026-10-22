@@ -1,14 +1,14 @@
 {
-  "version": "1.0.47",
+  "version": "1.0.48",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.47/update.zip",
-  "sha256": "b808cd915e616b595960f4c9709f28f96340a0ee43b0c5537968cb62b856b849",
-  "size": 200483516,
-  "published_at": "2026-10-22T11:41:40.354Z",
-  "notes": "PROGRAMERI POS 1.0.47 (Windows SEF)\n\n- Stoku: sasia negative (shitje pa hyrje) shfaqet ne Statistikat, Stoku dhe Stok & Fitim; cilesimi \"Lejo shitje pa stok\" zbatohet para fiskalizimit; konfirmim me data kur produkti kalon ne \"Produkt per shitje\"/\"rishitje\".\n- Kontabiliteti: TVSH-ja e shitjeve te reja merret nga kuponi i fiskalizuar; numri i fatures ne Libri i Shitjes pa UUID; viti fiskal/periudha te lexueshme.\n- Printimi SEF me i shpejte (pa testin e printerit para fiskalizimit; printohet vetem pas pranimit nga ATK).\n- Butoni \"Dil\" ngjitur me perdoruesin.\n- Perditesimi nuk kthehet mbrapsht kur pritet zgjedhja e biznesit.\n- Fatura A4 B2B: pagesa te kombinuara, data prapa ne kohe, parapamje me Printo/Ruaj PDF, logoja dhe te dhenat e shitesit.",
-  "signature": "jl1lqqwhpCorOu2lenL4wkwlG070BXAw0yFq1BbL9A7zeCwHZZQuh7rcX7FZPpY4gja+u4h4aTF7kvAKLq5LAA=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.48/update.zip",
+  "sha256": "7ac501fc362490ed91bf2dd34177aba3bfced9b6682fdba79ad28a253929f740",
+  "size": 200484495,
+  "published_at": "2026-10-22T14:39:33.211Z",
+  "notes": "Windows SEF stable 1.0.48: kitchen/bar printer routing, CP858 Albanian characters, stock search and sortable stock/accounting tables.",
+  "signature": "nmHwLdp1lrYY5mXElfJE8FT2Mku5NJKIbaCUcOm5bFpMkfbcu0PUJxLdNQlDrsREkFqXBmm5T5oBobi4QrJzAA=="
 }
