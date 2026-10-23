@@ -1,14 +1,14 @@
 {
-  "version": "1.0.51",
+  "version": "1.0.52",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.51/update.zip",
-  "sha256": "f03a060d3086ecc850bb3abf80482ddb8ad98d79a5bcd63bde75b68aba56e7d9",
-  "size": 200533372,
-  "published_at": "2026-10-23T08:18:54.837Z",
-  "notes": "",
-  "signature": "qA9n3hchzRXRc1d9LEOJ79GwRTBxUSZLwDh+jHExmbw/IJTn9QfzE28u/i0vp2oPcpY7Cou2VEtA4jOQds//AA=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.52/update.zip",
+  "sha256": "89750540f397fdb64757f433d176ae145884a657c17667bf4263289b73581128",
+  "size": 200555020,
+  "published_at": "2026-10-23T11:29:21.815Z",
+  "notes": "Lokalizim i plotë SR/EN për Windows, Market dhe Mobile.",
+  "signature": "/5iIm8q4aonKjVQfDYKp1W6+TRjSOH0kRAcowSa8bPkSCjL17SeSgcvnCdKinoCBhG/liIIL+iaM4ts3MGMBCQ=="
 }
