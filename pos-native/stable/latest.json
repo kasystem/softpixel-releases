@@ -1,14 +1,14 @@
 {
-  "version": "1.0.50",
+  "version": "1.0.51",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.50/update.zip",
-  "sha256": "479bf0f07e768dc0def76ea2493bdf8f57dac68af0cc7f46ed05a253932686f2",
-  "size": 200533551,
-  "published_at": "2026-10-23T07:30:38.272Z",
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.51/update.zip",
+  "sha256": "f03a060d3086ecc850bb3abf80482ddb8ad98d79a5bcd63bde75b68aba56e7d9",
+  "size": 200533372,
+  "published_at": "2026-10-23T08:18:54.837Z",
   "notes": "",
-  "signature": "KdmbGwYqs4bcz+i0AmPmEeSGOyg9H5QEgBxNjlkqazxEuqme5w336hLTl7fTnNF9pV26H+5IcWxDxVHGIyQrBg=="
+  "signature": "qA9n3hchzRXRc1d9LEOJ79GwRTBxUSZLwDh+jHExmbw/IJTn9QfzE28u/i0vp2oPcpY7Cou2VEtA4jOQds//AA=="
 }
