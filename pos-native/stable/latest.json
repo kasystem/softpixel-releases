@@ -1,14 +1,14 @@
 {
-  "version": "1.0.48",
+  "version": "1.0.49",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.48/update.zip",
-  "sha256": "7ac501fc362490ed91bf2dd34177aba3bfced9b6682fdba79ad28a253929f740",
-  "size": 200484495,
-  "published_at": "2026-10-22T14:39:33.211Z",
-  "notes": "Windows SEF stable 1.0.48: kitchen/bar printer routing, CP858 Albanian characters, stock search and sortable stock/accounting tables.",
-  "signature": "nmHwLdp1lrYY5mXElfJE8FT2Mku5NJKIbaCUcOm5bFpMkfbcu0PUJxLdNQlDrsREkFqXBmm5T5oBobi4QrJzAA=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.49/update.zip",
+  "sha256": "efba6d19688b82b45df7c563984c996debb60936ea519da64b26c7be96fc5555",
+  "size": 200533355,
+  "published_at": "2026-10-23T06:39:38.735Z",
+  "notes": "",
+  "signature": "iNmtno3nTNDe8EjzvAuX4aRPvpKHV4w6m5WH2LRDZWp3mT/9tyYu7WH4HvG8FGlEjvUMvswlm/rT9/IsQVSfAg=="
 }
