@@ -1,14 +1,14 @@
 {
-  "version": "1.0.52",
+  "version": "1.0.53",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.52/update.zip",
-  "sha256": "89750540f397fdb64757f433d176ae145884a657c17667bf4263289b73581128",
-  "size": 200555020,
-  "published_at": "2026-10-23T11:29:21.815Z",
-  "notes": "Lokalizim i plotë SR/EN për Windows, Market dhe Mobile.",
-  "signature": "/5iIm8q4aonKjVQfDYKp1W6+TRjSOH0kRAcowSa8bPkSCjL17SeSgcvnCdKinoCBhG/liIIL+iaM4ts3MGMBCQ=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.53/update.zip",
+  "sha256": "d411914da28bf87f7cf6828915c67558fb057ca9bc87b599d1a30ed73b49c0e4",
+  "size": 200564862,
+  "published_at": "2026-10-24T17:02:38.507Z",
+  "notes": "SEF Windows 1.0.53: bug fixes, localization and client picker update",
+  "signature": "uOO+xaWac3cUsFEBjg5jJXZ5hoMov1as4QESThayG3LsbYb9KppUsVsu2FLWjdtWQcMefVvqN0aGEDCpiAl+Bw=="
 }
