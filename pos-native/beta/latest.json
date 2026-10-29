@@ -1,0 +1,14 @@
+{
+  "version": "1.0.56",
+  "product_id": "com.programeri.pos",
+  "channel": "beta",
+  "architecture": "x64",
+  "min_db_schema": 1,
+  "max_db_schema": 1,
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.56/update.zip",
+  "sha256": "e64ee00f3be806577825e0dbc06953052e95514a4f11e1e70429b5f0d424f643",
+  "size": 200739020,
+  "published_at": "2026-10-29T21:01:14.594Z",
+  "notes": "Mjeku SEF integration and latest executable selection; A4 financial statement line drilldowns and supporting books; ATK fiscal-time and coupon preview updates; accountant report/mobile improvements.",
+  "signature": "0PBnDT3MWpnVfne2DXoK57VDj2AFwsGCHZFaUIO2Qj/NJbfhvKVz1BJ7581jJvthkkiwWnks/FGQ2KVBCzIWAw=="
+}
