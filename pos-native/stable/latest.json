@@ -1,14 +1,14 @@
 {
-  "version": "1.0.58",
+  "version": "1.0.59",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.58/update.zip",
-  "sha256": "56f173be6e69f8ef9a078165da112001d90a6199684c9b40ee1d80afdd63cd05",
-  "size": 200800221,
-  "published_at": "2026-10-30T19:58:55.833Z",
-  "notes": "Shitje me Pako/Komplet (F4), ndreqje kthim/anulim stoku, gate normative, sinkronizim bashkimi i ures fiskale MJEKU SEF",
-  "signature": "IhHN/pPONCGAOJfZeQRLDfYY7iiadys9BjthIP9PE0YQWp+Pvr+ARcSyCVBJcy4tOyj0n1uZfJiPuvoAuFwuCA=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.59/update.zip",
+  "sha256": "dc74e5b0209c468493016813519bb383835d19adf04ea62be50d25582929a916",
+  "size": 211580192,
+  "published_at": "2026-10-30T22:28:45.635Z",
+  "notes": "Qasja ATK nga Mjeku regjistrohet si kyqje; perfshihet Mjeku Windows.",
+  "signature": "hE/6SFbLZXNcdCWfIhDBwZSa1yvomlY0aTZO91E4M39reACwEmdiJCosoCexJCu55Yc07TkTNO5UG2T5jw26Dw=="
 }
