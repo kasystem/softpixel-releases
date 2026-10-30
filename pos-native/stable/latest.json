@@ -1,14 +1,14 @@
 {
-  "version": "1.0.53",
+  "version": "1.0.57",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.53/update.zip",
-  "sha256": "d411914da28bf87f7cf6828915c67558fb057ca9bc87b599d1a30ed73b49c0e4",
-  "size": 200564862,
-  "published_at": "2026-10-24T17:02:38.507Z",
-  "notes": "SEF Windows 1.0.53: bug fixes, localization and client picker update",
-  "signature": "uOO+xaWac3cUsFEBjg5jJXZ5hoMov1as4QESThayG3LsbYb9KppUsVsu2FLWjdtWQcMefVvqN0aGEDCpiAl+Bw=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.57/update.zip",
+  "sha256": "39744e48f43906c0ca4f4f8b66e238db01c320fa85a46f26bc9093fd1c2f297e",
+  "size": 200757850,
+  "published_at": "2026-10-30T07:00:52.465Z",
+  "notes": "Integrim SEF i Mjekut, përmirësime të orës fiskale ATK, kuponëve, statistikave dhe librave financiarë.",
+  "signature": "zD029bRMcNce/WgH6QNanlF2B/6DlssMG5AmvSPtdvxAqEHWE5kiYAnITm1RN5Nm0Afq+VLrb/ULATfrWbiMAg=="
 }
