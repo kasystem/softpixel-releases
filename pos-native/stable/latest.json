@@ -1,14 +1,14 @@
 {
-  "version": "1.0.64",
+  "version": "1.0.65",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.64/update.zip",
-  "sha256": "fa1c116db24824ece5e06d6f78427fc7c1e9d8dde980a6e54d21fa4814b569c7",
-  "size": 213208909,
-  "published_at": "2026-10-31T23:59:33.110Z",
-  "notes": "Fix kritik: crash per modul jo-restaurant; aktivizim direkt Mjeku; PDF B2B identik me parapamjen; fix Dil; fix 0.00 Faturat B2B; fix TVSH per biznes pa TVSH; fix emri produktit; rikthim Sinkronizimet; Mjeku i bashkangjitur",
-  "signature": "aB+XrrxKwwi80JK2BnKO1t++TJbBsLOosuX9f3HzY1DICq6gqgUEkD3DlSGr3qJCtNaxI4y06DeSFm8JtEytAw=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.65/update.zip",
+  "sha256": "d7ae40bff4eb5303661308c917ebbbc80c216ea290d9036e3ee70d56705570ac",
+  "size": 213209114,
+  "published_at": "2026-11-01T14:01:22.550Z",
+  "notes": "Fix: butoni Sinkronizimet nuk hapte asgje (paneli s'ishte i zhvendosur ne panelHost-in e ri)",
+  "signature": "QqVHhr1/vCjZL4j3oXCZj0mPQv6KXN0D6YGipgOMJP60nUc4emJamZm/7ppkpejpGtTTMcbko4EAXYBPA2lTDg=="
 }
