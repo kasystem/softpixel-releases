@@ -1,14 +1,14 @@
 {
-  "version": "1.0.59",
+  "version": "1.0.64",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.59/update.zip",
-  "sha256": "dc74e5b0209c468493016813519bb383835d19adf04ea62be50d25582929a916",
-  "size": 211580192,
-  "published_at": "2026-10-30T22:28:45.635Z",
-  "notes": "Qasja ATK nga Mjeku regjistrohet si kyqje; perfshihet Mjeku Windows.",
-  "signature": "hE/6SFbLZXNcdCWfIhDBwZSa1yvomlY0aTZO91E4M39reACwEmdiJCosoCexJCu55Yc07TkTNO5UG2T5jw26Dw=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.64/update.zip",
+  "sha256": "fa1c116db24824ece5e06d6f78427fc7c1e9d8dde980a6e54d21fa4814b569c7",
+  "size": 213208909,
+  "published_at": "2026-10-31T23:59:33.110Z",
+  "notes": "Fix kritik: crash per modul jo-restaurant; aktivizim direkt Mjeku; PDF B2B identik me parapamjen; fix Dil; fix 0.00 Faturat B2B; fix TVSH per biznes pa TVSH; fix emri produktit; rikthim Sinkronizimet; Mjeku i bashkangjitur",
+  "signature": "aB+XrrxKwwi80JK2BnKO1t++TJbBsLOosuX9f3HzY1DICq6gqgUEkD3DlSGr3qJCtNaxI4y06DeSFm8JtEytAw=="
 }
