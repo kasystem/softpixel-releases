@@ -1,14 +1,14 @@
 {
-  "version": "1.0.65",
+  "version": "1.0.66",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.65/update.zip",
-  "sha256": "d7ae40bff4eb5303661308c917ebbbc80c216ea290d9036e3ee70d56705570ac",
-  "size": 213209114,
-  "published_at": "2026-11-01T14:01:22.550Z",
-  "notes": "Fix: butoni Sinkronizimet nuk hapte asgje (paneli s'ishte i zhvendosur ne panelHost-in e ri)",
-  "signature": "QqVHhr1/vCjZL4j3oXCZj0mPQv6KXN0D6YGipgOMJP60nUc4emJamZm/7ppkpejpGtTTMcbko4EAXYBPA2lTDg=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.66/update.zip",
+  "sha256": "d04ed6f5251df6fb02aace0c5e11479f65ac388163f1ed2dc2fbee2502c02442",
+  "size": 200928148,
+  "published_at": "2026-11-03T10:40:41.391Z",
+  "notes": "Kontabilitet dhe pasqyra financiare, inventory accounting, raportimi paralel, kthimet fiskale dhe permiresime te radhes SEF.",
+  "signature": "sc0FwtUEMUMjKjQny708nL15XEtcamCENkTZ3V34pti7QJp0nCZeoAeh1BsV1lDt6d0gZ1HAq8BOEFItP/ohDg=="
 }
