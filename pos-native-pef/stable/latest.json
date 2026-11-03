@@ -1,14 +1,14 @@
 {
-  "version": "1.0.55",
+  "version": "1.0.66",
   "product_id": "com.programeri.pos.pef",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.55/update.zip",
-  "sha256": "265cb422729428465805bfb56a572d760ef25ee21b264ba6e213fcc031cb5e7f",
-  "size": 226661915,
-  "published_at": "2026-10-26T22:48:33.339Z",
-  "notes": "PEF KONTO: Faturat B2B, A4 riprint dhe statistikat",
-  "signature": "baaYTN3UFUiDrySd2HQxhFy2yFXFDLpeKPLQfRsiYhx2rXjkxWDkMgl49VZKjUSyyc21G4prRtGea+aLqYnLDA=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.66/update.zip",
+  "sha256": "1e017841ca92e74b39ffc85653b889dd34d697263ab6fc8afb1975c9848cea72",
+  "size": 227496362,
+  "published_at": "2026-11-03T10:58:34.667Z",
+  "notes": "Përmirësime të kontabilitetit, pasqyrave financiare, inventarit dhe përvojës në PEF KONTO.",
+  "signature": "QBgU92q80RgoO6knBD7hu1mFLjnyMOeXI9bT6SwP172ooN6PNBBWICnsh8mV0zdiTrygAmHdhNZInt9FZMPVCg=="
 }
