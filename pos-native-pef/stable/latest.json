@@ -1,14 +1,14 @@
 {
-  "version": "1.0.66",
+  "version": "1.0.71",
   "product_id": "com.programeri.pos.pef",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.66/update.zip",
-  "sha256": "1e017841ca92e74b39ffc85653b889dd34d697263ab6fc8afb1975c9848cea72",
-  "size": 227496362,
-  "published_at": "2026-11-03T10:58:34.667Z",
-  "notes": "Përmirësime të kontabilitetit, pasqyrave financiare, inventarit dhe përvojës në PEF KONTO.",
-  "signature": "QBgU92q80RgoO6knBD7hu1mFLjnyMOeXI9bT6SwP172ooN6PNBBWICnsh8mV0zdiTrygAmHdhNZInt9FZMPVCg=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.71/update.zip",
+  "sha256": "952dee764926c1f2bdc652462e721f66e715b533ebf39cedd980e7b6dec515f9",
+  "size": 231882960,
+  "published_at": "2026-11-08T14:48:40.915Z",
+  "notes": "Fatura A4: numerim i ndarë PEF (F-PP) dhe SEF (F-SP). Kontabiliteti në shqip, konto sipas llojit të artikullit dhe raporte të reja kontosh. Rregullime në pagesa dhe stok.",
+  "signature": "KV1QE8UTyG7oryNwvjCoZUxoF7lB7gcf9cBiUAJ27lY16KRxfQ0rhOltYNBOiNwExssTNc9OlMyYFk7a+oViCA=="
 }
