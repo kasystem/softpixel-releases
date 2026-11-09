@@ -1,14 +1,14 @@
 {
-  "version": "1.0.74",
+  "version": "1.0.76",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.74/update.zip",
-  "sha256": "b821d66a4e6fa962f33e669bcb015ea9950dbf16aecef3b71ae6359949ab5262",
-  "size": 219260470,
-  "published_at": "2026-11-09T09:02:56.815Z",
-  "notes": "Kupon SEF me i shpejte, rregullime TVSH, depo, sinkronizim tavolinash, Mjeku 0.6.2",
-  "signature": "ZwuJPWPwLwkk6vcfHcR1mIfCGqWUj7uqdp8VA98dszbUewXBQrrrEXI9EfWV20/M4T85Vh2Av7a7mZ7U/yJiAQ=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.76/update.zip",
+  "sha256": "513c2a5dd74141f5a74befdafc653dbea748be5faa979d964294abc776261c93",
+  "size": 220072667,
+  "published_at": "2026-11-09T20:36:38.560Z",
+  "notes": "1.0.76: Zbërthimet te Kontabiliteti (KMSH, stoku, TVSH, tatimi, pasqyrat, ditari, arka/banka, klientët/furnitorët, pagat, asetet) me eksport PDF/Excel; korrigjimi i stokut më i sigurt; ndryshim i produkteve në grup; DUD automatik për blerjet import; CRM te Klientë & Furnitorë.",
+  "signature": "GqW32R5Z9QtXKN3JA4/u4SfQcKP0w8HW7WN803JbPLjEKNKOke/+Tl6KzTDIiJlO4cR7+xcY8YXvzSlw7q7kCg=="
 }
