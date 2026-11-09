@@ -1,14 +1,14 @@
 {
-  "version": "1.0.71",
+  "version": "1.0.74",
   "product_id": "com.programeri.pos.pef",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.71/update.zip",
-  "sha256": "952dee764926c1f2bdc652462e721f66e715b533ebf39cedd980e7b6dec515f9",
-  "size": 231882960,
-  "published_at": "2026-11-08T14:48:40.915Z",
-  "notes": "Fatura A4: numerim i ndarë PEF (F-PP) dhe SEF (F-SP). Kontabiliteti në shqip, konto sipas llojit të artikullit dhe raporte të reja kontosh. Rregullime në pagesa dhe stok.",
-  "signature": "KV1QE8UTyG7oryNwvjCoZUxoF7lB7gcf9cBiUAJ27lY16KRxfQ0rhOltYNBOiNwExssTNc9OlMyYFk7a+oViCA=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.74/update.zip",
+  "sha256": "9428a69a4dacf47e91eea3dd028cf181a1a2831dfa49d3e365880fea90b9e783",
+  "size": 248228417,
+  "published_at": "2026-11-09T09:19:55.319Z",
+  "notes": "Motori RED (testim), fshirja e faturave te Kontabilistit, rregullime TVSH dhe depo, sinkronizim tavolinash",
+  "signature": "gUQUHVYqVv50/YZenJfmUYSZK6yx7vHWYaolBBQH4TC0c6NlVq8yQxD+BshtagDiyXLf9S9y1LT0ds7kupOsDA=="
 }
