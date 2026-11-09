@@ -1,14 +1,14 @@
 {
-  "version": "1.0.71",
+  "version": "1.0.74",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.71/update.zip",
-  "sha256": "78570b7305fedbe1fe44671755086194c7cf8e5a975dee3c1a1caca9bcaace5c",
-  "size": 204472850,
-  "published_at": "2026-11-08T14:31:38.202Z",
-  "notes": "Fatura A4: numerim i ndarë PEF (F-PP) dhe SEF (F-SP). Kontabiliteti në shqip, konto sipas llojit të artikullit dhe raporte të reja kontosh. Rregullime në pagesa dhe stok.",
-  "signature": "rbERXZ2SxVqx2SdjPdqk43gJG/l4+STZ+l4FvgnpfnryUqWBd4N+uCzldgAeHsesz3XaAOEs7oiNyHp+cSljDQ=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.74/update.zip",
+  "sha256": "b821d66a4e6fa962f33e669bcb015ea9950dbf16aecef3b71ae6359949ab5262",
+  "size": 219260470,
+  "published_at": "2026-11-09T09:02:56.815Z",
+  "notes": "Kupon SEF me i shpejte, rregullime TVSH, depo, sinkronizim tavolinash, Mjeku 0.6.2",
+  "signature": "ZwuJPWPwLwkk6vcfHcR1mIfCGqWUj7uqdp8VA98dszbUewXBQrrrEXI9EfWV20/M4T85Vh2Av7a7mZ7U/yJiAQ=="
 }
