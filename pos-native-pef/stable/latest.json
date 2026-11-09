@@ -1,14 +1,14 @@
 {
-  "version": "1.0.74",
+  "version": "1.0.76",
   "product_id": "com.programeri.pos.pef",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.74/update.zip",
-  "sha256": "9428a69a4dacf47e91eea3dd028cf181a1a2831dfa49d3e365880fea90b9e783",
-  "size": 248228417,
-  "published_at": "2026-11-09T09:19:55.319Z",
-  "notes": "Motori RED (testim), fshirja e faturave te Kontabilistit, rregullime TVSH dhe depo, sinkronizim tavolinash",
-  "signature": "gUQUHVYqVv50/YZenJfmUYSZK6yx7vHWYaolBBQH4TC0c6NlVq8yQxD+BshtagDiyXLf9S9y1LT0ds7kupOsDA=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.76/update.zip",
+  "sha256": "7f51debd5a689bbbbf26513977fd8689e17b62b8f0b02e1baf0d5177ad928eb8",
+  "size": 249995330,
+  "published_at": "2026-11-09T20:17:27.659Z",
+  "notes": "1.0.76: Zbërthimet te Kontabiliteti (KMSH, stoku, TVSH, tatimi, pasqyrat, ditari, arka/banka, klientët/furnitorët, pagat, asetet) me eksport PDF/Excel; korrigjimi i stokut më i sigurt; ndryshim i produkteve në grup; DUD automatik për blerjet import; CRM te Klientë & Furnitorë.",
+  "signature": "o3iEelyrCncuNjhM5Hm3i4lDXS26c77Q3tU5p2e0EHLUymUwnSJ4UYfJvwrS/mvTL+boo9+2tLwSmSydAC3XCg=="
 }
