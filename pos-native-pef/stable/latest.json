@@ -1,14 +1,14 @@
 {
-  "version": "1.0.76",
+  "version": "1.0.78",
   "product_id": "com.programeri.pos.pef",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.76/update.zip",
-  "sha256": "7f51debd5a689bbbbf26513977fd8689e17b62b8f0b02e1baf0d5177ad928eb8",
-  "size": 249995330,
-  "published_at": "2026-11-09T20:17:27.659Z",
-  "notes": "1.0.76: Zbërthimet te Kontabiliteti (KMSH, stoku, TVSH, tatimi, pasqyrat, ditari, arka/banka, klientët/furnitorët, pagat, asetet) me eksport PDF/Excel; korrigjimi i stokut më i sigurt; ndryshim i produkteve në grup; DUD automatik për blerjet import; CRM te Klientë & Furnitorë.",
-  "signature": "o3iEelyrCncuNjhM5Hm3i4lDXS26c77Q3tU5p2e0EHLUymUwnSJ4UYfJvwrS/mvTL+boo9+2tLwSmSydAC3XCg=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.78/update.zip",
+  "sha256": "715b4e05ddc476aa92062bf90a9a0d7cd1054562ce65c85d08296933291b514e",
+  "size": 250277809,
+  "published_at": "2026-11-10T12:41:03.678Z",
+  "notes": "1.0.78: Fatura A4 B2B e njëjtë në Windows dhe Mobile (Statistikat me të njëjtat opsione); fatura B2B pa kupon postohet si kupon (kostoja/stoku në libra); Kontabiliteti hapet më shpejt me \"Duke ngarkuar…\"; dritaret e Fletës/Planit kontabël dhe Stokut s'japin më gabim; kuponi SEF më i shpejtë pas pauzave; RED (PEF) s'shkon kurrë te pajisjet SEF; Zbërthimet më të sakta; etiketa peshoreje; përmirësime të tjera.",
+  "signature": "5Y0LrrW69j0MkCh87Axn59kXd32o6qBObZYY5jfnMf63TIq8Fjo0GuieHmh2Z1O4X/dUEcGJq8qKLZurmUdpBw=="
 }
