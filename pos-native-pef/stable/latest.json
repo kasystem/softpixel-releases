@@ -1,14 +1,14 @@
 {
-  "version": "1.0.81",
+  "version": "1.0.82",
   "product_id": "com.programeri.pos.pef",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.81/update.zip",
-  "sha256": "96ca5de2fc5fc76ab60e860e917b2759d7dc5ad60fe4815402d1cb3e8b9505f4",
-  "size": 251160285,
-  "published_at": "2026-11-11T12:33:50.604Z",
-  "notes": "Njësitë e lidhura (copë / pako / paletë): lidhje me produkt ekzistues, F4 i gjen të gjitha njësitë dhe e kthen sasinë; pakot zbresin nga copat ose kanë stok të vet (hapen vetë kur mungojnë copat).\nKDS aktivizohet/çaktivizohet te Parametrat → Kuzhina; porositë e paguara mbeten në KDS deri në dorëzim; ekrani i klientëve.\nHyrja në mes të vitit: të dhënat historike për pasqyrat vjetore. Peshorja: lexim i zgjuar i etiketave, lidhje manuale + Aprovo.\n\"Qasja ATK\" s'shfaqet më në PEF KONTO. Rregullime në pagesa, thesar, faturat e blerjes dhe hyrje.",
-  "signature": "YVKFzP7aoc6amgW9Um1WR0p+Lyt7ZZo3ymWlaMx+9C2lH4I431DMrq/ImGTeQQzPe580mWBlVylJ5KR84MjSBQ=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.82/update.zip",
+  "sha256": "2dfd411d83386961e27298852416a826e64e8fbcf456f935913b6e508c4721a3",
+  "size": 251258617,
+  "published_at": "2026-11-11T21:55:53.765Z",
+  "notes": "## PROGRAMERI POS 1.0.82\n\n- Përditësimet mund të lëshohen vetëm për disa klientë (Admin-paneli 2 · Versionet); pa rregull, të gjithë i marrin si më parë.\n- Stok & Fitim: s'shfaqen më \"Produkt për shitje\", shërbimet dhe produktet pa lloj; materiali i konsumit dhe ambalazhimi shfaqen me stok, pa fitim/marzh.\n- Njësitë e lidhura (copë / pako / paletë), KDS te Parametrat → Kuzhina, Peshorja (lexim i zgjuar + lidhje manuale), hyrja në mes të vitit.\n- Kontabiliteti: qiraja mujore, riklasifikimi i arkës, bankat (IBAN te fatura A4 B2B), korrigjime në librat dhe raportet.\n- Instalohet mbi versionin ekzistues pa humbur të dhëna.",
+  "signature": "dPJHiXuH8mZc16E3+6xRa5FI3HHmUNnAGK85lWhQytGeFwmvuxjWqRCOING7eAWhpZ4tbEnMujJG+eD/yl2VCg=="
 }
