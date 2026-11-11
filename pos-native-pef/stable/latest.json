@@ -1,14 +1,14 @@
 {
-  "version": "1.0.80",
+  "version": "1.0.81",
   "product_id": "com.programeri.pos.pef",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.80/update.zip",
-  "sha256": "68ce6d7f6d57c0769869b7d5f4aec61ea17b753229c4bd10c68c939392496345",
-  "size": 250729281,
-  "published_at": "2026-11-11T07:48:58.655Z",
-  "notes": "1.0.80: Kontabiliteti në nivel biznesi merr shitjet nga të gjitha POS-et (TVSH, Libri i Shitjes, raportet, IS/IL/PD24, Bilanci, KKRF); stoku negativ i çdo pajisjeje shihet në çdo PC dhe korrigjimi nga një pajisje tjetër (p.sh. PEF Konto) mbulon shitjet pa stok me kosto; stoku fillestar postohet në kontabilitet (Inventar / Kapital); Import Kosto e Stokut (Depot); kostoja e stokut sinkronizohet ndërmjet pajisjeve; importi i produkteve pranon llojet shqip dhe \"I pacaktuar\" si parazgjedhje; KMSH plotësohet për shitjet me kosto 0; fatura B2B: kuponi fiskal merr të njëjtën metodë pagese si fatura, fatura Cash s'del më borxh, fatura mban të dhënat e plota të blerësit edhe në pajisjet e tjera; B2B nga kuponët dhe fletëdërgesat; Market: kuponët e 30 ditëve te Kopje/Kthim/Anulim, peshorja mëson etiketat; logoja e kuponit më e qartë; KDS: porositë mbeten deri në dorëzim; punëtorët e dyfishtë bashkohen, te punëtorët detyrohet vetëm emri; Libri i Shitjes pa ndarje të gabuar 8%; përmirësimet e 1.0.79.",
-  "signature": "DdCRgxrhAX0xTFqc55LRfnnnfjsT/Q8mf93UstspFKqwR/YWFOZcKyXt4OtyqG2aKacVmvDdOg0G8Weveo1BDg=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.81/update.zip",
+  "sha256": "96ca5de2fc5fc76ab60e860e917b2759d7dc5ad60fe4815402d1cb3e8b9505f4",
+  "size": 251160285,
+  "published_at": "2026-11-11T12:33:50.604Z",
+  "notes": "Njësitë e lidhura (copë / pako / paletë): lidhje me produkt ekzistues, F4 i gjen të gjitha njësitë dhe e kthen sasinë; pakot zbresin nga copat ose kanë stok të vet (hapen vetë kur mungojnë copat).\nKDS aktivizohet/çaktivizohet te Parametrat → Kuzhina; porositë e paguara mbeten në KDS deri në dorëzim; ekrani i klientëve.\nHyrja në mes të vitit: të dhënat historike për pasqyrat vjetore. Peshorja: lexim i zgjuar i etiketave, lidhje manuale + Aprovo.\n\"Qasja ATK\" s'shfaqet më në PEF KONTO. Rregullime në pagesa, thesar, faturat e blerjes dhe hyrje.",
+  "signature": "YVKFzP7aoc6amgW9Um1WR0p+Lyt7ZZo3ymWlaMx+9C2lH4I431DMrq/ImGTeQQzPe580mWBlVylJ5KR84MjSBQ=="
 }
