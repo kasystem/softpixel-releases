@@ -1,14 +1,14 @@
 {
-  "version": "1.0.82",
+  "version": "1.0.85",
   "product_id": "com.programeri.pos.pef",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.82/update.zip",
-  "sha256": "2dfd411d83386961e27298852416a826e64e8fbcf456f935913b6e508c4721a3",
-  "size": 251258617,
-  "published_at": "2026-11-11T21:55:53.765Z",
-  "notes": "## PROGRAMERI POS 1.0.82\n\n- Përditësimet mund të lëshohen vetëm për disa klientë (Admin-paneli 2 · Versionet); pa rregull, të gjithë i marrin si më parë.\n- Stok & Fitim: s'shfaqen më \"Produkt për shitje\", shërbimet dhe produktet pa lloj; materiali i konsumit dhe ambalazhimi shfaqen me stok, pa fitim/marzh.\n- Njësitë e lidhura (copë / pako / paletë), KDS te Parametrat → Kuzhina, Peshorja (lexim i zgjuar + lidhje manuale), hyrja në mes të vitit.\n- Kontabiliteti: qiraja mujore, riklasifikimi i arkës, bankat (IBAN te fatura A4 B2B), korrigjime në librat dhe raportet.\n- Instalohet mbi versionin ekzistues pa humbur të dhëna.",
-  "signature": "dPJHiXuH8mZc16E3+6xRa5FI3HHmUNnAGK85lWhQytGeFwmvuxjWqRCOING7eAWhpZ4tbEnMujJG+eD/yl2VCg=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.85/update.zip",
+  "sha256": "43b82abf40dc1453648631bd80f6926e59dfb490abe3e4295bdee4a916dcc2e1",
+  "size": 297560531,
+  "published_at": "2026-11-14T14:05:12.703Z",
+  "notes": "## PEF KONTO 1.0.85\n\n- Sinkronizimi: porositë dhe kontabiliteti dërgohen në pjesë ditore (biznese me shumë kuponë s'ngecin më; pajisjet e reja nisin më shpejt).\n- Çmimi i degës s'humbet më te pajisjet e reja (produktet shfaqeshin me 0.00); stoku negativ shihet nga çdo PC i degës pa kopje të tepërta.\n- Faturat e blerjes: korrigjim i faturës së postuar, kthimet në librin e blerjeve, DUD/Import me TVSH të saktë, investimet me kutitë e veta të TVSH-së.\n- Pagesat me kartelë: direkt te banka e POS-it si \"pa konfirmuar\" deri te ekstrakti. Ekstrakti: tërheqje/depozitime në arkë.\n- Fatura B2B termike 58/80/100 mm ose A4; PEF s'printon kurrë ESC/POS te pajisja fiskale.\n- Pasqyrat financiare vjetore nga libri; kategoria \"Energji\"; importi opsional i historisë tatimore nga ATK.\n- Mjeku 0.6.4 i përfshirë; MetalDesigner: shfletuesi i projekteve.\n- Instalohet mbi versionin ekzistues pa humbur të dhëna.",
+  "signature": "trAoxFNSs99fQpr3y1MW+EjbeZPW1Uk2V+dpeYPArV7cBqyRIfWlW7gBEgNSePsoozsRw7HbXTd9in3aDaq8Cw=="
 }
