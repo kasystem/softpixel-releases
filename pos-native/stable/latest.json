@@ -1,14 +1,14 @@
 {
-  "version": "1.0.85",
+  "version": "1.0.86",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.85/update.zip",
-  "sha256": "83d60554339f036a5fc5dacc74965595aad1094e680cfdf0fd8bb03850edd982",
-  "size": 260155705,
-  "published_at": "2026-11-14T13:24:50.899Z",
-  "notes": "## PROGRAMERI POS 1.0.85\n\n- Sinkronizimi: porositë dhe kontabiliteti dërgohen në pjesë ditore (biznese me shumë kuponë s'ngecin më; pajisjet e reja nisin më shpejt).\n- Çmimi i degës s'humbet më te pajisjet e reja (produktet shfaqeshin me 0.00); stoku negativ shihet nga çdo PC i degës pa kopje të tepërta.\n- Faturat e blerjes: korrigjim i faturës së postuar, kthimet në librin e blerjeve, DUD/Import me TVSH të saktë, investimet me kutitë e veta të TVSH-së.\n- Pagesat me kartelë: direkt te banka e POS-it si \"pa konfirmuar\" deri te ekstrakti. Ekstrakti: tërheqje/depozitime në arkë.\n- Fatura B2B termike 58/80/100 mm ose A4; PEF s'printon kurrë ESC/POS te pajisja fiskale.\n- Pasqyrat financiare vjetore nga libri; kategoria \"Energji\"; importi opsional i historisë tatimore nga ATK.\n- Mjeku 0.6.4 i përfshirë; MetalDesigner: shfletuesi i projekteve.\n- Instalohet mbi versionin ekzistues pa humbur të dhëna.",
-  "signature": "1H+GJyjd4E8SJxjxLvBBAKiSIlGbHumDcPEld9gFbCe2lhqvHMbdoGrnMUN6f47mWu3Y0eHSX3vNnpSV6KGrDw=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.86/update.zip",
+  "sha256": "a184e4630ba9b422d9bec7ee707aa409b9cf09d1e6023c9d1564bdb08ff16dee",
+  "size": 260540020,
+  "published_at": "2026-11-15T23:47:19.241Z",
+  "notes": "Faturat B2B:\n- Një dritare e vetme për faturën B2B te \"Printo Fiskal\"; formati merret nga Parametrat → Printeri B2B.\n- Printimi A4 hapet me 2 kopje (numri ndryshohet në dialog); fatura termike ka vend për nënshkrim.\n- Shtim i shpejtë i bankës (IBAN + konto) direkt nga fatura.\n- Pagesa me kesh mund të shënohet si borxh; pagesa me kartelë shkon te xhirollogaria.\n\nKontabiliteti:\n- Kapitali i pronarit (fillestar / shtim / tërheqje) postohet te arka ose xhirollogaria dhe del te librat, ditari dhe bilanci.\n- Import periodik i librave të shitjeve dhe blerjeve; bartja e TVSH-së së blerjes në muaj tjetër dhe e tepricës së TVSH-së.\n- Plani kontabël me konto të veta, rrjedhat e parasë, rabatet & zbritjet e klientëve, notat kreditore të rabatit.\n- Thesari si tab pranë Bankave; ekstrakti bankar me lidhje konto për çdo rresht.\n- Kalkulatorët ATK me dizajn të ri (rregullohet gabimi \"Cannot set Owner\").\n\nTë tjera:\n- \"Mbaj mend emrin dhe fjalëkalimin\" pa hyrje automatike.\n- Rregullim i sinkronizimit për kapitalin, këstet e tatimit në fitim dhe qiranë.\n- Të dhënat ekzistuese ruhen; përditësimi instalohet mbi versionin aktual.",
+  "signature": "C/ClV+fosHI/lTgZjNUwDWx8C/7vyrwwCUJ3EsYOBVS2sHyXS7o2VsR7/PcMbQXlijrIFeSdvlgcRw/fRDQ0Cw=="
 }
