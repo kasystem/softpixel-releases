@@ -1,14 +1,14 @@
 {
-  "version": "1.0.89",
+  "version": "1.0.90",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.89/update.zip",
-  "sha256": "390ce2d398263b3c9467e5a757f07f91aed1799aff97c2696a560c8529855c46",
-  "size": 249889290,
-  "published_at": "2026-11-16T22:00:00.651Z",
-  "notes": "PROGRAMERI POS 1.0.89\n- Anulimi i kuponit SEF nga ekrani i shitjes (Market) tani e kthen stokun dhe regjistron notën kreditore; anulimet e mëparshme që s'e kthyen stokun rregullohen automatikisht një herë pas përditësimit.\n- Anulim/kthim: produkti për rishitje kthehet direkt në stok, produkti me normativë kthen lëndët; kur s'ka çka të kthehet, shfaqet \"Kthim në pezull\" te Stoqet në Pritje.\n- Faturat: anulimet dhe kthimet shfaqen si rreshta, fatura origjinale \"Anuluar\"; Dashboard u hoq, Statistikat hapen te Faturat; rreshta për faqe deri \"Të gjitha\", kërkim sipas tavolinës dhe listime sipas punëtorit, klientit, ditës, muajit, metodës.\n- Biznesi pa TVSH: detajet e faturës s'tregojnë më TVSH.\n- Përdoruesit: emrat e plotë sinkronizohen ndërmjet pajisjeve dhe shfaqen te \"Shitësi\".\n- Produktet: Kategoria ATK mund të ndryshohet gjithmonë; Lloji i stokut mund të ndryshohet një herë edhe pasi produkti ka stok/shitje.\n- Plani kontabël me nënkonto, lidhje automatike dhe tabi \"Rrjedhjet\" (paraja, banka, veprimet kontabël).\n- Përmirësime të tjera në module (Telefonat & Garancionet, Mallrat jashtë përdorimit, afatet e skadimit, PVC/Metal).",
-  "signature": "I1zaI/TBji5/7aCudY6QJ84ALEX5TOtLWsCLvKwbG3BLsysgaa9dyohCWkgn34s1iqh6NamCjHXHqJOlea9wAA=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.90/update.zip",
+  "sha256": "f98f3ed3d55c4a92688462946d91f3c09c4a1f54a52dc58c1a70aa27e0881888",
+  "size": 249971037,
+  "published_at": "2026-11-16T23:42:40.522Z",
+  "notes": "PROGRAMERI POS 1.0.90\n- Profili tatimor (forma ligjore SH.P.K./B.I.) dhe regjimi tatimor sinkronizohen në të gjitha pajisjet e biznesit.\n- Biznesi pa TVSH: anulimet dhe kthimet s'kanë më TVSH; notat e mëparshme me TVSH rregullohen automatikisht.\n- Anulimi i kuponit s'dështon më për koston (edhe kur malli u shit pa stok); anulimet e ndalura riprovohen automatikisht.\n- \"Produktet pa stok\": shfaq vetëm stokun negativ aktual.\n- Tatimi në qarkullim (TQ): kthimet dhe anulimet e ulin bazën.",
+  "signature": "qpF4isONXSi9zBeJ0Zzz8Exn0KAenFlc/7pVSp3Ama+mSbXfyT4czsKxieP52s5eAzeOSkIxmRxit7MIHx7IBA=="
 }
