@@ -1,14 +1,14 @@
 {
-  "version": "1.0.86",
+  "version": "1.0.89",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.86/update.zip",
-  "sha256": "a184e4630ba9b422d9bec7ee707aa409b9cf09d1e6023c9d1564bdb08ff16dee",
-  "size": 260540020,
-  "published_at": "2026-11-15T23:47:19.241Z",
-  "notes": "Faturat B2B:\n- Një dritare e vetme për faturën B2B te \"Printo Fiskal\"; formati merret nga Parametrat → Printeri B2B.\n- Printimi A4 hapet me 2 kopje (numri ndryshohet në dialog); fatura termike ka vend për nënshkrim.\n- Shtim i shpejtë i bankës (IBAN + konto) direkt nga fatura.\n- Pagesa me kesh mund të shënohet si borxh; pagesa me kartelë shkon te xhirollogaria.\n\nKontabiliteti:\n- Kapitali i pronarit (fillestar / shtim / tërheqje) postohet te arka ose xhirollogaria dhe del te librat, ditari dhe bilanci.\n- Import periodik i librave të shitjeve dhe blerjeve; bartja e TVSH-së së blerjes në muaj tjetër dhe e tepricës së TVSH-së.\n- Plani kontabël me konto të veta, rrjedhat e parasë, rabatet & zbritjet e klientëve, notat kreditore të rabatit.\n- Thesari si tab pranë Bankave; ekstrakti bankar me lidhje konto për çdo rresht.\n- Kalkulatorët ATK me dizajn të ri (rregullohet gabimi \"Cannot set Owner\").\n\nTë tjera:\n- \"Mbaj mend emrin dhe fjalëkalimin\" pa hyrje automatike.\n- Rregullim i sinkronizimit për kapitalin, këstet e tatimit në fitim dhe qiranë.\n- Të dhënat ekzistuese ruhen; përditësimi instalohet mbi versionin aktual.",
-  "signature": "C/ClV+fosHI/lTgZjNUwDWx8C/7vyrwwCUJ3EsYOBVS2sHyXS7o2VsR7/PcMbQXlijrIFeSdvlgcRw/fRDQ0Cw=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.89/update.zip",
+  "sha256": "390ce2d398263b3c9467e5a757f07f91aed1799aff97c2696a560c8529855c46",
+  "size": 249889290,
+  "published_at": "2026-11-16T22:00:00.651Z",
+  "notes": "PROGRAMERI POS 1.0.89\n- Anulimi i kuponit SEF nga ekrani i shitjes (Market) tani e kthen stokun dhe regjistron notën kreditore; anulimet e mëparshme që s'e kthyen stokun rregullohen automatikisht një herë pas përditësimit.\n- Anulim/kthim: produkti për rishitje kthehet direkt në stok, produkti me normativë kthen lëndët; kur s'ka çka të kthehet, shfaqet \"Kthim në pezull\" te Stoqet në Pritje.\n- Faturat: anulimet dhe kthimet shfaqen si rreshta, fatura origjinale \"Anuluar\"; Dashboard u hoq, Statistikat hapen te Faturat; rreshta për faqe deri \"Të gjitha\", kërkim sipas tavolinës dhe listime sipas punëtorit, klientit, ditës, muajit, metodës.\n- Biznesi pa TVSH: detajet e faturës s'tregojnë më TVSH.\n- Përdoruesit: emrat e plotë sinkronizohen ndërmjet pajisjeve dhe shfaqen te \"Shitësi\".\n- Produktet: Kategoria ATK mund të ndryshohet gjithmonë; Lloji i stokut mund të ndryshohet një herë edhe pasi produkti ka stok/shitje.\n- Plani kontabël me nënkonto, lidhje automatike dhe tabi \"Rrjedhjet\" (paraja, banka, veprimet kontabël).\n- Përmirësime të tjera në module (Telefonat & Garancionet, Mallrat jashtë përdorimit, afatet e skadimit, PVC/Metal).",
+  "signature": "I1zaI/TBji5/7aCudY6QJ84ALEX5TOtLWsCLvKwbG3BLsysgaa9dyohCWkgn34s1iqh6NamCjHXHqJOlea9wAA=="
 }
