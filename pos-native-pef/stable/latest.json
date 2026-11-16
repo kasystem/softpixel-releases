@@ -1,14 +1,14 @@
 {
-  "version": "1.0.86",
+  "version": "1.0.89",
   "product_id": "com.programeri.pos.pef",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.86/update.zip",
-  "sha256": "2f65447d35fbf4a4d3d34ad4b62c34072941b4280fe04556a2322fab54779739",
-  "size": 298311159,
-  "published_at": "2026-11-16T00:15:43.733Z",
-  "notes": "Faturat B2B:\n- Një dritare e vetme për faturën B2B te \"Printo Fiskal\"; formati merret nga Parametrat → Printeri B2B.\n- Printimi A4 hapet me 2 kopje (numri ndryshohet në dialog); fatura termike ka vend për nënshkrim.\n- Shtim i shpejtë i bankës (IBAN + konto) direkt nga fatura.\n- Pagesa me kesh mund të shënohet si borxh; pagesa me kartelë shkon te xhirollogaria.\n\nKontabiliteti:\n- Kapitali i pronarit (fillestar / shtim / tërheqje) postohet te arka ose xhirollogaria dhe del te librat, ditari dhe bilanci.\n- Import periodik i librave të shitjeve dhe blerjeve; bartja e TVSH-së së blerjes në muaj tjetër dhe e tepricës së TVSH-së.\n- Plani kontabël me konto të veta, rrjedhat e parasë, rabatet & zbritjet e klientëve, notat kreditore të rabatit.\n- Thesari si tab pranë Bankave; ekstrakti bankar me lidhje konto për çdo rresht.\n- Kalkulatorët ATK me dizajn të ri (rregullohet gabimi \"Cannot set Owner\").\n\nTë tjera:\n- \"Mbaj mend emrin dhe fjalëkalimin\" pa hyrje automatike.\n- Rregullim i sinkronizimit për kapitalin, këstet e tatimit në fitim dhe qiranë.\n- Të dhënat ekzistuese ruhen; përditësimi instalohet mbi versionin aktual.",
-  "signature": "bPLKchbD26GVqUl7GfIRPlLjIvQPr9r7qJqT/vUEHhoa/yPelaNBVF1VgQTnPzFh2YH43I14nVfJKTNzs7F7Bw=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.89/update.zip",
+  "sha256": "8cd6ae468cf54420099fda78f207bc820a255cbf393ab1aa5c8620acfa03f4d4",
+  "size": 288020513,
+  "published_at": "2026-11-16T22:40:04.482Z",
+  "notes": "PEF KONTO 1.0.89\n- Kthim/anulim: produkti për rishitje kthehet direkt në stok, produkti me normativë kthen lëndët; kur s'ka çka të kthehet, shfaqet \"Kthim në pezull\" te Stoqet në Pritje. Kthimi në arkë shfaqet edhe te Rrjedhjet.\n- Biznesi pa TVSH: korrigjimi i faturës hyrëse s'jep më \"TVSH e zbritshme\" (TVSH shkon në kosto); faturat e korrigjuara më parë rregullohen automatikisht një herë.\n- Faturat: anulimet dhe kthimet shfaqen si rreshta; Statistikat hapen te Faturat; rreshta për faqe deri \"Të gjitha\", kërkim sipas tavolinës dhe listime sipas punëtorit, klientit, ditës, muajit, metodës.\n- Përdoruesit: emrat e plotë sinkronizohen ndërmjet pajisjeve dhe shfaqen te \"Shitësi\".\n- Produktet: Kategoria ATK mund të ndryshohet gjithmonë; Lloji i stokut një herë edhe pasi produkti ka stok/shitje; importi nga Excel lexon \"Kategoria ATK\".\n- Plani kontabël me nënkonto, lidhje automatike dhe tabi \"Rrjedhjet\".",
+  "signature": "vQMVLiVwMBPeF7VOnH+ZQL+h6zbHOCZNjU1U9tyY8yX8lrz6S/W8wzAeIHX3Xb8JfapvJaLZLu/lw4xWXsS6Dg=="
 }
