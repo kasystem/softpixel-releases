@@ -1,14 +1,14 @@
 {
-  "version": "1.0.91",
+  "version": "1.0.92",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.91/update.zip",
-  "sha256": "b6ca804048b55e0f1d1af9451a2545c27ac1c584351aa17db47bb6b9014d62fb",
-  "size": 249971045,
-  "published_at": "2026-11-17T07:35:52.157Z",
-  "notes": "1.0.91 — rregullim urgjent\n- Hyrja: përdoruesit admin/kont hapen sërish me fjalëkalimin e tyre (në disa pajisje 1.0.89/1.0.90 jepnin \"Përdoruesi ose fjalëkalimi nuk është i saktë\").",
-  "signature": "YuDB1ae/obDYZH8X+jnffO3DxSMPJbQlyEcL+0r9/F3L2X8ZRTsezPfjoBt8ww8JutdNzmPW1GK5J13UwarPDw=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.92/update.zip",
+  "sha256": "4880f61aba7ce41387e573e68972774a39a42f472fd4d2470da6b8f19865750c",
+  "size": 250551234,
+  "published_at": "2026-11-17T11:26:07.986Z",
+  "notes": "Thesari: skeda ATK (tatimi në paga, Trusti, TQ/TF, TVSH, qiraja, pagat neto, detyrime të tjera) dhe skeda \"Automjetet e biznesit\" (afatet, karburanti me km).\nBankat: çdo xhirollogari e re merr kontën e vet (102001…); butoni Fshi për xhirollogaritë pa veprime.\nShpenzimet: periudhë e veçantë për listën dhe Excel-in.\nRregullime: fatura e fshirë s'shfaqet te Rrjedhjet; DUD draft s'e kthen blerjen vendore në import; korrigjime në libra dhe raporte.",
+  "signature": "6BrFbuEeCZ8cSDCE7Ud7QafQf6ZBmPf3kZYOMwGEOIjsi2ucPQPamvYCwcawbgXgSNHRYJauc+LNY6zwIP7rBQ=="
 }
