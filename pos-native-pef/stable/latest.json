@@ -1,14 +1,14 @@
 {
-  "version": "1.0.90",
+  "version": "1.0.91",
   "product_id": "com.programeri.pos.pef",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.90/update.zip",
-  "sha256": "447844e1516211abe95ebc5ab100707834abdc0727731ca09ca168c96d14f367",
-  "size": 288186510,
-  "published_at": "2026-11-17T00:42:20.823Z",
-  "notes": "PEF KONTO 1.0.90\n- Profili tatimor (forma ligjore SH.P.K./B.I.) dhe regjimi tatimor sinkronizohen në të gjitha pajisjet e biznesit.\n- Biznesi pa TVSH: anulimet dhe kthimet s'kanë më TVSH; notat e mëparshme me TVSH rregullohen automatikisht.\n- Kthimi/anulimi s'dështon më për koston (edhe kur malli u shit pa stok); riprovohet automatikisht.\n- \"Produktet pa stok\": shfaq vetëm stokun negativ aktual.\n- Tatimi në qarkullim (TQ): kthimet dhe anulimet e ulin bazën.\n- \"Cilësimet\" pranë Kontabilitetit shfaqet vetëm pasi zgjidhet moduli i prodhimit.",
-  "signature": "SmG2+l+McdUx+E5Lco+DsCLtW3z6XYZLEqY2K5t4MuM5AK6aVBUq76HTuYoxfrdbhkByOSHsjXgiD02a9sUTCg=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.91/update.zip",
+  "sha256": "0d3199377d6d2f713f2bc8fe69a205d3c142697b8660e15f765d810cf8f65964",
+  "size": 288186170,
+  "published_at": "2026-11-17T07:48:07.301Z",
+  "notes": "1.0.91 — rregullim urgjent\n- Hyrja: përdoruesit admin/kont hapen sërish me fjalëkalimin e tyre (në disa pajisje 1.0.89/1.0.90 jepnin \"Përdoruesi ose fjalëkalimi nuk është i saktë\").",
+  "signature": "uEWaax9IhIy9R9YYiuDkxVvBRTSuaNAdrNYPHP8l98mRgB320SwKie7oVEWR/B1MwCzgrGx3mF0nywXIutQqCQ=="
 }
