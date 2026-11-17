@@ -1,14 +1,14 @@
 {
-  "version": "1.0.89",
+  "version": "1.0.90",
   "product_id": "com.programeri.pos.pef",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.89/update.zip",
-  "sha256": "8cd6ae468cf54420099fda78f207bc820a255cbf393ab1aa5c8620acfa03f4d4",
-  "size": 288020513,
-  "published_at": "2026-11-16T22:40:04.482Z",
-  "notes": "PEF KONTO 1.0.89\n- Kthim/anulim: produkti për rishitje kthehet direkt në stok, produkti me normativë kthen lëndët; kur s'ka çka të kthehet, shfaqet \"Kthim në pezull\" te Stoqet në Pritje. Kthimi në arkë shfaqet edhe te Rrjedhjet.\n- Biznesi pa TVSH: korrigjimi i faturës hyrëse s'jep më \"TVSH e zbritshme\" (TVSH shkon në kosto); faturat e korrigjuara më parë rregullohen automatikisht një herë.\n- Faturat: anulimet dhe kthimet shfaqen si rreshta; Statistikat hapen te Faturat; rreshta për faqe deri \"Të gjitha\", kërkim sipas tavolinës dhe listime sipas punëtorit, klientit, ditës, muajit, metodës.\n- Përdoruesit: emrat e plotë sinkronizohen ndërmjet pajisjeve dhe shfaqen te \"Shitësi\".\n- Produktet: Kategoria ATK mund të ndryshohet gjithmonë; Lloji i stokut një herë edhe pasi produkti ka stok/shitje; importi nga Excel lexon \"Kategoria ATK\".\n- Plani kontabël me nënkonto, lidhje automatike dhe tabi \"Rrjedhjet\".",
-  "signature": "vQMVLiVwMBPeF7VOnH+ZQL+h6zbHOCZNjU1U9tyY8yX8lrz6S/W8wzAeIHX3Xb8JfapvJaLZLu/lw4xWXsS6Dg=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.90/update.zip",
+  "sha256": "447844e1516211abe95ebc5ab100707834abdc0727731ca09ca168c96d14f367",
+  "size": 288186510,
+  "published_at": "2026-11-17T00:42:20.823Z",
+  "notes": "PEF KONTO 1.0.90\n- Profili tatimor (forma ligjore SH.P.K./B.I.) dhe regjimi tatimor sinkronizohen në të gjitha pajisjet e biznesit.\n- Biznesi pa TVSH: anulimet dhe kthimet s'kanë më TVSH; notat e mëparshme me TVSH rregullohen automatikisht.\n- Kthimi/anulimi s'dështon më për koston (edhe kur malli u shit pa stok); riprovohet automatikisht.\n- \"Produktet pa stok\": shfaq vetëm stokun negativ aktual.\n- Tatimi në qarkullim (TQ): kthimet dhe anulimet e ulin bazën.\n- \"Cilësimet\" pranë Kontabilitetit shfaqet vetëm pasi zgjidhet moduli i prodhimit.",
+  "signature": "SmG2+l+McdUx+E5Lco+DsCLtW3z6XYZLEqY2K5t4MuM5AK6aVBUq76HTuYoxfrdbhkByOSHsjXgiD02a9sUTCg=="
 }
