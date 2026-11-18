@@ -1,14 +1,14 @@
 {
-  "version": "1.0.93",
+  "version": "1.0.94",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.93/update.zip",
-  "sha256": "a278924b618a9f9fe9fe396669e775ff1db33edc15c24f2f0da7894de89c274b",
-  "size": 250713613,
-  "published_at": "2026-11-18T01:34:03.310Z",
-  "notes": "- **Teuta — asistentja AI e programit** (butoni ✨ Teuta poshtë djathtas, ose Ctrl+J), te Produktet, Statistikat, Faturat B2B dhe Kontabiliteti:\n  - Hap çdo ekran me fjalë: \"shko te thesari\", \"më dërgo te shpenzimet\", \"hap veturat\".\n  - Krijon produkt, klient ose furnitor nga një fjali (\"krijo produkt Coca Cola, çmimi 1,20\") — të plotëson formularin, ti e kontrollon dhe shtyp \"Ruaj\". Kategoria ATK sugjerohet vetë.\n  - Fatura B2B me bisedë: \"krijo faturë për klientin X\" → shkruan produktet → fatura krijohet para syve → \"gati\" e hap te editori për fiskalizim/printim.\n  - Lexon foton e faturës hyrëse dhe e ruan si draft për rishikim; produktet që mungojnë t'i propozon një nga një (çmimin e shitjes e cakton ti).\n  - \"Sa do të paguaj tatim këtë muaj?\" — TQ ose TF sipas regjimit (të dyja kur regjimi s'është caktuar), TVSH (ose pse s'paguan), tatimi në paga.\n  - Modeli AI punon BRENDA kompjuterit tënd (pa internet, të dhënat s'dalin nga pajisja). Shkarkohet një herë në sfond (≈3 GB) në kompjuterët me të paktën 8 GB RAM.\n- Dokument i ri (Ctrl+N): shtohet Thesari; DUD-i shfaqet vetëm kur aktivizohet te Rregullat e faturimit (sinkronizohet në të gjitha pajisjet).\n- DUD: dallimi faturë ↔ DUD tani vetëm paralajmëron.\n- Produktet: \"Sasia e parazgjedhur e shitjes\" (p.sh. 16 copë) — me një prekje ose skanim shtohet direkt ajo sasi.\n- Njësitë e klientit: një klient mund të ketë disa njësi (p.sh. në qytete të ndryshme). Te fatura B2B, oferta, profatura dhe fletëdërgesa zgjidhet njësia ku shitet/dërgohet malli dhe printohet në dokument; pa njësi, shitja bëhet në nivel biznesi. NUI-ja dhe fiskalizimi mbeten të klientit.\n- Përmirësime dhe rregullime të tjera të vogla.",
-  "signature": "C6jK/8xAaauGlnRvv+ikKZVRXM5f4SeQZ2k5phS2sTex6gMbyesOkko3hjvtYxpdmky66ow4Y6ekOtA7XEM9BA=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.94/update.zip",
+  "sha256": "2ab677d55762baf571fe1e577bc1a65df41ab5d36b5f7af2522f3551dc0ead9b",
+  "size": 250821296,
+  "published_at": "2026-11-18T14:17:28.551Z",
+  "notes": "- **Fatura hyrëse nga telefoni** (butoni 📱 Nga telefoni): skano QR-in në PC, bëj foton me telefon (Wi-Fi lokal) dhe fatura hapet direkt te «Fatura hyrëse». Pas aprovimit, fotoja mund të fshihet nga PC-ja (opsioni i zgjedhur paraprakisht); të dhënat e faturës mbeten.\n- Skaneri i faturës lexon fillimisht me Teutën; nëse Teuta s'është gati, përdoret leximi i vjetër.\n- **Propozimi i produktit** për rreshtat pa produkt: lidh produktin e njëjtë/të ngjashëm, ose krijon produkt të ri (emri nga Teuta ose emri i faturës). Çmimin e shitjes e cakton ti.\n- Dritarja e rishikimit të faturës hyrëse hapet e maksimizuar, me shirita lëvizës — çdo kolonë shihet edhe në ekrane të vogla.\n- «Përmbajtja», «Sasia» dhe «Vlera» pranojnë presje dhjetore.\n- «+ Disa produkte» (si Excel) u kthye te paneli i produkteve.\n- **Katalogu i barkodeve**: skano barkodin — emri, njësia dhe TVSH-ja plotësohen vetë.\n- Kodi i produktit sipas formatit të biznesit (p.sh. RE100010, RE100011…).\n- Fatura hyrëse: njësia merret nga produkti në databazë; njësia që mungon shtohet në listë.",
+  "signature": "XS/w3RIXmNx7gJ2vDrVc0dWqnrbVQfUjCPkZZFRcr/d5+jpUS6GrG9DrUkJ9pA3S0mq6/DyseMX/z9zQF3u1Ag=="
 }
