@@ -1,14 +1,14 @@
 {
-  "version": "1.0.96",
+  "version": "1.0.97",
   "product_id": "com.programeri.pos.pef",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.96/update.zip",
-  "sha256": "1c1e8f982a8172ecf8b064ca53c0537a0d9c66012f3208fdfa181110a7683e80",
-  "size": 289783238,
-  "published_at": "2026-11-19T01:32:29.773Z",
-  "notes": "Teuta tani punon online: pergjigjet dhe leximi i faturave nga fotoja behen per pak sekonda (pa internet perdoret modeli lokal vetem ne PC te forte).\nTeuta si chatbot: 102 funksione te shpejta, raportet, librat, borxhet, kontrolli ditor, eksport ne Excel/PDF, dhe pyetje si \"si quhesh\" ose \"ku e gjej TVSH-ne\".\nProduktet \"Lende e pare\" ose \"Pa caktuar\" lejohen me cmim 0 EUR.\nRishikimi i fatures hyrese: shirit levizjeje edhe siper kolonave.\nAnimacion i ri gjate ngarkimit dhe permiresime te tjera.",
-  "signature": "dcuqxEKlSx051iyZNGZbjSHJS0vIzd1wONNIozuSto18IqT8AGrJs7l/xH97bRU2oTq9FBNki4w0JDkVzz3+Bw=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.97/update.zip",
+  "sha256": "06471e0c2d7d8a20fa9e30ff15b0ada7d0a9b3c9f0a3a0a65ffc63ba965272c2",
+  "size": 290088948,
+  "published_at": "2026-11-19T20:16:34.162Z",
+  "notes": "Teuta: pyetjet e shpeshta (mbi 200, ne kategori), butoni per mbyllje, shpjegime per SEF dhe kuponet, kerkimi i kuponit sipas dates/shumes dhe historiku i klientit; \"Pyet Teuten\" te fushat e produktit me shembull dhe propozim; Teuta ne shqip, serbisht dhe anglisht.\nBlerjet: plani i kesteve per faturat e blerjes (pagesa te pjesshme sipas afatit).\nDitari i arkes/bankes tregon numrin e fatures ose kuponit ne vend te kodit te gjate.\nDUD: hapja e DUD-it per fatura te reja importi pa numer s'jep me gabim.",
+  "signature": "S0DSmyzjrwM2c7ZD9Jie1HDc06GxE2yRL0I9RLC2hNO6ioO7LrTLSVKpVUn62+NBrcPLupWV60DnHZVdcvGzDA=="
 }
