@@ -1,14 +1,14 @@
 {
-  "version": "1.0.94",
+  "version": "1.0.96",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.94/update.zip",
-  "sha256": "2ab677d55762baf571fe1e577bc1a65df41ab5d36b5f7af2522f3551dc0ead9b",
-  "size": 250821296,
-  "published_at": "2026-11-18T16:58:40.530Z",
-  "notes": "- **Fatura hyrëse nga telefoni** (butoni «Nga telefoni»): skano QR-in në PC, bëj foton me telefon (Wi-Fi lokal) dhe fatura hapet direkt te «Fatura hyrëse». Pas aprovimit, fotoja mund të fshihet nga PC-ja (opsioni i zgjedhur paraprakisht); të dhënat e faturës mbeten.\n- Skaneri i faturës lexon fillimisht me Teutën; nëse Teuta s'është gati, përdoret leximi i vjetër.\n- **Propozimi i produktit** për rreshtat pa produkt: lidh produktin e njëjtë/të ngjashëm, ose krijon produkt të ri (emri nga Teuta ose emri i faturës). Çmimin e shitjes e cakton ti.\n- Dritarja e rishikimit të faturës hyrëse hapet e maksimizuar, me shirita lëvizës — çdo kolonë shihet edhe në ekrane të vogla.\n- «Përmbajtja», «Sasia» dhe «Vlera» pranojnë presje dhjetore.\n- «+ Disa produkte» (si Excel) u kthye te paneli i produkteve.\n- **Katalogu i barkodeve**: skano barkodin — emri, njësia dhe TVSH-ja plotësohen vetë.\n- Kodi i produktit sipas formatit të biznesit (p.sh. RE100010, RE100011…).\n- Fatura hyrëse: njësia merret nga produkti në databazë; njësia që mungon shtohet në listë.",
-  "signature": "EQERNEihWn7FrkYbhinv5b8CglCE2tdHaNp7pk7sidgdbxn7d6zfYxsuriwY6G68vXQ7VylQ8L66jxDFtW3wCQ=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.96/update.zip",
+  "sha256": "245b051830a7289200d64670302ff614af2f09dbb410b87c1e94fd13a2e4c869",
+  "size": 250902561,
+  "published_at": "2026-11-19T01:06:00.430Z",
+  "notes": "Teuta tani punon online: pergjigjet dhe leximi i faturave nga fotoja behen per pak sekonda (pa internet perdoret modeli lokal vetem ne PC te forte).\nTeuta si chatbot: 102 funksione te shpejta, raportet, librat, borxhet, kontrolli ditor, eksport ne Excel/PDF, dhe pyetje si \"si quhesh\" ose \"ku e gjej TVSH-ne\".\nProduktet \"Lende e pare\" ose \"Pa caktuar\" lejohen me cmim 0 EUR.\nRishikimi i fatures hyrese: shirit levizjeje edhe siper kolonave.\nAnimacion i ri gjate ngarkimit dhe permiresime te tjera.",
+  "signature": "brr39rTcUgsL7C4rMUfLLQiFGGoJ7dzMVlDLOho86A3Hx32DBmgnsFGtE5HLsmtvfu+R496DppRm4wQu5UFCAA=="
 }
