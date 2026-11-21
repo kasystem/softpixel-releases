@@ -1,14 +1,14 @@
 {
-  "version": "1.0.97",
+  "version": "1.0.99",
   "product_id": "com.programeri.pos.pef",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.97/update.zip",
-  "sha256": "06471e0c2d7d8a20fa9e30ff15b0ada7d0a9b3c9f0a3a0a65ffc63ba965272c2",
-  "size": 290088948,
-  "published_at": "2026-11-19T20:16:34.162Z",
-  "notes": "Teuta: pyetjet e shpeshta (mbi 200, ne kategori), butoni per mbyllje, shpjegime per SEF dhe kuponet, kerkimi i kuponit sipas dates/shumes dhe historiku i klientit; \"Pyet Teuten\" te fushat e produktit me shembull dhe propozim; Teuta ne shqip, serbisht dhe anglisht.\nBlerjet: plani i kesteve per faturat e blerjes (pagesa te pjesshme sipas afatit).\nDitari i arkes/bankes tregon numrin e fatures ose kuponit ne vend te kodit te gjate.\nDUD: hapja e DUD-it per fatura te reja importi pa numer s'jep me gabim.",
-  "signature": "S0DSmyzjrwM2c7ZD9Jie1HDc06GxE2yRL0I9RLC2hNO6ioO7LrTLSVKpVUn62+NBrcPLupWV60DnHZVdcvGzDA=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.99/update.zip",
+  "sha256": "2100e728c9c8c3aa08a8947060d93327a3e79888b7b21b0b0fd8b7b114d8f8bb",
+  "size": 290234832,
+  "published_at": "2026-11-21T11:53:13.218Z",
+  "notes": "PROGRAMERI POS 1.0.99\n\n- Kopja rezervë (backup) tani verifikohet: një kopje bosh s'ruhet më kurrë dhe kopjet e mira s'fshihen; nëse mënyra e parë dështon, përdoret automatikisht një mënyrë e dytë. Çdo biznes ka dosjen e vet të kopjeve.\n- Ekranet e vogla (800×600): skedat e menysë shfaqen gjithmonë (në dy rreshta kur s'ka vend) dhe dritaret s'dalin më jashtë ekranit.\n- Fatura hyrëse: kolona \"Njësia\" merr gjithmonë njësinë e produktit (KG/CP s'dalin më bosh).\n- Normativat: lista tregon produktin përfundimtar; me klik hapen përbërësit.\n- Ngjyra të reja për kategoritë dhe produktet në shitje.\n- Teuta: opsionet sipas ekranit ku ndodheni.\n- Email-i i kuponit: përgatitja për \"Lidhu me Google\" (shfaqet vetëm kur aktivizohet); SMTP vazhdon si më parë.\n- Përmirësime të shpejtësisë dhe të regjistrit ARBK; kontrolli i integritetit mbetet i pandryshuar.",
+  "signature": "EoZhxqneufsFsJvDjcbBP3LwXdiJyVpxzX4vzdY0xzuDMuJsOoqwdZ14rW/7GwtB19jvecUAOSeBMsvVtk3qAA=="
 }
