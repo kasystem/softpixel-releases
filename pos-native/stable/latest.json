@@ -1,14 +1,14 @@
 {
-  "version": "1.0.100",
+  "version": "1.0.101",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.100/update.zip",
-  "sha256": "2b8d17c1a575c602cb391b1bf17d04f7835b7d5844911ef01db6ad132e331832",
-  "size": 251142410,
-  "published_at": "2026-11-21T23:31:54.691Z",
-  "notes": "PROGRAMERI POS 1.0.100\n\n- Fshirja e faturës: fatura (edhe me kupon PEF) fshihet plotësisht — nga Statistikat, Libri i Shitjes, Pagesat & Arkëtimet dhe stoku. Kuponi SEF mbetet i mbrojtur (vetëm Kthim/Anulim).\n- Fatura B2B e lidhur me faturën e fshirë fshihet bashkë me të.\n- Pagesat & Arkëtimet: pagesa e faturës së fshirë dhe kthimi i saj s'shfaqen më.\n- Kupon + Faturë B2B numërohet një herë (edhe kur fatura vjen nga celulari); B2B e vetme me vlerën e saj.\n- Stoku: fatura e fshirë (edhe nga një pajisje tjetër) e kthen stokun automatikisht; \"Produktet pa stok\" s'numëron më shitjet e fshira.\n- Kontabiliteti: njoftim kur profili tatimor i biznesit s'është plotësuar, me buton për ta plotësuar.",
-  "signature": "1qNtxuuucOmP4KMNzV4zwP1myNEj08pWMDRcw8q7xBE2TQ7AxNhfqB2J4hAJddUc0R4PXWNgoAqmg+bJuYmPDg=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.101/update.zip",
+  "sha256": "1cc3ac3e2feec210836edef50cc84540e8e24ec362d65f2ab948943b5a388b9a",
+  "size": 251179454,
+  "published_at": "2026-11-24T07:26:20.698Z",
+  "notes": "Versioni 1.0.101\n- Fatura B2B termike 58/80/100 mm: tekst më i madh në 58 mm, shitësi dhe blerësi me shkronja të trasha, rabati në kolonë vetëm kur ekziston, zbritja te totalet, agjenti me emër e mbiemër, barkode më të larta.\n- PEF: fatura A4 e fshirë e kthen numrin dhe nuk shfaqet më në Ditar.\n- Teuta lexon faturat hyrëse edhe nga PDF dhe Excel, si dhe DUD-in.\n- Libri i shitjes: rreshti ditor pa NUI shfaqet vetëm me datë.\n- Rregullime të tjera në stabilitet dhe sinkronizim.",
+  "signature": "dociFCeyFJZcDnTOgpHzjZjPTRZERCl/x8F7zoaUtv6NdNKp/tKKmwHhWciJ4Cw78cv/StK0TbTRmZOAGJ3jDg=="
 }
