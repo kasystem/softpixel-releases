@@ -1,14 +1,14 @@
 {
-  "version": "1.0.100",
+  "version": "1.0.101",
   "product_id": "com.programeri.pos.pef",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.100/update.zip",
-  "sha256": "7d6c86398b63baf524c7c56d46e7d37deb725d6201e4b79368e0ade05770ab12",
-  "size": 290282535,
-  "published_at": "2026-11-21T23:35:01.678Z",
-  "notes": "PROGRAMERI POS 1.0.100\n\n- Fshirja e faturës: fatura (edhe me kupon PEF) fshihet plotësisht — nga Statistikat, Libri i Shitjes, Pagesat & Arkëtimet dhe stoku. Kuponi SEF mbetet i mbrojtur (vetëm Kthim/Anulim).\n- Fatura B2B e lidhur me faturën e fshirë fshihet bashkë me të.\n- Pagesat & Arkëtimet: pagesa e faturës së fshirë dhe kthimi i saj s'shfaqen më.\n- Kupon + Faturë B2B numërohet një herë (edhe kur fatura vjen nga celulari); B2B e vetme me vlerën e saj.\n- Stoku: fatura e fshirë (edhe nga një pajisje tjetër) e kthen stokun automatikisht; \"Produktet pa stok\" s'numëron më shitjet e fshira.\n- Kontabiliteti: njoftim kur profili tatimor i biznesit s'është plotësuar, me buton për ta plotësuar.",
-  "signature": "5+ZpjLqp/1QKY14vaiP8guMEL/KMMHuM8DloTmTH46DdYTsH6GqEXtHbwex7eqncore15EzeeCQlcoSjRcP+BQ=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.101/update.zip",
+  "sha256": "93a72d3689944c13bef2c8c9aa4b50c8d88ec75c86f13977cd4fc79bd9f69ef4",
+  "size": 290371175,
+  "published_at": "2026-11-24T07:35:49.312Z",
+  "notes": "Versioni 1.0.101\n- Fatura B2B termike 58/80/100 mm: tekst më i madh në 58 mm, shitësi dhe blerësi me shkronja të trasha, rabati në kolonë vetëm kur ekziston, zbritja te totalet, agjenti me emër e mbiemër, barkode më të larta.\n- PEF: fatura A4 e fshirë e kthen numrin dhe nuk shfaqet më në Ditar.\n- Teuta lexon faturat hyrëse edhe nga PDF dhe Excel, si dhe DUD-in.\n- Libri i shitjes: rreshti ditor pa NUI shfaqet vetëm me datë.\n- Rregullime të tjera në stabilitet dhe sinkronizim.",
+  "signature": "8X4MDc7S1RcuS5u2mGxprv1cC3MO1HKYfcWc++PBrA2YDKyCcFhbkPDFt/6cFt6BQ+/1+bSV+CUGS/mG+h+fAg=="
 }
