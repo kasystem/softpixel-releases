@@ -1,14 +1,14 @@
 {
-  "version": "1.0.102",
+  "version": "1.0.103",
   "product_id": "com.programeri.pos.pef",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.102/update.zip",
-  "sha256": "265f43d1276cae4b590161510e9612e5ad1ec4ade2c3f0208c969e9e48b6576b",
-  "size": 290814086,
-  "published_at": "2026-11-25T00:22:10.314Z",
-  "notes": "Versioni 1.0.102\n- Fatura B2B termike: 2 kopje si parazgjedhje (1–5 te Printeri B2B), me prerje para çdo kopjeje; emrat e produkteve dhe barkodet më të mëdha.\n- PEF: fatura A4 e re merr numrin e parë të lirë të serisë.\n- Kontabiliteti: \"Operacionet\" (Fletë kontabël, Viti fiskal, TVSH mujore, Borxhi i keq, Kompensim, Qendra e kostos, Kartela e partnerit) dhe \"Porositë & Artikujt\" si grupe në menunë anësore.\n- Fatura e blerjes: Pesha (kg) e produktit përdoret për konvertimin nga kg në njësi dhe ndarjen e kostos sipas peshës.\n- Qendra e re e importit të produkteve dhe partnerëve; shitjet me agjentë në terren.\n- Libri i shitjes: kuponët e importuar pa NUI bashkohen në rreshtin ditor.\n- Kyçja më e sigurt (kufizim i provave të gabuara).\n- Teuta: kuponët e sotëm gjenden edhe pas mesnatës; rregullime të tjera në stabilitet dhe sinkronizim.",
-  "signature": "1EPQ6Cn8xKDPFn8GWHI8b5MiF9cXdMnd/qJ52oUqXEVc13oQflpKsHOfWcW5k5JpwSdvtKC2m7fWBPRmlfg/DA=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.103/update.zip",
+  "sha256": "7ff13420430218b345e93f7aab7d63c9a205e476fdf9b3a052c6924ca68b2c96",
+  "size": 290826166,
+  "published_at": "2026-11-25T09:26:44.474Z",
+  "notes": "Versioni 1.0.103\n- Libri i Shitjes: rreshtat manualë (p.sh. Z Raport) të futur nga PC-ja e Kontabilistit shfaqen në çdo PC të biznesit, në nivelin Biznes, Dega dhe POS.\n- Rreshtat manualë hyjnë në totalin \"Shitje të raportuara\", në Librin e Shitjes ATK dhe në eksportet e tij (pa ndikuar stokun).\n- Ikona e shkurtores në Desktop nuk mbetet më e bardhë pas përditësimit.",
+  "signature": "aOuP2nxL5FgEiXtHRiNjEnYL0db46Eyi1wIhAi56AMVcEIjSa4iXYv/Ex/kqR99Tm4JvU2mnqx4DUi7zzwCTAw=="
 }
