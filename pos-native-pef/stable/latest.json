@@ -1,14 +1,14 @@
 {
-  "version": "1.0.108",
+  "version": "1.0.109",
   "product_id": "com.programeri.pos.pef",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.108/update.zip",
-  "sha256": "0c45ba884a74a817473b39f19d1ffcc0f742179b69e66e816b818d6ddc8e6ab5",
-  "size": 291420243,
-  "published_at": "2026-11-25T18:14:45.618Z",
-  "notes": "PEF KONTO 1.0.108\n\n- Rreshtat manuale te Librit te Shitjes me produkte (opsionale): stoku zbritet me FIFO si shitja ne arke, KMSH postohet ne ditar; ndryshimi zbret vetem diferencen, fshirja e kthen mallin dhe KMSH-ne.\n- Rrjedhjet / Arka: paraja e rreshtave manuale hyn ne Arke (edhe rreshtat ekzistues plotesohen nje here).\n- \"± Korrigjo KMSH\": Rrit / Zvogelo / Fikso KMSH-ne e muajit, me parapamje; cdo korrigjim ndryshohet ose anulohet ne cdo kohe, me auditim.\n- Te gjitha hyjne ne ditar, pasqyrat, vjetore, KKRF, bilancin prove dhe zberthimet.",
-  "signature": "BAvmMIk9K4lexY4C0hRs40NNw0QP3bmoPPXgkDKx0ftApleAGrsunv+btL6zDLQo+jIT26Qr2epUN1udeNKUDA=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.109/update.zip",
+  "sha256": "8059c15ee245ebcb527b98d56669b7fd1c06514a37d9e8651021918ed3ee484d",
+  "size": 291593240,
+  "published_at": "2026-11-25T23:12:18.574Z",
+  "notes": "Versioni 1.0.109\n- Libri i Shitjes (ATK): fatura B2B nuk shfaqet më dy herë (si \"Shitje ditore\" dhe si rresht B2B).\n- Statistikat dhe Përmbledhja e biznesit: kuponët PEF tani numërohen.\n- Korrigjimet e dokumenteve (TVSH, zbritje, fshirje) arrijnë te statistikat në çdo PC.\n- Kontabiliteti: tabela e KMSH-së me kërkim, Përmbledhja më e shpejtë.\n- Moduli i ri \"Depo Doganore\" (IM7/IM4/EX3).\n- Leximi i faturave (OCR): nëse mungon Visual C++, programi ofron instalimin.",
+  "signature": "AleZWZa29vlHpseEeHyExyio9qplIlHpMRY9F8DuUbZ64QSPrqk9iclLCs2ZeNC2JgwkO1ULTvtcBlMbUnuvBA=="
 }
