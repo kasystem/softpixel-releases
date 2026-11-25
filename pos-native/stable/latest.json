@@ -1,14 +1,14 @@
 {
-  "version": "1.0.102",
+  "version": "1.0.109",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.102/update.zip",
-  "sha256": "684508f5764fb4b539e772a3866b2985ac3ba8a9758690baa8130031e4293c8b",
-  "size": 251438220,
-  "published_at": "2026-11-25T07:09:12.866Z",
-  "notes": "Versioni 1.0.102\n- Fatura B2B termike: 2 kopje si parazgjedhje (1–5 te Printeri B2B), me prerje para çdo kopjeje; emrat e produkteve dhe barkodet më të mëdha.\n- PEF: fatura A4 e re merr numrin e parë të lirë të serisë.\n- Kontabiliteti: \"Operacionet\" (Fletë kontabël, Viti fiskal, TVSH mujore, Borxhi i keq, Kompensim, Qendra e kostos, Kartela e partnerit) dhe \"Porositë & Artikujt\" si grupe në menunë anësore.\n- Fatura e blerjes: Pesha (kg) e produktit përdoret për konvertimin nga kg në njësi dhe ndarjen e kostos sipas peshës.\n- Qendra e re e importit të produkteve dhe partnerëve; shitjet me agjentë në terren.\n- Libri i shitjes: kuponët e importuar pa NUI bashkohen në rreshtin ditor.\n- Kyçja më e sigurt (kufizim i provave të gabuara).\n- Teuta: kuponët e sotëm gjenden edhe pas mesnatës; rregullime të tjera në stabilitet dhe sinkronizim.",
-  "signature": "Fu694kHX3l5W0s7Hld8HAN22NvoIxPtGpId75vvb6n6yQLrOH4UmqMSACv47qk1umSJ7ze5WkwHrx0s8IsRtAg=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.109/update.zip",
+  "sha256": "2bdad2996338b6287e85e264a103eed73147975716f16755e88879db690fcd9f",
+  "size": 252056839,
+  "published_at": "2026-11-25T23:09:43.645Z",
+  "notes": "Versioni 1.0.109\n- Përmbledhja e Kontabilitetit: periudha muaj/vit, kërkimi, shitje/blerje të shpejta, afatet dhe njoftimet; rezultati i muajit dhe trendi 6-mujor.\n- Libri i Shitjes: rreshtat manualë (edhe nga PC-ja e Kontabilistit) shfaqen në çdo PC dhe hyjnë në totalet, në ditar dhe në pasqyra; fatura B2B nuk del më dy herë.\n- Rreshtat manualë me produkte (stoku dhe KMSH), paraja e tyre në Arkë.\n- Korrigjo stokun: Shto / Hiq / Fikso, me arsye dhe historik.\n- Pagat dhe TQ hyjnë vetvetiu në ditar dhe në pasqyra.\n- Orari: modeli vlen nga muaji i zgjedhur.\n- Tabela e KMSH-së me kërkim; moduli i ri \"Depo Doganore\".\n- Korrigjimet e dokumenteve (TVSH, zbritje, fshirje) arrijnë te statistikat në çdo PC.\n- Leximi i faturave (OCR): s'kërkon më instalim të veçantë të Visual C++.",
+  "signature": "P/Z0+VPdtrSSXaZCRnwxk7XGOZrmcALUzM3gsHNlCg3YLavR89+xIOQAoj7pTPCWr61SQcyeHKTEWlD1bJxNBA=="
 }
