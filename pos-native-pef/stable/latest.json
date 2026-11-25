@@ -1,14 +1,14 @@
 {
-  "version": "1.0.103",
+  "version": "1.0.104",
   "product_id": "com.programeri.pos.pef",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.103/update.zip",
-  "sha256": "7ff13420430218b345e93f7aab7d63c9a205e476fdf9b3a052c6924ca68b2c96",
-  "size": 290826166,
-  "published_at": "2026-11-25T09:26:44.474Z",
-  "notes": "Versioni 1.0.103\n- Libri i Shitjes: rreshtat manualë (p.sh. Z Raport) të futur nga PC-ja e Kontabilistit shfaqen në çdo PC të biznesit, në nivelin Biznes, Dega dhe POS.\n- Rreshtat manualë hyjnë në totalin \"Shitje të raportuara\", në Librin e Shitjes ATK dhe në eksportet e tij (pa ndikuar stokun).\n- Ikona e shkurtores në Desktop nuk mbetet më e bardhë pas përditësimit.",
-  "signature": "aOuP2nxL5FgEiXtHRiNjEnYL0db46Eyi1wIhAi56AMVcEIjSa4iXYv/Ex/kqR99Tm4JvU2mnqx4DUi7zzwCTAw=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.104/update.zip",
+  "sha256": "4129a5158f894b142e568b6e23f023fadd2da7ad1d2fae377f524b64176113aa",
+  "size": 291293386,
+  "published_at": "2026-11-25T10:37:59.361Z",
+  "notes": "PEF 1.0.104\n\nLibri i Shitjes - rreshtat manualë\n- Rregullim: te Libri i Shitjes (ATK) rreshtat manualë dilnin dy herë (si rresht manual dhe si «Shitje ditore»). Tani dalin një herë.\n- Forma «Shto rresht manual»: klienti «Blerës fizik», numri vijues dhe arsyeja «Z Raport» si parazgjedhje. Shënohet vetëm totali; baza dhe TVSH-ja llogariten nga norma (biznes jo në TVSH: C 0%; në TVSH: 18%, 8% ose 0%).\n- Lloji i të ardhurës: Mall (3%) ose Shërbim (9%). Rreshtat ekzistues mbeten Mall.\n- Rreshtat manualë hyjnë te tatimi në qarkullim (formulari QS/IS, Zbërthimet, Kalkulatorët ATK): Mall te kutia [8], Shërbim te kutia [9].\n- CSV: kolona e re opsionale «Lloji» (Mall/Shërbim).\n\nKontabiliteti - Përmbledhje\n- Periudha: muaji i zgjedhur, Ky vit ose një vit tjetër.\n- Rreshtat manualë të Librit të Shitjes hyjnë te shitjet, grafiku dhe transaksionet.\n- Kërkimi në krye të faqes (produkt, partner, faturë, NUI); rezultatet dalin poshtë, Enter hap të parin.\n- Butonat «Shitje», «Blerje», «Shpenzim», «Arkëtim / Pagesë» hapin direkt dokumentin e ri.\n- Njoftimet dalin në krye të faqes dhe s'mbulojnë më kokën ose kartat.\n- Gjendja e Librave tregon gjendjen e vërtetë (e gjelbër, portokalli ose gri).\n- «Afatet tatimore»: TVSH, tatimi në burim, kontributet dhe kësti tremujor me afatin dhe ditët që mbeten.\n- Kartat pa vlerë shpjegojnë arsyen; Rezultati kontabël krahasohet me periudhën e kaluar.\n- Grafiku fshihet kur burimi s'e raporton; Transaksionet e fundit me kolonat Lloji, Hyrje, Dalje.\n- Menyja anësore më e gjerë; shiriti lart pa shirit lëvizjeje; shkronja më të lexueshme; hapja më e shpejtë.\n\nKorrigjimi i TVSH-së sipas kuponit\n- Butoni «Korrigjo TVSH-në nga kuponët» u hoq. Korrigjimi bëhet vetë në sfond çdo 15 minuta, me të njëjtat rregulla, dhe regjistrohet si «Teuta (automatik)». Vetëm kur s'ka ndryshime kontabël të padërguara; në PEF vetëm për biznes jo në TVSH.",
+  "signature": "VHzDLbC0eEjM+XSOvOAoxXsoBaZyB3Bv+vGLW5qd0sXzIpsMwz3V++AobRbXYAx+aT9PmHNsmIrPJEZ5DEJ5AQ=="
 }
