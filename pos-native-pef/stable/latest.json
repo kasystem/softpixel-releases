@@ -1,14 +1,14 @@
 {
-  "version": "1.0.107",
+  "version": "1.0.108",
   "product_id": "com.programeri.pos.pef",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.107/update.zip",
-  "sha256": "0d7adc2ab6066fdc24d5fd1bb07faf8bf2c1f3d2a020d925f565fdadebecf97f",
-  "size": 291363371,
-  "published_at": "2026-11-25T15:14:37.579Z",
-  "notes": "PEF KONTO 1.0.107\n\n- Pagat hyjne vetvetiu ne librin kryesor (ditar): Pasqyrat Financiare, Pasqyrat Vjetore, Pasqyrat sipas KKRF, Bilanci prove dhe Zberthimet i perfshijne. Ndryshimi i pages e riposton, pa dyfishim.\n- Tatimi ne qarkullim (TQ, 3% mall + 9% sherbime) postohet cdo muaj si shpenzim kur regjimi TQ eshte i fiksuar; kesti tremujor njeh vetem diferencen (pa dyfishim).\n- Zberthimi i Librit te Shitjes perfshin rreshtat manuale (Z Raport etj.); kontrolli \"Te hyrat = Libri i shitjes\" i llogarit.\n- Postimet behen ne sfond kur hapet Kontabiliteti, cdo 15 minuta dhe pas pranimit te pagave te Permbledhja.",
-  "signature": "PWCC7APt0FrtFMNHouAcJ2T3mtZDf4bJO1EPxVQdt2OcUd+heiK+fH+Nat9UTU9HUro/YqtpJ7jc4M0S8f2/Ag=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.108/update.zip",
+  "sha256": "0c45ba884a74a817473b39f19d1ffcc0f742179b69e66e816b818d6ddc8e6ab5",
+  "size": 291420243,
+  "published_at": "2026-11-25T18:14:45.618Z",
+  "notes": "PEF KONTO 1.0.108\n\n- Rreshtat manuale te Librit te Shitjes me produkte (opsionale): stoku zbritet me FIFO si shitja ne arke, KMSH postohet ne ditar; ndryshimi zbret vetem diferencen, fshirja e kthen mallin dhe KMSH-ne.\n- Rrjedhjet / Arka: paraja e rreshtave manuale hyn ne Arke (edhe rreshtat ekzistues plotesohen nje here).\n- \"± Korrigjo KMSH\": Rrit / Zvogelo / Fikso KMSH-ne e muajit, me parapamje; cdo korrigjim ndryshohet ose anulohet ne cdo kohe, me auditim.\n- Te gjitha hyjne ne ditar, pasqyrat, vjetore, KKRF, bilancin prove dhe zberthimet.",
+  "signature": "BAvmMIk9K4lexY4C0hRs40NNw0QP3bmoPPXgkDKx0ftApleAGrsunv+btL6zDLQo+jIT26Qr2epUN1udeNKUDA=="
 }
