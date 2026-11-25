@@ -1,14 +1,14 @@
 {
-  "version": "1.0.101",
+  "version": "1.0.102",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.101/update.zip",
-  "sha256": "1cc3ac3e2feec210836edef50cc84540e8e24ec362d65f2ab948943b5a388b9a",
-  "size": 251179454,
-  "published_at": "2026-11-24T07:26:20.698Z",
-  "notes": "Versioni 1.0.101\n- Fatura B2B termike 58/80/100 mm: tekst më i madh në 58 mm, shitësi dhe blerësi me shkronja të trasha, rabati në kolonë vetëm kur ekziston, zbritja te totalet, agjenti me emër e mbiemër, barkode më të larta.\n- PEF: fatura A4 e fshirë e kthen numrin dhe nuk shfaqet më në Ditar.\n- Teuta lexon faturat hyrëse edhe nga PDF dhe Excel, si dhe DUD-in.\n- Libri i shitjes: rreshti ditor pa NUI shfaqet vetëm me datë.\n- Rregullime të tjera në stabilitet dhe sinkronizim.",
-  "signature": "dociFCeyFJZcDnTOgpHzjZjPTRZERCl/x8F7zoaUtv6NdNKp/tKKmwHhWciJ4Cw78cv/StK0TbTRmZOAGJ3jDg=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.102/update.zip",
+  "sha256": "684508f5764fb4b539e772a3866b2985ac3ba8a9758690baa8130031e4293c8b",
+  "size": 251438220,
+  "published_at": "2026-11-25T07:09:12.866Z",
+  "notes": "Versioni 1.0.102\n- Fatura B2B termike: 2 kopje si parazgjedhje (1–5 te Printeri B2B), me prerje para çdo kopjeje; emrat e produkteve dhe barkodet më të mëdha.\n- PEF: fatura A4 e re merr numrin e parë të lirë të serisë.\n- Kontabiliteti: \"Operacionet\" (Fletë kontabël, Viti fiskal, TVSH mujore, Borxhi i keq, Kompensim, Qendra e kostos, Kartela e partnerit) dhe \"Porositë & Artikujt\" si grupe në menunë anësore.\n- Fatura e blerjes: Pesha (kg) e produktit përdoret për konvertimin nga kg në njësi dhe ndarjen e kostos sipas peshës.\n- Qendra e re e importit të produkteve dhe partnerëve; shitjet me agjentë në terren.\n- Libri i shitjes: kuponët e importuar pa NUI bashkohen në rreshtin ditor.\n- Kyçja më e sigurt (kufizim i provave të gabuara).\n- Teuta: kuponët e sotëm gjenden edhe pas mesnatës; rregullime të tjera në stabilitet dhe sinkronizim.",
+  "signature": "Fu694kHX3l5W0s7Hld8HAN22NvoIxPtGpId75vvb6n6yQLrOH4UmqMSACv47qk1umSJ7ze5WkwHrx0s8IsRtAg=="
 }
