@@ -1,14 +1,14 @@
 {
-  "version": "1.0.105",
+  "version": "1.0.106",
   "product_id": "com.programeri.pos.pef",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.105/update.zip",
-  "sha256": "e87719bb6d20eb94ef69ae0102439bf7448917efd1658d158ce61341a1fff8bd",
-  "size": 291303413,
-  "published_at": "2026-11-25T11:25:25.394Z",
-  "notes": "PEF 1.0.105\n\nLibri i Shitjes - rreshtat manualë\n- Një faturë mund të ketë edhe mall edhe shërbime: «Totali - mall (3%)» dhe «Totali - shërbime (9%)» shënohen veç e veç (p.sh. 20 EUR + 25 EUR).\n- Te Libri i Shitjes fatura del si një rresht me totalin (45 EUR); ndarja 3%/9% përdoret vetëm te tatimi në qarkullim (kutia [8] dhe [9]).\n- Bizneset me tatim në fitim (TF) shënojnë vetëm totalin.",
-  "signature": "4Xc6su1cX5DEQJwcO4+W8evZGuPI40+H+mUlvcMMvH14ggGD9pRcEUFFGYGKTF1Kcjb6fQiEkGqPVeLT8mijDQ=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.106/update.zip",
+  "sha256": "ba47581e8ee387ff04bd5462cb4a01e31a9bcdc3cef8d33a5785b16d0c2b6b17",
+  "size": 291337970,
+  "published_at": "2026-11-25T12:59:10.191Z",
+  "notes": "PEF 1.0.106\n\nKontabiliteti - Përmbledhje\n- Rezultati i muajit: shitjet - blerjet - shpenzimet - pagat bruto - kontributi i punëdhënësit - tatimi i biznesit (TQ 3%/9% ose TF), para dhe pas tatimeve.\n- Trendi i rezultatit pas tatimeve për 6 muaj (ose 12 muajt e vitit).\n- Raportet e periudhës së zgjedhur: librat, TVSH, TQ, TF, KMSH, pagat, arka dhe banka, pasqyrat.\n- Shiriti i pagave të muajit: njofton kur asnjë pagë s'është përgatitur ose finalizuar; butoni «Prano dhe finalizo pagat» i përgatit dhe i finalizon me një klik.\n\nPagat\n- Pa bllokime: pa orar vlen orari standard 08:00-16:00 (e hënë - e premte); paralajmërimet s'e ndalin pagën.\n- Orari: «Apliko» fillon nga muaji i zgjedhur dhe e zëvendëson orarin e mëvonshëm (s'mbivendoset).\n\nBiznes i ri nga Kontabilisti\n- Regjimi tatimor (TQ / TF) zgjidhet gjatë krijimit (opsional).\n- Pa numër TVSH, biznesi konsiderohet jo në TVSH.\r\n\nRreshtat manualë të Librit të Shitjes\n- Hyjnë në ditar dhe dalin te të gjitha pasqyrat: Pasqyrat Financiare, Pasqyrat vjetore, Pasqyrat sipas KKRF, Bilanci provë, Zbërthimet (Arka / Të hyrat nga shitja / TVSH).\n- Rreshtat ekzistues (edhe ata të shtuar sot nga PC-ja e Kontabilistit) postohen vetë kur hapet Kontabiliteti. Fshirja e rreshtit e anulon regjistrimin.\r\n\nStoku\n- Butoni i ri «Korrigjo stokun» te moduli Stoku (dhe «Rregullo» në çdo rresht): Shto në stok, Hiq nga stoku ose Fikso stokun (p.sh. fikso në 36 - ndryshimi llogaritet vetë).\n- Parapamja: gjendja tani, ndryshimi, gjendja e re; arsye të gatshme (Inventarizim, Dëmtim, Humbje, Skadim, Gabim regjistrimi); historiku i korrigjimeve të produktit. Stoku s'bëhet negativ.",
+  "signature": "p4Ew3IId9+jrn7DhoInI4LYC9VLirVqBWdvB89ob336AuCsl2qHYK5mT75FNLpw4Ggv8q0hkjzx63F+Fzr3zBQ=="
 }
