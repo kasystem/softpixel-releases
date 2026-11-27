@@ -1,14 +1,14 @@
 {
-  "version": "1.0.110",
+  "version": "1.0.111",
   "product_id": "com.programeri.pos.pef",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.110/update.zip",
-  "sha256": "b67328362c287e6212e82ea1f7cf5c0bdb1b326c5af9b0bc236a55524e8cbc57",
-  "size": 291798151,
-  "published_at": "2026-11-27T10:41:57.354Z",
-  "notes": "Versioni 1.0.110\n- EDI: Libri i Blerjes dhe Libri i Shitjes mund te deklarohen me zero (0 te NUI/NF/NP) kur periudha s'ka transaksione.\n- Libri i Shitjes pa TVSH: shitjet ditore nga SEF/PEF dalin me kodin 1 (Pazari ditor), sipas EDI-se se ATK-se.\n- Kontabiliteti: pagesa e shpejte e klientit, nen-kontot e partnereve, depot doganore ne menu, xhirollogarite e punetoreve.\n- Ekstraktet bankare lexohen me ndihmen e Teutes; sugjerime nga blerjet e meparshme te furnitorit.\n- Aprovimi Zero dhe versionimi i dokumenteve kontabel (versioni me i ri fiton gjate sinkronizimit).\n- Sinkronizo bizneset e zyres se Kontabilistit.\n- MetalDesigner: navigim me i mire, veshja e profileve dhe blerjet e metalit.\n- Rregullime te tjera dhe permiresime te shpejtesise.",
-  "signature": "y1fduuiSW6mlEHLcBVVT4K5dZ/WcjRpXealY/h/drSY5/D/TZ0mSpE00PGjQaeigaiIsqt+Zoad8Z1wgBjB+CA=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.111/update.zip",
+  "sha256": "080153d55cb112888d95336593bd8310b63589d875a811ce0fae2d85715d9fd8",
+  "size": 291984164,
+  "published_at": "2026-11-27T20:21:39.948Z",
+  "notes": "Versioni 1.0.111\r\n- Libri i Shitjes: \"Kuponat e ditës\" - shitjet shënohen si kupona fiskalë (shumë për një datë), edhe me import nga Excel/CSV; dalin si shitja ditore nr. 1 me NUI 1, stoku dhe KMSH-ja zbresin si në arkë (opsionale).\r\n- Pllakat e produkteve në arkë: kartë e re me foto, çmim dhe ngjyrën e kategorisë; sfondi i bardhë i fotos hiqet vetë.\r\n- Fatura hyrëse nga telefoni: skeda e re \"Rrjet tjetër / 4G\" kur telefoni s'e hap kompjuterin në të njëjtin Wi-Fi.\r\n- Produktet: filtri i kategorisë, renditja e kategorive me tërheqje (drag & drop).\r\n- Përmbledhja hapet menjëherë; parazgjedhja \"Sipas blerjeve\".\r\n- MetalDesigner: Ngjyrosja, Blerjet dhe ndërtimi me Teutën.\r\n- Kontrolli i integritetit të të dhënave në nisje është më i shpejtë (i njëjti kontroll, i njëjti rezultat).\r\n- Rregullime të tjera dhe përmirësime të shpejtësisë.",
+  "signature": "h9Dy86mpECv1E6BgPzPID3QGul96K0j7nxztO3SST5A6iBJdHmmM7G4kc36iDp3txSsC+DZug+wSzTRzH48HCg=="
 }
