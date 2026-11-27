@@ -1,14 +1,14 @@
 {
-  "version": "1.0.109",
+  "version": "1.0.110",
   "product_id": "com.programeri.pos.pef",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.109/update.zip",
-  "sha256": "8059c15ee245ebcb527b98d56669b7fd1c06514a37d9e8651021918ed3ee484d",
-  "size": 291593240,
-  "published_at": "2026-11-25T23:12:18.574Z",
-  "notes": "Versioni 1.0.109\n- Libri i Shitjes (ATK): fatura B2B nuk shfaqet më dy herë (si \"Shitje ditore\" dhe si rresht B2B).\n- Statistikat dhe Përmbledhja e biznesit: kuponët PEF tani numërohen.\n- Korrigjimet e dokumenteve (TVSH, zbritje, fshirje) arrijnë te statistikat në çdo PC.\n- Kontabiliteti: tabela e KMSH-së me kërkim, Përmbledhja më e shpejtë.\n- Moduli i ri \"Depo Doganore\" (IM7/IM4/EX3).\n- Leximi i faturave (OCR): nëse mungon Visual C++, programi ofron instalimin.",
-  "signature": "AleZWZa29vlHpseEeHyExyio9qplIlHpMRY9F8DuUbZ64QSPrqk9iclLCs2ZeNC2JgwkO1ULTvtcBlMbUnuvBA=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-pef-v1.0.110/update.zip",
+  "sha256": "b67328362c287e6212e82ea1f7cf5c0bdb1b326c5af9b0bc236a55524e8cbc57",
+  "size": 291798151,
+  "published_at": "2026-11-27T10:41:57.354Z",
+  "notes": "Versioni 1.0.110\n- EDI: Libri i Blerjes dhe Libri i Shitjes mund te deklarohen me zero (0 te NUI/NF/NP) kur periudha s'ka transaksione.\n- Libri i Shitjes pa TVSH: shitjet ditore nga SEF/PEF dalin me kodin 1 (Pazari ditor), sipas EDI-se se ATK-se.\n- Kontabiliteti: pagesa e shpejte e klientit, nen-kontot e partnereve, depot doganore ne menu, xhirollogarite e punetoreve.\n- Ekstraktet bankare lexohen me ndihmen e Teutes; sugjerime nga blerjet e meparshme te furnitorit.\n- Aprovimi Zero dhe versionimi i dokumenteve kontabel (versioni me i ri fiton gjate sinkronizimit).\n- Sinkronizo bizneset e zyres se Kontabilistit.\n- MetalDesigner: navigim me i mire, veshja e profileve dhe blerjet e metalit.\n- Rregullime te tjera dhe permiresime te shpejtesise.",
+  "signature": "y1fduuiSW6mlEHLcBVVT4K5dZ/WcjRpXealY/h/drSY5/D/TZ0mSpE00PGjQaeigaiIsqt+Zoad8Z1wgBjB+CA=="
 }
