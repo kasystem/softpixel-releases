@@ -1,14 +1,14 @@
 {
-  "version": "1.0.109",
+  "version": "1.0.110",
   "product_id": "com.programeri.pos",
   "channel": "stable",
   "architecture": "x64",
   "min_db_schema": 1,
   "max_db_schema": 1,
-  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.109/update.zip",
-  "sha256": "2bdad2996338b6287e85e264a103eed73147975716f16755e88879db690fcd9f",
-  "size": 252056839,
-  "published_at": "2026-11-25T23:09:43.645Z",
-  "notes": "Versioni 1.0.109\n- Përmbledhja e Kontabilitetit: periudha muaj/vit, kërkimi, shitje/blerje të shpejta, afatet dhe njoftimet; rezultati i muajit dhe trendi 6-mujor.\n- Libri i Shitjes: rreshtat manualë (edhe nga PC-ja e Kontabilistit) shfaqen në çdo PC dhe hyjnë në totalet, në ditar dhe në pasqyra; fatura B2B nuk del më dy herë.\n- Rreshtat manualë me produkte (stoku dhe KMSH), paraja e tyre në Arkë.\n- Korrigjo stokun: Shto / Hiq / Fikso, me arsye dhe historik.\n- Pagat dhe TQ hyjnë vetvetiu në ditar dhe në pasqyra.\n- Orari: modeli vlen nga muaji i zgjedhur.\n- Tabela e KMSH-së me kërkim; moduli i ri \"Depo Doganore\".\n- Korrigjimet e dokumenteve (TVSH, zbritje, fshirje) arrijnë te statistikat në çdo PC.\n- Leximi i faturave (OCR): s'kërkon më instalim të veçantë të Visual C++.",
-  "signature": "P/Z0+VPdtrSSXaZCRnwxk7XGOZrmcALUzM3gsHNlCg3YLavR89+xIOQAoj7pTPCWr61SQcyeHKTEWlD1bJxNBA=="
+  "url": "https://github.com/kasystem/softpixel-releases/releases/download/pos-native-v1.0.110/update.zip",
+  "sha256": "599f017c630b9a45b53bbd5dc219ddb309cf856fc023b7cbde6f28fbe5864523",
+  "size": 252204769,
+  "published_at": "2026-11-27T10:33:33.550Z",
+  "notes": "Versioni 1.0.110\n- EDI: Libri i Blerjes dhe Libri i Shitjes mund te deklarohen me zero (0 te NUI/NF/NP) kur periudha s'ka transaksione.\n- Libri i Shitjes pa TVSH: shitjet ditore nga SEF/PEF dalin me kodin 1 (Pazari ditor), sipas EDI-se se ATK-se.\n- Kontabiliteti: pagesa e shpejte e klientit, nen-kontot e partnereve, depot doganore ne menu, xhirollogarite e punetoreve.\n- Ekstraktet bankare lexohen me ndihmen e Teutes; sugjerime nga blerjet e meparshme te furnitorit.\n- Aprovimi Zero dhe versionimi i dokumenteve kontabel (versioni me i ri fiton gjate sinkronizimit).\n- Sinkronizo bizneset e zyres se Kontabilistit.\n- MetalDesigner: navigim me i mire, veshja e profileve dhe blerjet e metalit.\n- Rregullime te tjera dhe permiresime te shpejtesise.",
+  "signature": "tBaIcQrofuGt1HUMkXiIvbZ/npKNXzV/e5MxvJubZ18k3dNY/dmLT5qOuopcQQaKAQSpE9fXBKkLseXkDk66CQ=="
 }
